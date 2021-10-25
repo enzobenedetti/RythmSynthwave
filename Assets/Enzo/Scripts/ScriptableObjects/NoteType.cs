@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Enzo.Scripts.ScriptableObjects
 {
@@ -6,6 +7,8 @@ namespace Enzo.Scripts.ScriptableObjects
     public class NoteType : ScriptableObject
     {
         public int index;
+
+        public Sprite sprite;
 
         public Vector3 direction;
         public void Movement(Transform transform, float speed)
