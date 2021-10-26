@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Note.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Note.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Track.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Track.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/NoteType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/NoteType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1634895686488</updated>
       <workItem from="1634895692189" duration="9185000" />
-      <workItem from="1635170294836" duration="1578000" />
+      <workItem from="1635170294836" duration="1732000" />
+      <workItem from="1635254866066" duration="375000" />
     </task>
     <servers />
   </component>
@@ -103,6 +99,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
