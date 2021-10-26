@@ -1,28 +1,26 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Enzo.Scripts.ScriptableObjects
+
+[CreateAssetMenu(fileName = "Track")]
+public class Track : ScriptableObject
 {
-    [CreateAssetMenu(fileName = "Track")]
-    public class Track : ScriptableObject
+    public string author;
+    
+    public float bpm;
+
+    public float lenght;
+
+    public AudioClip completeTrack;
+
+    public AudioClip baseTrack;
+
+    public AudioClip onComboTrack;
+    
+    public List<Note> notes;
+    
+    public Track(List<Note> notes)
     {
-        public string author;
-        
-        public float bpm;
-
-        public float lenght;
-
-        public AudioClip completeTrack;
-
-        public AudioClip baseTrack;
-
-        public AudioClip onComboTrack;
-        
-        public List<Note> notes;
-        
-        public Track(List<Note> notes)
-        {
-            this.notes = notes;
-        }
+        this.notes = notes;
     }
 }

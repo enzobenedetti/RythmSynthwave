@@ -1,12 +1,9 @@
 ﻿using System;
 
-namespace Enzo.Scripts.ScriptableObjects
+[Serializable]
+public class Note
 {
-    [Serializable]
-    public class Note
-    {
-        public NoteType type;
+    public NoteType type;
 
-        public float timeCode;
-    }
+    public float timeCode;
 }
