@@ -5,10 +5,13 @@ public class Score : MonoBehaviour
 {
     public static Text scoreText;
     public static Text comboText;
+    
     private static int _score = 0;
 
     private static int combo = 0;
-    // Start is called before the first frame update
+    
+    public static bool OnCombo;
+    
     void Awake()
     {
         scoreText = GameObject.Find("Score").GetComponent<Text>();
@@ -30,6 +33,7 @@ public class Score : MonoBehaviour
     public static void AddCombo()
     {
         combo++;
+        OnCombo = true;
         if (combo < 5) return;
         if (combo < 15) _score += 1;
         else if (combo < 30) _score += 5;
