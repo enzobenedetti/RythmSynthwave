@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
     
     public static float timer = -1f;
 
-    private bool _timerOn = false;
+    private static bool _timerOn = true;
     
     // Update is called once per frame
     void Update()
@@ -21,12 +21,12 @@ public class Timer : MonoBehaviour
         _timerOn = true;
     }
 
-    public void StopTimer()
+    public static void StopTimer()
     {
         _timerOn = false;
     }
 
-    public void ResetTimer()
+    public static void ResetTimer()
     {
         _timerOn = false;
         timer = -1f;
