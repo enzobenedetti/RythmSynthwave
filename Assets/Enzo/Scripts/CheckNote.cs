@@ -147,7 +147,7 @@ public class CheckNote : MonoBehaviour
             {
                 Debug.Log("Bad !");
                 notesLeft.Remove(notesLeft[0]);
-                //Score.GotBad();
+                Score.GotBad();
             }
         }
     
@@ -157,24 +157,24 @@ public class CheckNote : MonoBehaviour
                 Timer.timer >= note.timeCode - perfectBuffer)
             {
                 Debug.Log("Perfect !");
-                //Score.GotPerfect();
+                Score.GotPerfect();
             }
             else if (Timer.timer <= note.timeCode + niceBuffer &&
                      Timer.timer >= note.timeCode - niceBuffer)
             {
                 Debug.Log("Nice !");
-                //Score.GotNice();
+                Score.GotNice();
             }
             else if (Timer.timer <= note.timeCode + okBuffer &&
                      Timer.timer >= note.timeCode - okBuffer)
             {
                 Debug.Log("OK");
-                //Score.GotOk();
+                Score.GotOk();
             }
             else
             {
                 Debug.Log("Bad");
-                //Score.GotBad();
+                Score.GotBad();
             }
             notesLeft.Remove(note);
         }

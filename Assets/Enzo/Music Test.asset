@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db42ca34b75f47aaab087a9a7fc16c4c, type: 3}
   m_Name: Music Test
   m_EditorClassIdentifier: 
-  author: 
+  author: none
   bpm: 90
   lenght: 30
   completeTrack: {fileID: 0}
@@ -27,3 +27,5 @@ MonoBehaviour:
     timeCode: 5
   - type: {fileID: 11400000, guid: d3d7d5c79a65e9a4d9403c7064faf90e, type: 2}
     timeCode: 6
+  - type: {fileID: 11400000, guid: d3d7d5c79a65e9a4d9403c7064faf90e, type: 2}
+    timeCode: 7

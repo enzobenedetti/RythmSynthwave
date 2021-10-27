@@ -8,6 +8,7 @@ public class MusicPlayer : MonoBehaviour
 
     public Track track;
     private int nextNote;
+    
     // Start is called before the first frame update
     void Start()
     {

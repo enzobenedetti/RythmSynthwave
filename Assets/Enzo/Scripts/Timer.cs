@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     public static float timer = -1f;
 
     private bool _timerOn = false;
-
+    
     // Update is called once per frame
     void Update()
     {

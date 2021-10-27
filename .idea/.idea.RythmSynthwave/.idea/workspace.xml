@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="" />
+    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Music Test.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Music Test.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/Timer.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +29,7 @@
     <setting file="file://G:/RythmTest/Assets/Scripts/ScriptablesObject/Note.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://G:/RythmTest/Assets/Scripts/ScriptablesObject/Track.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://G:/RythmTest/Assets/Scripts/Score.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zrA9hwMS3IY4ZeBUnYWavyK5PR" />
