@@ -9,6 +9,7 @@ public class MoveNote : MonoBehaviour
     public NoteType NoteType;
 
     public SpriteRenderer SpriteRenderer;
+    
     // Start is called before the first frame update
     void Start()
     {

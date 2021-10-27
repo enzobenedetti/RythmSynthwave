@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/NoteType/Left.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/NoteType/Left.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/NoteType/Up.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/NoteType/Up.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
