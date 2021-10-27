@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Music Test.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Music Test.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/Score.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/Timer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

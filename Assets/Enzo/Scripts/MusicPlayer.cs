@@ -25,7 +25,7 @@ public class MusicPlayer : MonoBehaviour
                 currentNote.GetComponent<MoveNote>().NoteType = track.notes[nextNote].type;
                 nextNote++;
             }
-
+        if (track.lenght <= Timer.timer) Timer.StopTimer();
     }
     
 }
