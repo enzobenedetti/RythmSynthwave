@@ -20,8 +20,8 @@ public class MusicPlayer : MonoBehaviour
         if (nextNote < track.notes.Count)
             if (Timer.timer >= track.notes[nextNote].timeCode - (60/track.bpm) * 3)
             {
-                GameObject currentSphere = Instantiate(notesPrefab, Vector3.zero, Quaternion.identity);
-                currentSphere.GetComponent<MoveNote>().NoteType = track.notes[nextNote].type;
+                GameObject currentNote = Instantiate(notesPrefab, Vector3.zero, Quaternion.identity);
+                currentNote.GetComponent<MoveNote>().NoteType = track.notes[nextNote].type;
                 nextNote++;
             }
 

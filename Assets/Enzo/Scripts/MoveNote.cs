@@ -7,9 +7,12 @@ public class MoveNote : MonoBehaviour
     public static float speed = 2f;
 
     public NoteType NoteType;
+
+    public SpriteRenderer SpriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
+        SpriteRenderer.sprite = NoteType.sprite;
         if (NoteType.direction == Vector3.zero)
             transform.localScale = new Vector3(3, 3, 3);
     }

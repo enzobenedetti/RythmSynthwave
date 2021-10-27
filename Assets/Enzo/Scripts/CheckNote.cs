@@ -12,14 +12,14 @@ public class CheckNote : MonoBehaviour
     
         public float badBuffer = 1f;
     
-        public MusicPlayer Music;
+        public MusicPlayer MusicPlayer;
     
         private List<Note> notesLeft = new List<Note>();
     
         // Start is called before the first frame update
         void Start()
         {
-            foreach (var t in Music.track.notes)
+            foreach (var t in MusicPlayer.track.notes)
             {
                 notesLeft.Add(t);
             }
