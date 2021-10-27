@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Note.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Note.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/NoteType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/NoteType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Track.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects/Track.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,8 @@
       <updated>1634895686488</updated>
       <workItem from="1634895692189" duration="9185000" />
       <workItem from="1635170294836" duration="1732000" />
-      <workItem from="1635254866066" duration="1335000" />
+      <workItem from="1635254866066" duration="2642000" />
+      <workItem from="1635335975088" duration="491000" />
     </task>
     <servers />
   </component>
