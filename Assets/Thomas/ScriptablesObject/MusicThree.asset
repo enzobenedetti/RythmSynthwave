@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ec49b0bf961134eb3e6960f0814794, type: 3}
   m_Name: MusicThree
   m_EditorClassIdentifier: 
-  TrackMainInfo: {fileID: 11400000, guid: d4007680dbdc5c949980137e8991fc3c, type: 2}
+  MusicTitle: Howling
+  MusicAuthor: Lupus Nocte
+  BPM: 150
+  Minutes: 3
+  Seconds: 4
   SceneRelatedToTrack: MusicThreeScene
   MusicDifficulty: 2

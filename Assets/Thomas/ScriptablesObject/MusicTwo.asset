@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22ec49b0bf961134eb3e6960f0814794, type: 3}
-  m_Name: MusicOne
+  m_Name: MusicTwo
   m_EditorClassIdentifier: 
-  TrackMainInfo: {fileID: 11400000, guid: ed38bde6489e0b94bb5892c9e9a6292c, type: 2}
-  SceneRelatedToTrack: MusicOneScene
-  MusicDifficulty: 0
+  MusicTitle: Catch Up
+  MusicAuthor: Falcon Dives
+  BPM: 110
+  Minutes: 2
+  Seconds: 36
+  SceneRelatedToTrack: MusicTwoScene
+  MusicDifficulty: 1

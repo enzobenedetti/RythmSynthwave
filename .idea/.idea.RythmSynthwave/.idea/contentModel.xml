@@ -109,10 +109,12 @@
           </e>
         </e>
         <e p="Thomas" t="Include">
+          <e p="ScriptablesObject" t="Include">
+            <e p="LevelSelectionDisplay.cs" t="Include" />
+          </e>
           <e p="Scripts" t="Include">
             <e p="ButtonsScript.cs" t="Include" />
-            <e p="LevelSelection.cs" t="Include" />
-            <e p="LevelSelectionDisplay.cs" t="Include" />
+            <e p="LevelSelectionBrain.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />
           </e>
         </e>
