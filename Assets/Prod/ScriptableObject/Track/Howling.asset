@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db42ca34b75f47aaab087a9a7fc16c4c, type: 3}
   m_Name: Howling
   m_EditorClassIdentifier: 
-  author: 
-  bpm: 0
-  lenght: 0
-  completeTrack: {fileID: 0}
-  baseTrack: {fileID: 0}
-  onComboTrack: {fileID: 0}
+  author: Lupus Nocte
+  bpm: 150
+  lenght: 184
+  completeTrack: {fileID: 8300000, guid: e0aa13708bc51124c92aa2a2d4c4313c, type: 3}
+  baseTrack: {fileID: 8300000, guid: 5281f977678fd064788d68ae03282e38, type: 3}
+  onComboTrack: {fileID: 8300000, guid: 9116d728ed6d700478ef291dd04489a0, type: 3}
   notes: []

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/ScriptableObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +66,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11500">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="11500" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />

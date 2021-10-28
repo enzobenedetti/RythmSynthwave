@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db42ca34b75f47aaab087a9a7fc16c4c, type: 3}
   m_Name: Catch Up
   m_EditorClassIdentifier: 
-  author: 
-  bpm: 0
-  lenght: 0
-  completeTrack: {fileID: 0}
-  baseTrack: {fileID: 0}
-  onComboTrack: {fileID: 0}
+  author: Falcon Dives
+  bpm: 110
+  lenght: 121
+  completeTrack: {fileID: 8300000, guid: 06d2aa311e9221c46878b1efcdc5abb2, type: 3}
+  baseTrack: {fileID: 8300000, guid: f7ef3c742fc158d43b4d280dcc800428, type: 3}
+  onComboTrack: {fileID: 8300000, guid: ace36cff77ee01c4ab2775289c414429, type: 3}
   notes: []

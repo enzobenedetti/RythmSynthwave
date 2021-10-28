@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db42ca34b75f47aaab087a9a7fc16c4c, type: 3}
   m_Name: Sweet Eidolon
   m_EditorClassIdentifier: 
-  author: 
-  bpm: 0
-  lenght: 0
-  completeTrack: {fileID: 0}
-  baseTrack: {fileID: 0}
-  onComboTrack: {fileID: 0}
+  author: Andreas Boldt
+  bpm: 78
+  lenght: 153
+  completeTrack: {fileID: 8300000, guid: 562c4d182d6fe304cbc08c94b16c3441, type: 3}
+  baseTrack: {fileID: 8300000, guid: 8aa2ebc4ec2ac0544b101ba8f7379d32, type: 3}
+  onComboTrack: {fileID: 8300000, guid: a624efe168180254080f07c14ffe0083, type: 3}
   notes: []

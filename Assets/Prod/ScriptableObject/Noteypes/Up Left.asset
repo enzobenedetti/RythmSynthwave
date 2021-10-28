@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12322310ba4caa46ac8502fa7d30904, type: 3}
   m_Name: Up Left
   m_EditorClassIdentifier: 
-  index: 0
+  index: 7
   sprite: {fileID: 0}
-  direction: {x: 0, y: 0, z: 0}
+  direction: {x: -1, y: 1, z: 0}
