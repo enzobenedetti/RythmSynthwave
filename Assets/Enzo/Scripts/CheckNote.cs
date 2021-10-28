@@ -146,6 +146,7 @@ public class CheckNote : MonoBehaviour
             else if (Timer.timer >= notesLeft[0].timeCode + okBuffer)
             {
                 Debug.Log("Bad !");
+                MusicPlayer.DestroyNote(notesLeft[0]);
                 notesLeft.Remove(notesLeft[0]);
                 Score.GotBad();
             }
@@ -177,5 +178,6 @@ public class CheckNote : MonoBehaviour
                 Score.GotBad();
             }
             notesLeft.Remove(note);
+            MusicPlayer.DestroyNote(note);
         }
 }

@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://G:/RythmTest/Assets/Scripts/MoveNote.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/36/02b85da6/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://G:/RythmTest/Assets/Scripts/Music.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://G:/RythmTest/Assets/Scripts/CheckNotes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -37,6 +36,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -67,10 +68,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11500">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11500" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -90,7 +91,7 @@
       <workItem from="1635170294836" duration="1732000" />
       <workItem from="1635254866066" duration="2642000" />
       <workItem from="1635335975088" duration="2127000" />
-      <workItem from="1635404018084" duration="860000" />
+      <workItem from="1635404018084" duration="2202000" />
     </task>
     <servers />
   </component>
@@ -114,5 +115,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs</url>
+          <line>178</line>
+          <properties documentPath="F:\Projets\Unity\RythmSynthwave\Assets\Enzo\Scripts\CheckNote.cs" initialLine="178" containingFunctionPresentation="method 'CheckTiming'">
+            <startOffsets>
+              <option value="5656" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5679" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
