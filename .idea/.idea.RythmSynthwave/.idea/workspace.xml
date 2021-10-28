@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/Score.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/Timer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +22,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://G:/RythmTest/Assets/Scripts/MoveNote.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://G:/RythmTest/Assets/Scripts/Music.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/PlayerTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://G:/RythmTest/Assets/Scripts/CheckNotes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://G:/RythmTest/Assets/Scripts/ScriptablesObject/Note.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -91,6 +90,7 @@
       <workItem from="1635170294836" duration="1732000" />
       <workItem from="1635254866066" duration="2642000" />
       <workItem from="1635335975088" duration="2127000" />
+      <workItem from="1635404018084" duration="860000" />
     </task>
     <servers />
   </component>
