@@ -16,6 +16,5 @@ MonoBehaviour:
   MusicAuthor: Falcon Dives
   BPM: 110
   Minutes: 2
-  Seconds: 36
-  SceneRelatedToTrack: MusicTwoScene
+  Seconds: 1
   MusicDifficulty: 1
