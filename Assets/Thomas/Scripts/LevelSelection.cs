@@ -5,18 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 
-namespace Ui
+namespace UI
 {
     public class LevelSelection : MonoBehaviour
     {
         public enum MusicSelection{MusicOne,MusicTwo,MusicThree}
         public MusicSelection CurHighlightedMusic;
-
-        public string MusicOneName;
-        public string MusicTwoName;
-        public string MusicThreeName;
-
-        private void Start()
+        
+        private void Awake()
         {
             CurHighlightedMusic = MusicSelection.MusicOne;
         }
@@ -28,26 +24,59 @@ namespace Ui
 
         void CheckInputs()
         {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                StartSelectedMusic();
-            }
+            if (Input.GetButtonDown("Central")) { StartSelectedMusic(); }
+            
+            if (Input.GetButtonDown("Down")) { ChangeMusicDown(); }
+            
+            if (Input.GetButtonDown("Up")) { ChangeMusicUp(); }
         }
 
         void StartSelectedMusic()
         {
             switch (CurHighlightedMusic)
             {
-                case MusicSelection.MusicOne: 
-                    SceneManager.LoadScene(MusicOneName);
+                case MusicSelection.MusicOne:
+                    
                     break;
-                case MusicSelection.MusicTwo: 
-                    SceneManager.LoadScene(MusicTwoName);
+                case MusicSelection.MusicTwo:
+                    
                     break;
                 case MusicSelection.MusicThree:
-                    SceneManager.LoadScene(MusicThreeName);
+                    
                     break;
             }
+        }
+
+        void ChangeMusicUp()
+        {
+            switch (CurHighlightedMusic)
+            {
+                case MusicSelection.MusicOne:
+                    CurHighlightedMusic = MusicSelection.MusicThree;
+                    break;
+                case MusicSelection.MusicTwo:
+                    CurHighlightedMusic = MusicSelection.MusicOne;
+                    break;
+                case MusicSelection.MusicThree:
+                    CurHighlightedMusic = MusicSelection.MusicTwo;
+                    break;
+            }    
+        }
+
+        void ChangeMusicDown()
+        {
+            switch (CurHighlightedMusic)
+            {
+                case MusicSelection.MusicOne:
+                    CurHighlightedMusic = MusicSelection.MusicTwo;
+                    break;
+                case MusicSelection.MusicTwo:
+                    CurHighlightedMusic = MusicSelection.MusicThree;
+                    break;
+                case MusicSelection.MusicThree:
+                    CurHighlightedMusic = MusicSelection.MusicOne;
+                    break;
+            } 
         }
     }
 }

@@ -19,8 +19,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/ButtonsScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionSO.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplay.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1zrA9hwMS3IY4ZeBUnYWavyK5PR" />
   <component name="ProjectViewState">
@@ -84,6 +93,7 @@
       <workItem from="1635254866066" duration="2642000" />
       <workItem from="1635335975088" duration="2127000" />
       <workItem from="1635404018084" duration="2202000" />
+      <workItem from="1635433576807" duration="2973000" />
     </task>
     <servers />
   </component>
