@@ -113,6 +113,7 @@
             <e p="ButtonsScript.cs" t="Include" />
             <e p="LevelSelection.cs" t="Include" />
             <e p="LevelSelectionDisplay.cs" t="Include" />
+            <e p="UiManager.cs" t="Include" />
           </e>
         </e>
       </e>
