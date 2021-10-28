@@ -8,7 +8,9 @@ public class MusicPlayer : MonoBehaviour
 
     public Track track;
     private int nextNote;
-    
+
+    public static List<GameObject> noteOnScreen = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +24,22 @@ public class MusicPlayer : MonoBehaviour
             if (Timer.timer >= track.notes[nextNote].timeCode - (60/track.bpm) * 3)
             {
                 GameObject currentNote = Instantiate(notesPrefab, Vector3.zero, Quaternion.identity);
-                currentNote.GetComponent<MoveNote>().NoteType = track.notes[nextNote].type;
+                currentNote.GetComponent<MoveNote>().Note = track.notes[nextNote];
+                noteOnScreen.Add(currentNote);
                 nextNote++;
             }
         if (track.lenght <= Timer.timer) Timer.StopTimer();
     }
-    
+
+    public static void DestroyNote(Note note)
+    {
+        foreach (GameObject noteGameObject in noteOnScreen)
+        {
+            if (noteGameObject.GetComponent<MoveNote>().Note == note)
+            {
+                Destroy(noteGameObject);
+                break;
+            }
+        }
+    }
 }
