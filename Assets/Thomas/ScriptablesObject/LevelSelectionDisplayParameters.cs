@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "LevelDisplayParameters")]
-public class LevelSelectionDisplay : ScriptableObject
+public class LevelSelectionDisplayParameters : ScriptableObject
 {
     public string MusicTitle;
     public string MusicAuthor;

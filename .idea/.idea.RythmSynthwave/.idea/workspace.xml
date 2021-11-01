@@ -15,11 +15,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MoveNote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/MusicPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -29,8 +28,13 @@
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionSO.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelection.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplay.cs" />
-      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionBrain.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/ScriptablesObject/LevelSelectionDisplayParameters.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/ButtonsScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zrA9hwMS3IY4ZeBUnYWavyK5PR" />
@@ -96,6 +100,9 @@
       <workItem from="1635335975088" duration="2127000" />
       <workItem from="1635404018084" duration="2202000" />
       <workItem from="1635433576807" duration="2973000" />
+      <workItem from="1635510598066" duration="5014000" />
+      <workItem from="1635714386223" duration="3820000" />
+      <workItem from="1635774008882" duration="3657000" />
     </task>
     <servers />
   </component>
@@ -119,17 +126,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Enzo/Scripts/CheckNote.cs</url>
-          <line>178</line>
-          <properties documentPath="F:\Projets\Unity\RythmSynthwave\Assets\Enzo\Scripts\CheckNote.cs" initialLine="178" containingFunctionPresentation="method 'CheckTiming'" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

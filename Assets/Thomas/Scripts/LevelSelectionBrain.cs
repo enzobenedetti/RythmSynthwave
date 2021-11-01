@@ -9,17 +9,18 @@ namespace UI
 {
     public class LevelSelectionBrain : MonoBehaviour
     {
-        public LevelSelectionDisplay MusicOne;
-        public LevelSelectionDisplay MusicTwo;
-        public LevelSelectionDisplay MusicThree;
+        [Header("Tracks")]
+        public LevelSelectionDisplayParameters MusicOne;
+        public LevelSelectionDisplayParameters MusicTwo;
+        public LevelSelectionDisplayParameters MusicThree;
         
-        [HideInInspector]public LevelSelectionDisplay UpperDisplay;
-        [HideInInspector]public LevelSelectionDisplay MiddleDisplay;
-        [HideInInspector]public LevelSelectionDisplay LowerDisplay;    
+        [HideInInspector]public LevelSelectionDisplayParameters upperDisplayParameters;
+        [HideInInspector]public LevelSelectionDisplayParameters middleDisplayParameters;
+        [HideInInspector]public LevelSelectionDisplayParameters lowerDisplayParameters;    
         
         public enum MusicSelection{MusicOne,MusicTwo,MusicThree}
         public MusicSelection CurHighlightedMusic;
-        
+
         private void Awake()
         {
             CurHighlightedMusic = MusicSelection.MusicOne;
@@ -30,7 +31,7 @@ namespace UI
             CheckInputs();
             CheckHighlightedMusic();
         }
-
+        
         void CheckInputs()
         {
             if (Input.GetButtonDown("Central")) { StartSelectedMusic(); }
@@ -39,7 +40,7 @@ namespace UI
             
             if (Input.GetButtonDown("Down")) { ChangeMusicUp(); }
         }
-
+        
         void StartSelectedMusic()
         {
             switch (CurHighlightedMusic)
@@ -93,19 +94,19 @@ namespace UI
             switch (CurHighlightedMusic)
             {
                 case MusicSelection.MusicOne:
-                    UpperDisplay = MusicThree;
-                    MiddleDisplay = MusicOne;
-                    LowerDisplay = MusicTwo;
+                    upperDisplayParameters = MusicThree;
+                    middleDisplayParameters = MusicOne;
+                    lowerDisplayParameters = MusicTwo;
                     break;
                 case MusicSelection.MusicTwo:
-                    UpperDisplay = MusicOne;
-                    MiddleDisplay = MusicTwo;
-                    LowerDisplay = MusicThree;
+                    upperDisplayParameters = MusicOne;
+                    middleDisplayParameters = MusicTwo;
+                    lowerDisplayParameters = MusicThree;
                     break;
                 case MusicSelection.MusicThree:
-                    MiddleDisplay = MusicThree;
-                    UpperDisplay = MusicTwo;
-                    LowerDisplay = MusicOne;
+                    middleDisplayParameters = MusicThree;
+                    upperDisplayParameters = MusicTwo;
+                    lowerDisplayParameters = MusicOne;
                     break;
             }
         }
