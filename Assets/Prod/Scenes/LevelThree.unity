@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &128663763 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1877058710153097080, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+  m_PrefabInstance: {fileID: 1877058709735611363}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1fa0d3b03548f4796b083e1d0e1b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &131544359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1200,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542320089 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4544099535705400088, guid: 5027613b848967947a6410588b0c048d, type: 3}
+  m_PrefabInstance: {fileID: 8851489879074466303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1712587297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1401,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031263495 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4866555393626745161, guid: 5027613b848967947a6410588b0c048d, type: 3}
+  m_PrefabInstance: {fileID: 8851489879074466303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1877058709735611363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1390,6 +1423,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scripts InGame
       objectReference: {fileID: 0}
+    - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 2031263495}
+    - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: author
+      value: 
+      objectReference: {fileID: 1542320089}
+    - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: playerMusic
+      value: 
+      objectReference: {fileID: 128663763}
     - target: {fileID: 1877058710153097086, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: m_RootOrder
       value: 2
