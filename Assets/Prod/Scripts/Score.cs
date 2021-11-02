@@ -1,67 +1,72 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public static class Score
 {
-    public static Text scoreText;
-    public static Text comboText;
-    
-    private static int _score = 0;
 
-    private static int combo = 0;
+    public static int score = 0;
+
+    public static int Combo = 0;
+
+    private static int _maxCombo = 0;
+    public static int MaxCombo
+    {
+        get => _maxCombo;
+        set
+        {
+            if (value < _maxCombo) return;
+            _maxCombo = value;
+            
+        }
+    }
+
+    public static int PerfectCount = 0;
+    public static int NiceCount = 0;
+    public static int OkCount = 0;
+    public static int BadCount = 0;
     
     public static bool OnCombo;
-    
-    void Awake()
-    {
-        scoreText = GameObject.Find("Score").GetComponent<Text>();
-        comboText = GameObject.Find("Combo").GetComponent<Text>();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-    
-    }
-
-    static void UpdateUI()
-    {
-        scoreText.text = "Score : " + _score;
-        comboText.text = "Combo : " + combo;
-    }
+    public static Track music;
 
     public static void AddCombo()
     {
-        combo++;
+        Combo++;
+        MaxCombo = Combo;
         OnCombo = true;
-        if (combo < 5) return;
-        if (combo < 15) _score += 1;
-        else if (combo < 30) _score += 5;
-        else _score += 10;
+        if (Combo < 5) return;
+        if (Combo < 15) score += 1;
+        else if (Combo < 30) score += 5;
+        else score += 10;
     }
 
     public static void GotPerfect()
     {
-        _score += 10;
+        score += 10;
         AddCombo();
-        UpdateUI();
+        PerfectCount++;
+        ScoreUI.UpdateUI();
     }
     public static void GotNice()
     {
-        _score += 5;
+        score += 5;
         AddCombo();
-        UpdateUI();
+        NiceCount++;
+        ScoreUI.UpdateUI();
     }
     public static void GotOk()
     {
-        _score += 1;
+        score += 1;
         AddCombo();
-        UpdateUI();
+        OkCount++;
+        ScoreUI.UpdateUI();
     }
 
     public static void GotBad()
     {
-        combo = 0;
-        UpdateUI();
+        Combo = 0;
+        OnCombo = false;
+        BadCount++;
+        ScoreUI.UpdateUI();
     }
 }
