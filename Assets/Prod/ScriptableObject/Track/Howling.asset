@@ -18,4 +18,12 @@ MonoBehaviour:
   completeTrack: {fileID: 8300000, guid: e0aa13708bc51124c92aa2a2d4c4313c, type: 3}
   baseTrack: {fileID: 8300000, guid: 5281f977678fd064788d68ae03282e38, type: 3}
   onComboTrack: {fileID: 8300000, guid: 9116d728ed6d700478ef291dd04489a0, type: 3}
-  notes: []
+  notes:
+  - type: {fileID: 11400000, guid: 597af4583ae98464491c0c358555da9c, type: 2}
+    timeCode: 0.1
+  - type: {fileID: 11400000, guid: d3d7d5c79a65e9a4d9403c7064faf90e, type: 2}
+    timeCode: 0.9
+  - type: {fileID: 11400000, guid: 597af4583ae98464491c0c358555da9c, type: 2}
+    timeCode: 1.6
+  - type: {fileID: 11400000, guid: 6a07a7bb7270c10499635cd6aede5346, type: 2}
+    timeCode: 5
