@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   author: none
   bpm: 90
-  lenght: 30
+  lenght: 10
   completeTrack: {fileID: 0}
   baseTrack: {fileID: 0}
   onComboTrack: {fileID: 0}
