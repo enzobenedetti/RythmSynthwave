@@ -15,8 +15,10 @@ public class MusicPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Score.music = track;
         MoveNote.speed = track.bpm / 60;
         Timer.ResetTimer();
+        Timer.StartTimer();
     }
 
     // Update is called once per frame

@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
             timer += Time.deltaTime;
     }
 
-    public void StartTimer()
+    public static void StartTimer()
     {
         _timerOn = true;
     }

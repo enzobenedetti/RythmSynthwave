@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class EndLevelUI : MonoBehaviour
 {
+    public Text musicName;
+    public Text author;
+    
     public Text score;
     public Text perfect;
     public Text nice;
@@ -14,6 +17,8 @@ public class EndLevelUI : MonoBehaviour
     
     void Awake()
     {
+        musicName.text = Score.music.name;
+        author.text = Score.music.author;
         score.text = Score.score.ToString();
         perfect.text = "Perfect : " + Score.PerfectCount;
         nice.text = "Nice : " + Score.NiceCount;

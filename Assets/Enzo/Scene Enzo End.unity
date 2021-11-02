@@ -895,6 +895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c176bb858980c6a498587987facff66f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicName: {fileID: 940264399}
+  author: {fileID: 896245527}
   score: {fileID: 978027185}
   perfect: {fileID: 236454994}
   nice: {fileID: 271073795}

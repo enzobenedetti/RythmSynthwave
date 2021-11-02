@@ -27,6 +27,8 @@ public static class Score
     
     public static bool OnCombo;
 
+    public static Track music;
+
     public static void AddCombo()
     {
         Combo++;
