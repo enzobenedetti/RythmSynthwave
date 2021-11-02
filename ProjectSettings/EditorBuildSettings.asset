@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Prod/Scenes/LevelThree.unity
     guid: 854970ad1a9a0164183f586e913fd739
   - enabled: 1
+    path: Assets/Prod/Scenes/EndLevel.unity
+    guid: 4d0d7058c635f6845a13fd2a27becccf
+  - enabled: 0
     path: Assets/Enzo/Scene Enzo End.unity
     guid: f27ff7ff6367b5c4886df86b0da162ee
   m_configObjects: {}

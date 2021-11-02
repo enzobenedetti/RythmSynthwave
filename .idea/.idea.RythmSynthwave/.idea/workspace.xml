@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="" />
+    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Prefabs/todelete.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Prefabs/todelete.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Central.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Central.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Down Left.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Down Left.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Down Right.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Down Right.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Down.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Down.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Left.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Left.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Right.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Right.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Up Left.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Up Left.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Up Right.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Up Right.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Up.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Noteypes/Up.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Track/Howling.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/ScriptableObject/Track/Howling.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Sound/Music/Howling - Lupus Nocte/ES_Howling_OnCombo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Sound/Music/Howling - Lupus Nocte/ES_Howling_OnCombo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +33,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/EndLevelUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
@@ -100,7 +120,7 @@
       <workItem from="1635433576807" duration="2973000" />
       <workItem from="1635517699854" duration="14000" />
       <workItem from="1635517745752" duration="587000" />
-      <workItem from="1635840141013" duration="6746000" />
+      <workItem from="1635840141013" duration="9637000" />
     </task>
     <servers />
   </component>
