@@ -9,7 +9,12 @@ using UnityEngine.UI;
 
 public class ButtonsScript : MonoBehaviour
 {
-    [CanBeNull]public GameObject FirstSelected;
+    public GameObject FirstSelected;
+    
+    private void Awake()
+    {
+        SetSelectedObject(FirstSelected);
+    }
     
     public static void QuitGame()
     {
@@ -19,13 +24,13 @@ public class ButtonsScript : MonoBehaviour
         
         Application.Quit();
     }
-
-    private void Awake()
+    
+    private void Update()
     {
-        SetSelectedObject(FirstSelected);
+        CheckOutline();
     }
 
-    private void Update()
+    void CheckOutline()
     {
         GameObject[] Buttons = GameObject.FindGameObjectsWithTag("OutlinedButton");
 
@@ -49,7 +54,7 @@ public class ButtonsScript : MonoBehaviour
         }
     }
 
-    void OutlineButton(GameObject ToOutline)
+    public void OutlineButton(GameObject ToOutline)
     {
         if (ToOutline.GetComponent<Outline>())
         {
