@@ -16,14 +16,17 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa25908.12471/ScoreSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/EndLevelUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/ScoreUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PlayerTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PlayerData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SaveTestScript.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -32,8 +35,14 @@
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelection.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionBrain.cs" />
       <option value="$PROJECT_DIR$/Assets/HighScoreDisplayScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/ButtonsScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/SaveData.cs" />
+      <option value="$PROJECT_DIR$/../PlayerTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Prod/Scripts/CheckNote.cs" />
+      <option value="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionBrain.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zrA9hwMS3IY4ZeBUnYWavyK5PR" />
@@ -103,6 +112,7 @@
       <workItem from="1635517745752" duration="587000" />
       <workItem from="1635840141013" duration="6746000" />
       <workItem from="1635976076181" duration="2920000" />
+      <workItem from="1636034803636" duration="8347000" />
     </task>
     <servers />
   </component>

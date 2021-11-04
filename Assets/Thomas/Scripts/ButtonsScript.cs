@@ -46,10 +46,6 @@ public class ButtonsScript : MonoBehaviour
                 {
                     button.GetComponent<Outline>().enabled = false;
                 }
-                else
-                {
-                    return;
-                }
             }
         }
     }

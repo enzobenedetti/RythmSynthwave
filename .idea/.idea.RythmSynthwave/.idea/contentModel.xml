@@ -12,7 +12,6 @@
             <e p="ScoreUI.cs" t="Include" />
           </e>
         </e>
-        <e p="HighScoreDisplayScript.cs" t="Include" />
         <e p="Prod" t="Include">
           <e p="Materials" t="Include">
             <e p="toDelete.txt" t="Include" />
@@ -118,6 +117,7 @@
             <e p="ButtonsScript.cs" t="Include" />
             <e p="LevelSelectionBrain.cs" t="Include" />
             <e p="LevelSelectionDisplayScript.cs" t="Include" />
+            <e p="SaveData.cs" t="Include" />
           </e>
         </e>
       </e>
