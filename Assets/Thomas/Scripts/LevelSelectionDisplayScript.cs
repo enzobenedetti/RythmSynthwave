@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class LevelSelectionDisplayScript : MonoBehaviour
 {
+    private LevelSelectionBrain LevelSelectionBrain;
+    
     #region Level select Variables
     [Header("LevelSelectUpperTab")] 
     public TextMeshProUGUI UpperTitle;
@@ -22,6 +24,9 @@ public class LevelSelectionDisplayScript : MonoBehaviour
     public TextMeshProUGUI MiddleDifficulty;
     public TextMeshProUGUI MiddleBPM;
     public TextMeshProUGUI MiddleTime;
+    [Space] 
+    public GameObject CommencerObject;
+    public GameObject VitesseObject;
     
     [Header("LevelSelectLowerTab")] 
     public TextMeshProUGUI LowerTitle;
@@ -30,8 +35,11 @@ public class LevelSelectionDisplayScript : MonoBehaviour
     public TextMeshProUGUI LowerBPM;
     public TextMeshProUGUI LowerTime;
 
-    private LevelSelectionBrain LevelSelectionBrain;
+    
     #endregion
+
+    [Space]
+    public TextMeshProUGUI SpeedValueDisplay;
     
     private void Awake()
     {
@@ -43,6 +51,8 @@ public class LevelSelectionDisplayScript : MonoBehaviour
         UpperDisplay();
         MiddleDisplay();
         LowerDisplay();
+
+        SpeedValueDisplay.text = LevelSelectionBrain.Speed.ToString();
     }
     
     #region Level select Functions
@@ -86,6 +96,18 @@ public class LevelSelectionDisplayScript : MonoBehaviour
                 MiddleDifficulty.text = "Hard";
                 break;
         }
+
+        if (LevelSelectionBrain.OnMiddleTab)
+        {
+            CommencerObject.SetActive(true);     
+            VitesseObject.SetActive(true);
+        }
+        else
+        {
+            CommencerObject.SetActive(false);     
+            VitesseObject.SetActive(false);
+        }
+        
     }
 
     void LowerDisplay()
