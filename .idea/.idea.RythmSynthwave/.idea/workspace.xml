@@ -20,10 +20,12 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/ScoreUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/GameVolumeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PlayerTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PlayerData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/HighScoreData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../SaveTestScript.cs" root0="SKIP_HIGHLIGHTING" />
@@ -37,11 +39,16 @@
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/HighScoreDisplayScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/ButtonsScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/SaveData.cs" />
       <option value="$PROJECT_DIR$/../PlayerTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Prod/Scripts/CheckNote.cs" />
       <option value="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" />
+      <option value="$PROJECT_DIR$/../PlayerData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/GameData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/HighScoreData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/GameVolumeData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/MusicSpeedData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionBrain.cs" />
     </changedPaths>
   </component>
@@ -112,7 +119,8 @@
       <workItem from="1635517745752" duration="587000" />
       <workItem from="1635840141013" duration="6746000" />
       <workItem from="1635976076181" duration="2920000" />
-      <workItem from="1636034803636" duration="8347000" />
+      <workItem from="1636034803636" duration="8989000" />
+      <workItem from="1636115962492" duration="3066000" />
     </task>
     <servers />
   </component>

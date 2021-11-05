@@ -169,5 +169,10 @@ namespace UI
         {
             if (Speed > 1) Speed -= 0.25f;
         }
+
+        public void SaveMusicSpeed()
+        {
+            SaveData.SaveNextMusicSpeed(Speed);
+        }
     }
 }

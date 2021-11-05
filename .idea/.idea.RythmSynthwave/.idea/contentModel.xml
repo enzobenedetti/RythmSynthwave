@@ -115,8 +115,11 @@
           </e>
           <e p="Scripts" t="Include">
             <e p="ButtonsScript.cs" t="Include" />
+            <e p="GameVolumeData.cs" t="Include" />
+            <e p="HighScoreData.cs" t="Include" />
             <e p="LevelSelectionBrain.cs" t="Include" />
             <e p="LevelSelectionDisplayScript.cs" t="Include" />
+            <e p="MusicSpeedData.cs" t="Include" />
             <e p="SaveData.cs" t="Include" />
           </e>
         </e>
