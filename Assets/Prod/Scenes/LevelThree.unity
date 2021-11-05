@@ -1419,6 +1419,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1877058710153097080, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: IsImpactedBySpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1877058710153097081, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: m_Name
       value: Scripts InGame
