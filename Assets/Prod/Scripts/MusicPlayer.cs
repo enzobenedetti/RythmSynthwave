@@ -24,14 +24,13 @@ public class MusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (nextNote < track.notes.Count)
-            if (Timer.timer >= track.notes[nextNote].timeCode - (60/track.bpm) * 3)
-            {
-                GameObject currentNote = Instantiate(notesPrefab, Vector3.zero, Quaternion.identity);
-                currentNote.GetComponent<MoveNote>().Note = track.notes[nextNote];
-                noteOnScreen.Add(currentNote);
-                nextNote++;
-            }
+        while (nextNote < track.notes.Count && Timer.timer >= track.notes[nextNote].timeCode - (60/track.bpm) * 3)
+        {
+            GameObject currentNote = Instantiate(notesPrefab, Vector3.zero, Quaternion.identity);
+            currentNote.GetComponent<MoveNote>().Note = track.notes[nextNote];
+            noteOnScreen.Add(currentNote);
+            nextNote++;
+        }
         if (track.lenght <= Timer.timer)
         {
             Timer.StopTimer();

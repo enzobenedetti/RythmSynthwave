@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="" />
+    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo End.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/EndLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/EndLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,16 +19,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa25908.12471/ScoreSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/EndLevelUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplayScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/ScoreUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -33,7 +37,6 @@
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionBrain.cs" />
-      <option value="$PROJECT_DIR$/Assets/HighScoreDisplayScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zrA9hwMS3IY4ZeBUnYWavyK5PR" />
@@ -70,6 +73,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -79,6 +83,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -101,8 +106,9 @@
       <workItem from="1635433576807" duration="2973000" />
       <workItem from="1635517699854" duration="14000" />
       <workItem from="1635517745752" duration="587000" />
-      <workItem from="1635840141013" duration="6746000" />
-      <workItem from="1635976076181" duration="2920000" />
+      <workItem from="1635840141013" duration="11066000" />
+      <workItem from="1635933139158" duration="2812000" />
+      <workItem from="1636105772426" duration="28000" />
     </task>
     <servers />
   </component>
