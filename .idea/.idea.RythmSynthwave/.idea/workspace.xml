@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="" />
+    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scene Enzo End.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/EndLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/EndLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +108,7 @@
       <workItem from="1635517745752" duration="587000" />
       <workItem from="1635840141013" duration="11066000" />
       <workItem from="1635933139158" duration="2812000" />
+      <workItem from="1636105772426" duration="28000" />
     </task>
     <servers />
   </component>
