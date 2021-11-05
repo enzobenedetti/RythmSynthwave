@@ -549,6 +549,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notesPrefab: {fileID: 5740556239665459745, guid: a76af3cd83d4c5743a42060a3b346935, type: 3}
   track: {fileID: 11400000, guid: 738cd40e3ce92af45a5618b9fef355c5, type: 2}
+  Speed: 0
+  IsImpactedBySpeed: 1
 --- !u!114 &807543810
 MonoBehaviour:
   m_ObjectHideFlags: 0

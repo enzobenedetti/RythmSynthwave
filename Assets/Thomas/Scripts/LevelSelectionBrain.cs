@@ -80,7 +80,7 @@ namespace UI
             switch (CurHighlightedMusic)
             {
                 case MusicSelection.MusicOne:
-                    SceneManager.LoadScene("LevelOne");
+                    SceneManager.LoadScene("Scene Enzo");
                     break;
                 case MusicSelection.MusicTwo:
                     SceneManager.LoadScene("LevelTwo");
@@ -163,15 +163,12 @@ namespace UI
                     if (Speed < MusicThreeMaxSpeed) Speed += 0.25f;
                     break;
             }
+            SaveData.SaveNextMusicSpeed(Speed);
         }
 
         void ChangeSpeedDown()
         {
             if (Speed > 1) Speed -= 0.25f;
-        }
-
-        public void SaveMusicSpeed()
-        {
             SaveData.SaveNextMusicSpeed(Speed);
         }
     }

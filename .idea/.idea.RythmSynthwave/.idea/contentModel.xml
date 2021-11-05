@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Enzo" t="Include">
           <e p="Scripts" t="Include">
+            <e p="AudioManager.cs" t="Include" />
             <e p="EndLevelUI.cs" t="Include" />
             <e p="ScoreUI.cs" t="Include" />
           </e>
@@ -17,9 +18,6 @@
             <e p="toDelete.txt" t="Include" />
           </e>
           <e p="Models" t="Include">
-            <e p="toDelete.txt" t="Include" />
-          </e>
-          <e p="Prefabs" t="Include">
             <e p="toDelete.txt" t="Include" />
           </e>
           <e p="Scripts" t="Include">

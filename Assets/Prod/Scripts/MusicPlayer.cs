@@ -10,13 +10,17 @@ public class MusicPlayer : MonoBehaviour
     public Track track;
     private int nextNote;
 
+    public float Speed;
+    public bool IsImpactedBySpeed;
+
     public static List<GameObject> noteOnScreen = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
+        Speed = SaveData.LoadMusicSpeed().SavedSpeedForNextMusic;
         Score.music = track;
-        MoveNote.speed = track.bpm / 60;
+        MoveNote.speed = track.bpm / 60 * (IsImpactedBySpeed ? Speed : 1);
         Timer.ResetTimer();
         Timer.StartTimer();
     }
@@ -24,7 +28,7 @@ public class MusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (nextNote < track.notes.Count && Timer.timer >= track.notes[nextNote].timeCode - (60/track.bpm) * 3)
+        while (nextNote < track.notes.Count && Timer.timer >= track.notes[nextNote].timeCode - (60/track.bpm) * 3 * (IsImpactedBySpeed ? Speed : 1))
         {
             GameObject currentNote = Instantiate(notesPrefab, Vector3.zero, Quaternion.identity);
             currentNote.GetComponent<MoveNote>().Note = track.notes[nextNote];
