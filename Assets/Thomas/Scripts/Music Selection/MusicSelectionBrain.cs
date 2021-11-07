@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 namespace UI
 {
-    public class LevelSelectionBrain : MonoBehaviour
+    public class MusicSelectionBrain : MonoBehaviour
     {
         [Header("Tracks")]
         public LevelSelectionDisplayParameters MusicOne;
@@ -80,7 +80,7 @@ namespace UI
             switch (CurHighlightedMusic)
             {
                 case MusicSelection.MusicOne:
-                    SceneManager.LoadScene("Scene Enzo");
+                    SceneManager.LoadScene("LevelOne");
                     break;
                 case MusicSelection.MusicTwo:
                     SceneManager.LoadScene("LevelTwo");

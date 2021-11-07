@@ -6,9 +6,9 @@ using UI;
 using UnityEngine;
 
 
-public class LevelSelectionDisplayScript : MonoBehaviour
+public class MusicSelectionUI : MonoBehaviour
 {
-    private LevelSelectionBrain LevelSelectionBrain;
+    private MusicSelectionBrain _musicSelectionBrain;
     
     #region Level select Variables
     [Header("LevelSelectUpperTab")] 
@@ -43,7 +43,7 @@ public class LevelSelectionDisplayScript : MonoBehaviour
     
     private void Awake()
     {
-        LevelSelectionBrain = GetComponentInParent<LevelSelectionBrain>();
+        _musicSelectionBrain = GetComponentInParent<MusicSelectionBrain>();
     }
 
     private void Update()
@@ -52,18 +52,18 @@ public class LevelSelectionDisplayScript : MonoBehaviour
         MiddleDisplay();
         LowerDisplay();
 
-        SpeedValueDisplay.text = LevelSelectionBrain.Speed.ToString();
+        SpeedValueDisplay.text = _musicSelectionBrain.Speed.ToString();
     }
     
     #region Level select Functions
     void UpperDisplay()
     {
-        UpperTitle.text = LevelSelectionBrain.upperDisplayParameters.MusicTitle;
-        UpperAuthor.text = LevelSelectionBrain.upperDisplayParameters.MusicAuthor;
-        UpperTime.text =(LevelSelectionBrain.upperDisplayParameters.Minutes > 10 ? "" : "0") + LevelSelectionBrain.upperDisplayParameters.Minutes.ToString() +(LevelSelectionBrain.upperDisplayParameters.Seconds > 10 ? ":" : ":0")  + LevelSelectionBrain.upperDisplayParameters.Seconds;
-        UpperBPM.text = LevelSelectionBrain.upperDisplayParameters.BPM.ToString();
+        UpperTitle.text = _musicSelectionBrain.upperDisplayParameters.MusicTitle;
+        UpperAuthor.text = _musicSelectionBrain.upperDisplayParameters.MusicAuthor;
+        UpperTime.text =(_musicSelectionBrain.upperDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.upperDisplayParameters.Minutes.ToString() +(_musicSelectionBrain.upperDisplayParameters.Seconds > 10 ? ":" : ":0")  + _musicSelectionBrain.upperDisplayParameters.Seconds;
+        UpperBPM.text = _musicSelectionBrain.upperDisplayParameters.BPM.ToString();
 
-        switch (LevelSelectionBrain.upperDisplayParameters.MusicDifficulty)
+        switch (_musicSelectionBrain.upperDisplayParameters.MusicDifficulty)
         {
             case LevelSelectionDisplayParameters.Difficulty.Easy:
                 UpperDifficulty.text = "Easy";
@@ -79,12 +79,12 @@ public class LevelSelectionDisplayScript : MonoBehaviour
 
     void MiddleDisplay()
     {
-        MiddleTitle.text = LevelSelectionBrain.middleDisplayParameters.MusicTitle;
-        MiddleAuthor.text = LevelSelectionBrain.middleDisplayParameters.MusicAuthor;
-        MiddleTime.text = (LevelSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + LevelSelectionBrain.middleDisplayParameters.Minutes.ToString() + (LevelSelectionBrain.middleDisplayParameters.Seconds > 10 ? ":" : ":0") + LevelSelectionBrain.middleDisplayParameters.Seconds;
-        MiddleBPM.text = LevelSelectionBrain.middleDisplayParameters.BPM.ToString();
+        MiddleTitle.text = _musicSelectionBrain.middleDisplayParameters.MusicTitle;
+        MiddleAuthor.text = _musicSelectionBrain.middleDisplayParameters.MusicAuthor;
+        MiddleTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.middleDisplayParameters.Minutes.ToString() + (_musicSelectionBrain.middleDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.middleDisplayParameters.Seconds;
+        MiddleBPM.text = _musicSelectionBrain.middleDisplayParameters.BPM.ToString();
 
-        switch (LevelSelectionBrain.middleDisplayParameters.MusicDifficulty)
+        switch (_musicSelectionBrain.middleDisplayParameters.MusicDifficulty)
         {
             case LevelSelectionDisplayParameters.Difficulty.Easy:
                 MiddleDifficulty.text = "Easy";
@@ -97,7 +97,7 @@ public class LevelSelectionDisplayScript : MonoBehaviour
                 break;
         }
 
-        if (LevelSelectionBrain.OnMiddleTab)
+        if (_musicSelectionBrain.OnMiddleTab)
         {
             CommencerObject.SetActive(true);     
             VitesseObject.SetActive(true);
@@ -112,12 +112,12 @@ public class LevelSelectionDisplayScript : MonoBehaviour
 
     void LowerDisplay()
     {
-        LowerTitle.text = LevelSelectionBrain.lowerDisplayParameters.MusicTitle;
-        LowerAuthor.text = LevelSelectionBrain.lowerDisplayParameters.MusicAuthor;
-        LowerTime.text = (LevelSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + LevelSelectionBrain.lowerDisplayParameters.Minutes.ToString() + (LevelSelectionBrain.lowerDisplayParameters.Seconds > 10 ? ":" : ":0") + LevelSelectionBrain.lowerDisplayParameters.Seconds;
-        LowerBPM.text = LevelSelectionBrain.lowerDisplayParameters.BPM.ToString();
+        LowerTitle.text = _musicSelectionBrain.lowerDisplayParameters.MusicTitle;
+        LowerAuthor.text = _musicSelectionBrain.lowerDisplayParameters.MusicAuthor;
+        LowerTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.lowerDisplayParameters.Minutes.ToString() + (_musicSelectionBrain.lowerDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.lowerDisplayParameters.Seconds;
+        LowerBPM.text = _musicSelectionBrain.lowerDisplayParameters.BPM.ToString();
 
-        switch (LevelSelectionBrain.lowerDisplayParameters.MusicDifficulty)
+        switch (_musicSelectionBrain.lowerDisplayParameters.MusicDifficulty)
         {
             case LevelSelectionDisplayParameters.Difficulty.Easy:
                 LowerDifficulty.text = "Easy";
