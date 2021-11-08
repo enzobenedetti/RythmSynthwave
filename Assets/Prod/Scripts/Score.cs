@@ -31,6 +31,7 @@ public static class Score
 
     public static void AddCombo()
     {
+        Jauge.Add();
         Combo++;
         MaxCombo = Combo;
         OnCombo = true;
@@ -65,6 +66,7 @@ public static class Score
     public static void GotBad()
     {
         Combo = 0;
+        Jauge.Remove();
         OnCombo = false;
         BadCount++;
         ScoreUI.UpdateUI();
