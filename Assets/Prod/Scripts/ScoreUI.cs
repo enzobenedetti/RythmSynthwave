@@ -12,6 +12,7 @@ public class ScoreUI : MonoBehaviour
     public Text music;
     public Text author;
     public MusicPlayer playerMusic;
+    public static Slider JaugeSlider;
     
     // Start is called before the first frame update
     void Awake()
@@ -19,8 +20,14 @@ public class ScoreUI : MonoBehaviour
         scoreText = GameObject.Find("Score").GetComponent<Text>();
         comboText = GameObject.Find("Combo").GetComponent<Text>();
         maxText = GameObject.Find("MaxCombo").GetComponent<Text>();
+        JaugeSlider = GameObject.Find("Jauge").GetComponent<Slider>();
+        
         music.text = playerMusic.track.name;
         author.text = playerMusic.track.author;
+        scoreText.text = "Score : " + Score.score;
+        comboText.text = "Combo : " + Score.Combo;
+        maxText.text = "Combo Max : " + Score.MaxCombo;
+        JaugeSlider.value = Jauge.jauge;
     }
 
     // Update is called once per frame
@@ -29,5 +36,6 @@ public class ScoreUI : MonoBehaviour
         scoreText.text = "Score : " + Score.score;
         comboText.text = "Combo : " + Score.Combo;
         maxText.text = "Combo Max : " + Score.MaxCombo;
+        JaugeSlider.value = Jauge.jauge;
     }
 }
