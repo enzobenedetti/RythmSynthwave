@@ -29,36 +29,39 @@ public static class Score
 
     public static Track music;
 
-    public static void AddCombo()
+    public static int AddCombo()
     {
         Jauge.Add();
         Combo++;
         MaxCombo = Combo;
         OnCombo = true;
-        if (Combo < 5) return;
-        if (Combo < 15) score += 1;
-        else if (Combo < 30) score += 5;
-        else score += 10;
+        if (Combo < 5) return 0;
+        if (Combo < 15) return 1;
+        if (Combo < 30) return 5;
+        return 10;
     }
 
     public static void GotPerfect()
     {
-        score += 10;
-        AddCombo();
+        int scoreToAdd = 10 + AddCombo();
+        if (Jauge.isOutRun) scoreToAdd *= 2;
+        score += scoreToAdd;
         PerfectCount++;
         ScoreUI.UpdateUI();
     }
     public static void GotNice()
     {
-        score += 5;
-        AddCombo();
+        int scoreToAdd = 5 + AddCombo();
+        if (Jauge.isOutRun) scoreToAdd *= 2;
+        score += scoreToAdd;
         NiceCount++;
         ScoreUI.UpdateUI();
     }
     public static void GotOk()
     {
-        score += 1;
-        AddCombo();
+        int scoreToAdd = 1 + AddCombo();
+        if (Jauge.isOutRun) scoreToAdd *= 2;
+        score += scoreToAdd;
         OkCount++;
         ScoreUI.UpdateUI();
     }
