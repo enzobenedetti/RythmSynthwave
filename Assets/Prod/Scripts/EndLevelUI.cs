@@ -14,6 +14,8 @@ public class EndLevelUI : MonoBehaviour
     public Text ok;
     public Text bad;
     public Text combo;
+
+    public Slider JaugeSlider;
     
     void Awake()
     {
@@ -25,6 +27,7 @@ public class EndLevelUI : MonoBehaviour
         ok.text = "Ok : " + Score.OkCount;
         bad.text = "Bad : " + Score.BadCount;
         combo.text = Score.MaxCombo.ToString();
+        JaugeSlider.value = Jauge.jauge;
     }
 
     // Update is called once per frame

@@ -19,6 +19,8 @@ public class MusicPlayer : MonoBehaviour
     {
         Speed = SaveData.LoadMusicSpeed().SavedSpeedForNextMusic;
         Score.music = track;
+        Score.ResetScore();
+        Jauge.Reset();
         MoveNote.speed = track.bpm / 60 * Speed;
         Timer.ResetTimer();
         Timer.StartTimer();

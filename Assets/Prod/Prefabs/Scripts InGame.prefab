@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1877058710153097085}
   - component: {fileID: 9067524721520649833}
   - component: {fileID: 2028638990498152351}
+  - component: {fileID: 1153569430381992878}
   m_Layer: 0
   m_Name: Scripts InGame
   m_TagString: Untagged
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notesPrefab: {fileID: 5740556239665459745, guid: a76af3cd83d4c5743a42060a3b346935, type: 3}
   track: {fileID: 11400000, guid: d4007680dbdc5c949980137e8991fc3c, type: 2}
+  Speed: 1
 --- !u!114 &1877058710153097085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bdedb9fcf621f4e8678cf6a2a7b5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  author: {fileID: 0}
+  playerMusic: {fileID: 0}
 --- !u!114 &9067524721520649833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,3 +109,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioBase: {fileID: 0}
   audioCombo: {fileID: 0}
+--- !u!114 &1153569430381992878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877058710153097081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970e5370b4b4034da3482a19196d2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelObject: {fileID: 0}
+  levelMaterial: {fileID: 0}
+  invisibleMaterial: {fileID: 0}
+  lightLevel: {fileID: 0}
