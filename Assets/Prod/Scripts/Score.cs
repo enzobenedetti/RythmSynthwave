@@ -25,7 +25,7 @@ public static class Score
     public static int OkCount = 0;
     public static int BadCount = 0;
     
-    public static bool OnCombo;
+    public static bool OnCombo = true;
 
     public static Track music;
 
