@@ -69,4 +69,15 @@ public static class Score
         BadCount++;
         ScoreUI.UpdateUI();
     }
+
+    public static void ResetScore()
+    {
+        OnCombo = true;
+        Combo = 0;
+        BadCount = 0;
+        OkCount = 0;
+        NiceCount = 0;
+        PerfectCount = 0;
+        _maxCombo = 0;
+    }
 }
