@@ -14,6 +14,8 @@ public class CheckNote : MonoBehaviour
 
     public MusicPlayer MusicPlayer;
 
+    public TimingDisplay TimingDisplay;
+
     private List<Note> notesLeft = new List<Note>();
 
     // Start is called before the first frame update
@@ -145,7 +147,7 @@ public class CheckNote : MonoBehaviour
         }
         else if (Timer.timer >= notesLeft[0].timeCode + okBuffer)
         {
-            Debug.Log("Bad !");
+            TimingDisplay.DisplayResult(notesLeft[0].type.index, 1);
             MusicPlayer.DestroyNote(notesLeft[0]);
             notesLeft.Remove(notesLeft[0]);
             Score.GotBad();
@@ -157,24 +159,24 @@ public class CheckNote : MonoBehaviour
         if (Timer.timer <= note.timeCode + perfectBuffer &&
             Timer.timer >= note.timeCode - perfectBuffer)
         {
-            Debug.Log("Perfect !");
+            TimingDisplay.DisplayResult(note.type.index, 4);
             Score.GotPerfect();
         }
         else if (Timer.timer <= note.timeCode + niceBuffer &&
                  Timer.timer >= note.timeCode - niceBuffer)
         {
-            Debug.Log("Nice !");
+            TimingDisplay.DisplayResult(note.type.index, 3);
             Score.GotNice();
         }
         else if (Timer.timer <= note.timeCode + okBuffer &&
                  Timer.timer >= note.timeCode - okBuffer)
         {
-            Debug.Log("OK");
+            TimingDisplay.DisplayResult(note.type.index, 2);
             Score.GotOk();
         }
         else
         {
-            Debug.Log("Bad");
+            TimingDisplay.DisplayResult(note.type.index, 1);
             Score.GotBad();
         }
         notesLeft.Remove(note);

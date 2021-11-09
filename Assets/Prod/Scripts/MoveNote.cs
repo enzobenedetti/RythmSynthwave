@@ -16,7 +16,7 @@ public class MoveNote : MonoBehaviour
     {
         SpriteRenderer.sprite = Note.type.sprite;
         if (Note.type.direction == Vector3.zero)
-            transform.localScale = new Vector3(3, 3, 3);
+            transform.localScale = new Vector3(4, 4, 4);
     }
 
     // Update is called once per frame

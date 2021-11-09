@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9067524721520649833}
   - component: {fileID: 2028638990498152351}
   - component: {fileID: 1153569430381992878}
+  - component: {fileID: 9152019785208780630}
   m_Layer: 0
   m_Name: Scripts InGame
   m_TagString: Untagged
@@ -125,3 +126,15 @@ MonoBehaviour:
   levelMaterial: {fileID: 0}
   invisibleMaterial: {fileID: 0}
   lightLevel: {fileID: 0}
+--- !u!114 &9152019785208780630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877058710153097081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8331e191a7f4db64a81e29e130dcc09d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
