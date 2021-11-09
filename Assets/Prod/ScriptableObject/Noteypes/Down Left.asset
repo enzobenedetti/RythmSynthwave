@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Down Left
   m_EditorClassIdentifier: 
   index: 1
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: f7437dbc1924e594e82adbfb5412aba4, type: 3}
   direction: {x: -1, y: -1, z: 0}
