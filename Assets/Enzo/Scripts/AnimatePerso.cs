@@ -5,19 +5,10 @@ using UnityEngine;
 public class AnimatePerso : MonoBehaviour
 {
     public Animator Animator;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        // for (int i = 1; i < 10; i++)
-        // {
-        //     Animator.ResetTrigger(i.ToString());
-        // }
         if (Input.GetButtonDown("Down Left"))
         {
             Animator.SetTrigger("1");
@@ -54,5 +45,10 @@ public class AnimatePerso : MonoBehaviour
         {
             Animator.SetTrigger("9");
         }
+    }
+
+    public void BadAnimation()
+    {
+        Animator.SetTrigger("Bad");
     }
 }

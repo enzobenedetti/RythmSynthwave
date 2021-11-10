@@ -16,6 +16,8 @@ public class CheckNote : MonoBehaviour
 
     public TimingDisplay TimingDisplay;
 
+    public AnimatePerso AnimatePerso;
+
     private List<Note> notesLeft = new List<Note>();
 
     // Start is called before the first frame update
@@ -150,6 +152,7 @@ public class CheckNote : MonoBehaviour
             TimingDisplay.DisplayResult(notesLeft[0].type.index, 1);
             MusicPlayer.DestroyNote(notesLeft[0]);
             notesLeft.Remove(notesLeft[0]);
+            AnimatePerso.BadAnimation();
             Score.GotBad();
         }
     }
@@ -177,6 +180,7 @@ public class CheckNote : MonoBehaviour
         else
         {
             TimingDisplay.DisplayResult(note.type.index, 1);
+            AnimatePerso.BadAnimation();
             Score.GotBad();
         }
         notesLeft.Remove(note);
