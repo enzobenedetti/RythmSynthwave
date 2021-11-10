@@ -1236,6 +1236,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc778f920b6f7be4f92e1d6447b278ee, type: 3}
+--- !u!114 &2093398823 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1965045370541919507, guid: cc778f920b6f7be4f92e1d6447b278ee, type: 3}
+  m_PrefabInstance: {fileID: 2093398822}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fd3982e153efb45b30b0f9bfad6de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1877058709735611363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1331,6 +1342,10 @@ PrefabInstance:
       propertyPath: audioCombo
       value: 
       objectReference: {fileID: 847184278}
+    - target: {fileID: 9067524721520649833, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: AnimatePerso
+      value: 
+      objectReference: {fileID: 2093398823}
     - target: {fileID: 9067524721520649833, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: TimingDisplay
       value: 
