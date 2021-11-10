@@ -226,6 +226,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1153569430381992878, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153569430381992878, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: lightLevel
       value: 
       objectReference: {fileID: 593619310}
@@ -313,6 +317,10 @@ PrefabInstance:
       propertyPath: audioBase
       value: 
       objectReference: {fileID: 1001834025}
+    - target: {fileID: 2028638990498152351, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2028638990498152351, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: audioCombo
       value: 
