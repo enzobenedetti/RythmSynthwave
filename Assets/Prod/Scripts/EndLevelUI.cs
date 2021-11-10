@@ -29,6 +29,7 @@ public class EndLevelUI : MonoBehaviour
         bad.text = "Bad : " + Score.BadCount;
         combo.text = Score.MaxCombo.ToString();
         JaugeSlider.value = Jauge.jauge;
+        Debug.Log("Level Ended");
     }
 
     public void GoToMainMenu()
