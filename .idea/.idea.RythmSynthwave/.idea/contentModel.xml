@@ -6,13 +6,7 @@
     <e p="C:\Users\thoma\OneDrive\Bureau\RythmSynthwave" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Enzo" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="AudioManager.cs" t="Include" />
-            <e p="EndLevelUI.cs" t="Include" />
-            <e p="ScoreUI.cs" t="Include" />
-          </e>
-        </e>
+        <e p="OptionsMenuScript.cs" t="Include" />
         <e p="Prod" t="Include">
           <e p="Materials" t="Include">
             <e p="toDelete.txt" t="Include" />
@@ -21,10 +15,13 @@
             <e p="toDelete.txt" t="Include" />
           </e>
           <e p="Scripts" t="Include">
+            <e p="AudioManager.cs" t="Include" />
             <e p="CheckNote.cs" t="Include" />
+            <e p="EndLevelUI.cs" t="Include" />
             <e p="MoveNote.cs" t="Include" />
             <e p="MusicPlayer.cs" t="Include" />
             <e p="Score.cs" t="Include" />
+            <e p="ScoreUI.cs" t="Include" />
             <e p="ScriptableObject" t="Include">
               <e p="Note.cs" t="Include" />
               <e p="NoteType.cs" t="Include" />
@@ -112,13 +109,19 @@
             <e p="LevelSelectionDisplayParameters.cs" t="Include" />
           </e>
           <e p="Scripts" t="Include">
-            <e p="ButtonsScript.cs" t="Include" />
-            <e p="GameVolumeData.cs" t="Include" />
-            <e p="HighScoreData.cs" t="Include" />
-            <e p="MusicSelectionBrain.cs" t="Include" />
-            <e p="MusicSelectionUI.cs" t="Include" />
-            <e p="MusicSpeedData.cs" t="Include" />
-            <e p="SaveData.cs" t="Include" />
+            <e p="General UI" t="Include">
+              <e p="ButtonsScript.cs" t="Include" />
+            </e>
+            <e p="Music Selection" t="Include">
+              <e p="MusicSelectionBrain.cs" t="Include" />
+              <e p="MusicSelectionUI.cs" t="Include" />
+            </e>
+            <e p="Sauvegarde" t="Include">
+              <e p="GameVolumeData.cs" t="Include" />
+              <e p="HighScoreData.cs" t="Include" />
+              <e p="MusicSpeedData.cs" t="Include" />
+              <e p="SaveData.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>
