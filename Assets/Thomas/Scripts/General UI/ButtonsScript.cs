@@ -64,7 +64,7 @@ public class ButtonsScript : MonoBehaviour
         }
     }
 
-    public void SetSelectedObject(GameObject firstSelected)
+    public static void SetSelectedObject(GameObject firstSelected)
     {
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(firstSelected);
