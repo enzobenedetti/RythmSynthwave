@@ -40,5 +40,9 @@ public class AudioOptionsObject : MonoBehaviour
         RelatedValueText.text = (RelatedSlider.value / 10).ToString();
     }
 
-    
+    public void SaveAudioVolume()
+    {
+        SaveData.SaveAudioParameters(RelatedSlider.value/10);
+        Debug.Log("Saved audio at " + RelatedSlider.value/10);
+    }
 }
