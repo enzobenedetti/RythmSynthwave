@@ -1464,14 +1464,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3747348050158998149, guid: 5027613b848967947a6410588b0c048d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 272.441
-      objectReference: {fileID: 0}
-    - target: {fileID: 3747348050158998149, guid: 5027613b848967947a6410588b0c048d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -152.22052
-      objectReference: {fileID: 0}
     - target: {fileID: 7650207578544503075, guid: 5027613b848967947a6410588b0c048d, type: 3}
       propertyPath: m_Name
       value: Canvas InGame
