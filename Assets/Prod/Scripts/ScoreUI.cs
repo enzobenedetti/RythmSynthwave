@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class ScoreUI : MonoBehaviour
     public Text author;
     public MusicPlayer playerMusic;
     public static Slider JaugeSlider;
+    public Slider musicTime;
     
     // Start is called before the first frame update
     void Awake()
@@ -28,6 +30,12 @@ public class ScoreUI : MonoBehaviour
         comboText.text = "Combo : " + Score.Combo;
         maxText.text = "Combo Max : " + Score.MaxCombo;
         JaugeSlider.value = Jauge.jauge;
+        musicTime.value = 0;
+    }
+
+    private void Update()
+    {
+        musicTime.value = Timer.timer / playerMusic.track.lenght;
     }
 
     // Update is called once per frame
