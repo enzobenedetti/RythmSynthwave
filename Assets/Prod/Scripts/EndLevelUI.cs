@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,6 +9,8 @@ public class EndLevelUI : MonoBehaviour
 {
     public Text musicName;
     public Text author;
+
+    public TextMeshProUGUI result;
     
     public Text score;
     public Text perfect;
@@ -29,6 +32,7 @@ public class EndLevelUI : MonoBehaviour
         bad.text = "Bad : " + Score.BadCount;
         combo.text = Score.MaxCombo.ToString();
         JaugeSlider.value = Jauge.jauge;
+        result.text = Jauge.jauge >= 75 ? "You win !" : "You lose...";
         Debug.Log("Level Ended");
     }
 
