@@ -20,6 +20,8 @@ public class CheckNote : MonoBehaviour
 
     private List<Note> notesLeft = new List<Note>();
 
+    private bool input1, input2, input3, input4, input5, input6, input7, input8, input9 = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,11 +45,12 @@ public class CheckNote : MonoBehaviour
                 {
                     aviableNote.Add(note);
                 }
-                else break;
+                else if (note.timeCode - badBuffer !<= Timer.timer) break;
             }
-            
-            if (Input.GetButtonDown("Down Left"))
+
+            if (Input.GetButtonDown("Down Left") && !input1)
             {
+                input1 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 1)
@@ -57,8 +60,11 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("Down"))
+            else input1 = false;
+
+            if (Input.GetButtonDown("Down") && !input2)
             {
+                input2 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 2)
@@ -68,8 +74,11 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("Down Right"))
+            else input2 = false;
+
+            if (Input.GetButtonDown("Down Right") && !input3)
             {
+                input3 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 3)
@@ -79,8 +88,11 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("Left"))
+            else input3 = false;
+
+            if (Input.GetButtonDown("Left") && !input4)
             {
+                input4 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 4)
@@ -90,8 +102,11 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("Central"))
+            else input4 = false;
+
+            if (Input.GetButtonDown("Central") && !input5)
             {
+                input5 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 5)
@@ -101,8 +116,11 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("Right"))
+            else input5 = false;
+
+            if (Input.GetButtonDown("Right") && !input6)
             {
+                input6 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 6)
@@ -112,8 +130,11 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("Up Left"))
+            else input6 = false;
+
+            if (Input.GetButtonDown("Up Left") && !input7)
             {
+                input7 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 7)
@@ -123,19 +144,26 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButton("Up Right"))
+            else input7 = false;
+            
+            if (Input.GetButton("Up Right") && !input9)
             {
+                input9 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 9)
                     {
+                        Debug.Log("Timecode : " + Timer.timer);
                         CheckTiming(note);
                         break;
                     }
                 }
             }
-            if (Input.GetButtonDown("Up"))
+            else input9 = false;
+
+            if (Input.GetButtonDown("Up") && !input8)
             {
+                input8 = true;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 8)
@@ -145,6 +173,7 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
+            else input8 = false;
 
         }
         else if (Timer.timer >= notesLeft[0].timeCode + okBuffer)

@@ -49,6 +49,7 @@ public class MusicPlayer : MonoBehaviour
         {
             if (noteGameObject.GetComponent<MoveNote>().Note == note)
             {
+                noteOnScreen.Remove(noteGameObject);
                 Destroy(noteGameObject);
                 break;
             }
