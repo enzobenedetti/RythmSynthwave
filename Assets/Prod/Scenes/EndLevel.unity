@@ -502,6 +502,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8461091142362711779, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8461091142767033099, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_FontData.m_Font
       value: 

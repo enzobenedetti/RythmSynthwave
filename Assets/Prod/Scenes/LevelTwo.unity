@@ -266,6 +266,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1446028649}
     - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: musicTime
+      value: 
+      objectReference: {fileID: 1446028651}
+    - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: playerMusic
       value: 
       objectReference: {fileID: 347298174}
@@ -1509,6 +1513,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1446028651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3946588690073627523, guid: 5027613b848967947a6410588b0c048d, type: 3}
+  m_PrefabInstance: {fileID: 1446028648}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1524130732
