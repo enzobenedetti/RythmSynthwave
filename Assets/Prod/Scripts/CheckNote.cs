@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CheckNote : MonoBehaviour
 {
+    public bool allPerfectCheat;
+    public bool noBadCheat;
+    
     public float perfectBuffer = 0.05f;
     
     public float niceBuffer = 0.1f;
@@ -153,7 +156,6 @@ public class CheckNote : MonoBehaviour
                 {
                     if (note.type.index == 9)
                     {
-                        Debug.Log("Timecode : " + Timer.timer);
                         CheckTiming(note);
                         break;
                     }
@@ -178,41 +180,68 @@ public class CheckNote : MonoBehaviour
         }
         else if (Timer.timer >= notesLeft[0].timeCode + okBuffer)
         {
-            TimingDisplay.DisplayResult(notesLeft[0].type.index, 1);
-            MusicPlayer.DestroyNote(notesLeft[0]);
-            notesLeft.Remove(notesLeft[0]);
-            AnimatePerso.BadAnimation();
-            Score.GotBad();
+            if (!allPerfectCheat && !noBadCheat)
+            {
+                ScoreBad(notesLeft[0]);
+            }
+            else if (allPerfectCheat) ScorePerfect(notesLeft[0]);
+            else ScoreOk(notesLeft[0]);
         }
     }
 
     void CheckTiming(Note note)
     {
-        if (Timer.timer <= note.timeCode + perfectBuffer &&
+        if (allPerfectCheat) ScorePerfect(note);
+        else if (Timer.timer <= note.timeCode + perfectBuffer &&
             Timer.timer >= note.timeCode - perfectBuffer)
         {
-            TimingDisplay.DisplayResult(note.type.index, 4);
-            Score.GotPerfect();
+            ScorePerfect(note);
         }
         else if (Timer.timer <= note.timeCode + niceBuffer &&
                  Timer.timer >= note.timeCode - niceBuffer)
         {
-            TimingDisplay.DisplayResult(note.type.index, 3);
-            Score.GotNice();
+            ScoreNice(note);
         }
         else if (Timer.timer <= note.timeCode + okBuffer &&
                  Timer.timer >= note.timeCode - okBuffer)
         {
-            TimingDisplay.DisplayResult(note.type.index, 2);
-            Score.GotOk();
+            ScoreOk(note);
         }
         else
         {
-            TimingDisplay.DisplayResult(note.type.index, 1);
-            AnimatePerso.BadAnimation();
-            Score.GotBad();
+            if (!noBadCheat) ScoreBad(note);
+            ScoreOk(note);
         }
+        
+    }
+    private void ScorePerfect(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 4);
+        Score.GotPerfect();
         notesLeft.Remove(note);
         MusicPlayer.DestroyNote(note);
+    }
+
+    void ScoreNice(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 3);
+        Score.GotNice();
+        notesLeft.Remove(note);
+        MusicPlayer.DestroyNote(note);
+    }
+    private void ScoreOk(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 2);
+        Score.GotOk();
+        notesLeft.Remove(note);
+        MusicPlayer.DestroyNote(note);
+    }
+    void ScoreBad(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 1);
+        MusicPlayer.DestroyNote(note);
+        notesLeft.Remove(note);
+        AnimatePerso.BadAnimation();
+        Score.GotBad();
     }
 }
