@@ -24,6 +24,7 @@ public class MusicPlayer : MonoBehaviour
         MoveNote.speed = track.bpm / 60 * Speed;
         Timer.ResetTimer();
         Timer.StartTimer();
+        ScoreUI.UpdateUI();
     }
 
     // Update is called once per frame
