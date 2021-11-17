@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GetBadges : MonoBehaviour
 {
-    private bool allPerfectBadge;
-    private bool fullCombo;
+    private int badgeId;
     
     // Start is called before the first frame update
     void Start()
@@ -22,8 +21,11 @@ public class GetBadges : MonoBehaviour
     void CheckForBadges()
     {
         if (Score.music.notes.Count == Score.PerfectCount)
-            allPerfectBadge = true;
+            badgeId = 2;
         else if (Score.music.notes.Count == Score.MaxCombo)
-            fullCombo = true;
+            badgeId = 1;
+        if (SaveData.LoadBadges() != null)
+            if (SaveData.LoadBadges().badgeId < badgeId)
+                SaveData.SaveBadges(badgeId);
     }
 }

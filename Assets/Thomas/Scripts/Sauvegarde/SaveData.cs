@@ -107,4 +107,38 @@ public static class SaveData
       }
    }
    #endregion
+
+   #region Badges saves & load
+   public static void SaveBadges(int id)
+   {
+      BinaryFormatter formatter = new BinaryFormatter();
+      string path = Application.persistentDataPath + "/Badges.saves";
+      FileStream stream = new FileStream(path, FileMode.Create);
+
+      BadgesData data = new BadgesData(id);
+      
+      formatter.Serialize(stream, data);
+      stream.Close();
+   }
+
+   public static BadgesData LoadBadges()
+   {
+      string path = Application.persistentDataPath + "/Badges.saves";
+      if (File.Exists(path))
+      {
+         BinaryFormatter formatter = new BinaryFormatter();
+         FileStream stream = new FileStream(path, FileMode.Open);
+         
+         BadgesData data = formatter.Deserialize(stream) as BadgesData;
+         stream.Close();
+         
+         return data;
+      }
+      else
+      {
+         Debug.LogError("File not found in " + path);
+         return null;
+      }
+   }
+   #endregion
 }
