@@ -4,28 +4,27 @@ using UnityEngine;
 
 public class GetBadges : MonoBehaviour
 {
-    public int badgeId;
+    public int[] badgesId = new int[3];
     
     // Start is called before the first frame update
     void Start()
     {
-        if (SaveData.LoadBadges() == null) SaveData.SaveBadges(new int[3]);
         CheckForBadges();
     }
 
     void CheckForBadges()
     {
         if (Score.music.notes.Count == Score.PerfectCount)
-            badgeId = 2;
+            badgesId[Score.music.songId] = 2;
         else if (Score.music.notes.Count == Score.MaxCombo)
-            badgeId = 1;
-        else badgeId = 0;
+            badgesId[Score.music.songId] = 1;
+        else badgesId[Score.music.songId] = 0;
         
-        int[] badgesId = SaveData.LoadBadges().badgesId;
-        if (badgesId == null)
-            badgesId = new int[3];
-        if (badgesId[Score.music.songId] < badgeId)
-            badgesId[Score.music.songId] = badgeId;
-        SaveData.SaveBadges(badgesId);
+        int[] BadgesIdData = SaveData.LoadBadges().badgesId;
+        if (BadgesIdData == null)
+            BadgesIdData = new int[3]{0,0,0};
+        if (BadgesIdData[Score.music.songId] < badgesId[Score.music.songId])
+            BadgesIdData[Score.music.songId] = badgesId[Score.music.songId];
+        SaveData.SaveBadges(BadgesIdData);
     }
 }

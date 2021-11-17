@@ -31,7 +31,7 @@ public class EndLevelUI : MonoBehaviour
         musicName.text = Score.music.name;
         author.text = Score.music.author;
 
-        switch (BadgesScript.badgeId)
+        switch (BadgesScript.badgesId[Score.music.songId])
         {
             case 0:
                 badges.sprite = null;

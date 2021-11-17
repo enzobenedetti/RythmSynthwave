@@ -119,6 +119,7 @@ public static class SaveData
       
       formatter.Serialize(stream, data);
       stream.Close();
+      Debug.Log("Badges saves with data : " + id);
    }
 
    public static BadgesData LoadBadges()
@@ -132,6 +133,7 @@ public static class SaveData
          BadgesData data = formatter.Deserialize(stream) as BadgesData;
          stream.Close();
          
+         Debug.Log("Badges load with data : " + data.badgesId);
          return data;
       }
       else
