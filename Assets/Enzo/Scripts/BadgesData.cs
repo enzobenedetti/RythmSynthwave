@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class BadgesData
 {
-    public int badgeId;
+    public int[] badgesId = new int[3];
 
-    public BadgesData(int id)
+    public BadgesData(int[] ids)
     {
-        badgeId = id;
+        badgesId[0] = ids[0];
+        badgesId[1] = ids[0];
+        badgesId[2] = ids[0];
     }
 }

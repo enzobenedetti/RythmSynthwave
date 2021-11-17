@@ -109,7 +109,7 @@ public static class SaveData
    #endregion
 
    #region Badges saves & load
-   public static void SaveBadges(int id)
+   public static void SaveBadges(int[] id)
    {
       BinaryFormatter formatter = new BinaryFormatter();
       string path = Application.persistentDataPath + "/Badges.saves";

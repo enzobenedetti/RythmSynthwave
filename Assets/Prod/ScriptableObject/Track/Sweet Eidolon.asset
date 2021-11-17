@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db42ca34b75f47aaab087a9a7fc16c4c, type: 3}
   m_Name: Sweet Eidolon
   m_EditorClassIdentifier: 
+  songId: 0
   author: Andreas Boldt
   bpm: 78
   lenght: 153

@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &59916397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 59916397, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+  m_PrefabInstance: {fileID: 1736701659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &504394119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8461091143317708136, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
@@ -294,6 +305,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 59916396, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2547902706618276997, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -398,6 +441,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8461091141929701921, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: badges
+      value: 
+      objectReference: {fileID: 59916397}
+    - target: {fileID: 8461091141929701921, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: comboBadge
+      value: 
+      objectReference: {fileID: 21300000, guid: 68c2c0c4b7d37e14583e915a9c712674, type: 3}
+    - target: {fileID: 8461091141929701921, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: perfectBadge
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e84815c6458899418f6e4b6fdd72564, type: 3}
     - target: {fileID: 8461091141929701932, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_Name
       value: Canvas End Level

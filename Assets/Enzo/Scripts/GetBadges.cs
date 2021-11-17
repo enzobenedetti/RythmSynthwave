@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class GetBadges : MonoBehaviour
 {
-    private int badgeId;
+    public int badgeId;
     
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (SaveData.LoadBadges() == null) SaveData.SaveBadges(new int[3]);
+        CheckForBadges();
     }
 
     void CheckForBadges()
@@ -24,8 +19,13 @@ public class GetBadges : MonoBehaviour
             badgeId = 2;
         else if (Score.music.notes.Count == Score.MaxCombo)
             badgeId = 1;
-        if (SaveData.LoadBadges() != null)
-            if (SaveData.LoadBadges().badgeId < badgeId)
-                SaveData.SaveBadges(badgeId);
+        else badgeId = 0;
+        
+        int[] badgesId = SaveData.LoadBadges().badgesId;
+        if (badgesId == null)
+            badgesId = new int[3];
+        if (badgesId[Score.music.songId] < badgeId)
+            badgesId[Score.music.songId] = badgeId;
+        SaveData.SaveBadges(badgesId);
     }
 }
