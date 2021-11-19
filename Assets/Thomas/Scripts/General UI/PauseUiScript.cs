@@ -33,9 +33,7 @@ public class PauseUiScript : MonoBehaviour
             }
         }
         VolumeValueText.text = VolumeSlider.GetComponent<Slider>().value.ToString("F1");
-        AudioListener.volume = VolumeSlider.GetComponent<Slider>().value;
-
-
+        
         if (Input.GetButtonDown("Cancel"))
         {
             Pause();
@@ -57,6 +55,7 @@ public class PauseUiScript : MonoBehaviour
 
     public void SaveVolume()
     {
+        AudioListener.volume = VolumeSlider.GetComponent<Slider>().value;
         SaveData.SaveAudioParameters(AudioListener.volume);
         Debug.Log("Saved audio at " + VolumeSlider.GetComponent<Slider>().value);
     }

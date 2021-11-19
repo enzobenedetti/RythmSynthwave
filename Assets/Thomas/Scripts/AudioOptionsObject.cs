@@ -44,11 +44,11 @@ public class AudioOptionsObject : MonoBehaviour
         
         RelatedValueText.text = RelatedSlider.value.ToString("F1");
         
-        AudioListener.volume = RelatedSlider.value;
     }
 
     public void SaveAudioVolume()
     {
+        AudioListener.volume = RelatedSlider.value;
         SaveData.SaveAudioParameters(AudioListener.volume);
         Debug.Log("Saved audio at " + RelatedSlider.value);
     }

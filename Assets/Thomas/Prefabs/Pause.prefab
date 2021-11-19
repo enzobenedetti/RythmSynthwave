@@ -274,7 +274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: REPREND :D
+  m_text: REPRENDRE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8232bc66e6f12204692784bc1fcaab25, type: 2}
   m_sharedMaterial: {fileID: 1005410742669087316, guid: 8232bc66e6f12204692784bc1fcaab25, type: 2}
@@ -469,12 +469,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 493027998448855226}
+    m_SelectOnDown: {fileID: 7593821269223556936}
+    m_SelectOnLeft: {fileID: 2814896274560360906}
+    m_SelectOnRight: {fileID: 2814896274560360906}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 1829359303887739710}
   - component: {fileID: 2814896274560360906}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ChangerMusique
   m_TagString: OutlinedButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,12 +590,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 493027998448855226}
+    m_SelectOnDown: {fileID: 326397858607425082}
+    m_SelectOnLeft: {fileID: 5536092761144100633}
+    m_SelectOnRight: {fileID: 5536092761144100633}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 1b81335c2ea9ede45b1ed838f3691e3a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1267,10 +1267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 7593821269223556936}
+    m_SelectOnDown: {fileID: 493027998448855226}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -1300,11 +1300,23 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3232032578166638477}
+        m_TargetAssemblyTypeName: PauseUiScript, Assembly-CSharp
+        m_MethodName: SaveVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6391860695470759861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,10 +1407,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 5536092761144100633}
+    m_SelectOnDown: {fileID: 326397858607425082}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -1516,10 +1528,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 326397858607425082}
+    m_SelectOnDown: {fileID: 2814896274560360906}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -2052,7 +2064,6 @@ GameObject:
   - component: {fileID: 6554614640289082261}
   - component: {fileID: 1876906439230273348}
   - component: {fileID: 135649704197112506}
-  - component: {fileID: 6474162658076906033}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -2133,22 +2144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstSelected: {fileID: 7602729130611810336}
---- !u!114 &6474162658076906033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9086239204497951870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 941861185f2d68642b18a143dcc86494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VolumeObject: {fileID: 4237087782190901343}
-  FirstSelected: {fileID: 7602729130611810336}
-  VolumeSlider: {fileID: 6335402571815187446}
-  VolumeValueText: {fileID: 1204224366056912388}
 --- !u!1 &9115519038526722890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,6 +2156,7 @@ GameObject:
   - component: {fileID: 5731609502533858945}
   - component: {fileID: 3346169575756075874}
   - component: {fileID: 7236102390114062}
+  - component: {fileID: 3232032578166638477}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -2249,3 +2245,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3232032578166638477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9115519038526722890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 941861185f2d68642b18a143dcc86494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VolumeObject: {fileID: 4237087782190901343}
+  FirstSelected: {fileID: 7602729130611810336}
+  VolumeSlider: {fileID: 6335402571815187446}
+  VolumeValueText: {fileID: 1204224366056912388}
+  PauseTab: {fileID: 9086239204497951870}

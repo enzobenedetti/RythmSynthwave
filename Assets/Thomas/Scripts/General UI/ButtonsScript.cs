@@ -16,7 +16,7 @@ public class ButtonsScript : MonoBehaviour
     private void Awake()
     {
         SetSelectedObject(FirstSelected);
-        AudioListener.volume = 0.8f;
+        AudioListener.volume = SaveData.LoadAudioParameters().GameVolume;
         SaveData.SaveAudioParameters(AudioListener.volume);
     }
     
