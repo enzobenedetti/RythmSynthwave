@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+using UnityEngine.Serialization;
 
 public class TimingDisplay : MonoBehaviour
 {
@@ -9,10 +11,8 @@ public class TimingDisplay : MonoBehaviour
     public Sprite okSprite;
     public Sprite badSprite;
     public Sprite outRunSprite;
-
-    Transform zoneToDisplay;
-    public Transform zones;
-    public GameObject displayPrefab;
+    
+    public Transform zonesDisplay;
 
     // Start is called before the first frame update
     void Start()
@@ -29,37 +29,23 @@ public class TimingDisplay : MonoBehaviour
     public void DisplayResult(int index, int quality)
     {
         GameObject display = null;
-        foreach (Transform zone in zones)
+        foreach (Transform zone in zonesDisplay)
         {
             if (zone.name == index.ToString())
             {
-                zoneToDisplay = zone;
-                display = Instantiate(displayPrefab, zoneToDisplay.position + Vector3.up/2, Quaternion.identity);
+                display = zone.gameObject;
                 break;
             }
         }
-        if (quality >= 4)
+        
+        display.SetActive(true);
+
+        display.GetComponent<SpriteRenderer>().sprite = quality switch
         {
-            if (Jauge.isOutRun)
-            {
-                display.GetComponent<SpriteRenderer>().sprite = outRunSprite;
-            }
-            else
-            {
-                display.GetComponent<SpriteRenderer>().sprite = perfectSprite;
-            }
-        }
-        else if (quality == 3)
-        {
-            display.GetComponent<SpriteRenderer>().sprite = niceSprite;
-        }
-        else if (quality == 2)
-        {
-            display.GetComponent<SpriteRenderer>().sprite = okSprite;
-        }
-        else
-        {
-            display.GetComponent<SpriteRenderer>().sprite = badSprite;
-        }
+            4 => Jauge.isOutRun ? outRunSprite : perfectSprite,
+            3 => niceSprite,
+            2 => okSprite,
+            _ => badSprite
+        };
     }
 }

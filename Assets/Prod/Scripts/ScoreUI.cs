@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,9 +42,9 @@ public class ScoreUI : MonoBehaviour
     // Update is called once per frame
     public static void UpdateUI()
     {
-        scoreText.text = "Score : " + Score.score;
+        scoreText.DOText(Score.score.ToString(), 0.3f, true, ScrambleMode.Numerals);
         comboText.text = "Combo : " + Score.Combo;
         maxText.text = "Combo Max : " + Score.MaxCombo;
-        JaugeSlider.value = Jauge.jauge;
+        JaugeSlider.DOValue(Jauge.jauge, 0.25f, true).SetEase(Ease.InOutCirc);
     }
 }

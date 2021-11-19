@@ -23,9 +23,6 @@ public class CheckNote : MonoBehaviour
 
     private List<Note> notesLeft = new List<Note>();
 
-    private float input1, input2, input3, input4, input5, input6, input7, input8, input9;
-    private float inputBuffer = 0.03f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -52,9 +49,8 @@ public class CheckNote : MonoBehaviour
                 else if (note.timeCode - badBuffer !<= Timer.timer) break;
             }
 
-            if (Input.GetButtonDown("Down Left") && input1 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Down Left"))
             {
-                input1 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 1)
@@ -65,9 +61,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Down") && input2 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Down"))
             {
-                input2 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 2)
@@ -78,9 +73,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Down Right") && input3 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Down Right"))
             {
-                input3 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 3)
@@ -91,9 +85,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Left") && input4 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Left"))
             {
-                input4 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 4)
@@ -104,9 +97,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Central") && input5 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Central"))
             {
-                input5 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 5)
@@ -117,9 +109,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Right") && input6 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Right"))
             {
-                input6 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 6)
@@ -130,9 +121,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Up Left") && input7 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Up Left"))
             {
-                input7 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 7)
@@ -143,9 +133,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButton("Up Right") && input9 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Up Right"))
             {
-                input9 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 9)
@@ -156,9 +145,8 @@ public class CheckNote : MonoBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Up") && input8 + inputBuffer <= Timer.timer)
+            if (Input.GetButtonDown("Up"))
             {
-                input8 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 8)
@@ -202,7 +190,7 @@ public class CheckNote : MonoBehaviour
         else
         {
             if (!noBadCheat) ScoreBad(note);
-            ScoreOk(note);
+            else ScoreOk(note);
         }
         
     }
