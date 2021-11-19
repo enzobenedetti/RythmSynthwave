@@ -35,6 +35,11 @@ public class AudioManager : MonoBehaviour
             audioCombo.Play();
         }
 
+        if (MusicPlayer.OnPause)
+        {
+            audioBase.Pause();
+            audioCombo.Pause();
+        }
         if (Score.OnCombo) comboVolume += Time.deltaTime * 4;
         else comboVolume -= Time.deltaTime * 2;
 
