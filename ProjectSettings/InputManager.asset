@@ -12,7 +12,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[1]'
     altNegativeButton: 
-    altPositiveButton: w
+    altPositiveButton: x
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -28,7 +28,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[2]'
     altNegativeButton: 
-    altPositiveButton: x
+    altPositiveButton: c
     gravity: 3
     dead: 0.001
     sensitivity: 3
@@ -44,7 +44,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[3]'
     altNegativeButton: 
-    altPositiveButton: c
+    altPositiveButton: v
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -60,7 +60,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[4]'
     altNegativeButton: 
-    altPositiveButton: s
+    altPositiveButton: d
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -76,7 +76,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[5]'
     altNegativeButton: 
-    altPositiveButton: d
+    altPositiveButton: f
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -92,7 +92,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[6]'
     altNegativeButton: 
-    altPositiveButton: f
+    altPositiveButton: g
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -108,7 +108,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[7]'
     altNegativeButton: 
-    altPositiveButton: z
+    altPositiveButton: e
     gravity: 0
     dead: 0
     sensitivity: 0.1
@@ -124,7 +124,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[8]'
     altNegativeButton: 
-    altPositiveButton: e
+    altPositiveButton: r
     gravity: 0
     dead: 0
     sensitivity: 0.1
@@ -140,7 +140,7 @@ InputManager:
     negativeButton: 
     positiveButton: '[9]'
     altNegativeButton: 
-    altPositiveButton: r
+    altPositiveButton: t
     gravity: 0
     dead: 0
     sensitivity: 0.1
@@ -155,8 +155,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: '[4]'
     positiveButton: '[6]'
-    altNegativeButton: s
-    altPositiveButton: f
+    altNegativeButton: d
+    altPositiveButton: g
     gravity: 0
     dead: 0.19
     sensitivity: 1
@@ -171,8 +171,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: '[2]'
     positiveButton: '[8]'
-    altNegativeButton: x
-    altPositiveButton: e
+    altNegativeButton: c
+    altPositiveButton: r
     gravity: 0
     dead: 0.19
     sensitivity: 1
@@ -299,15 +299,15 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: '[2]'
     positiveButton: '[8]'
-    altNegativeButton: 
-    altPositiveButton: joystick button 1
+    altNegativeButton: c
+    altPositiveButton: r
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
     snap: 0
     invert: 0
     type: 0
-    axis: 0
+    axis: 1
     joyNum: 0
   - serializedVersion: 3
     m_Name: UiNaviguationHorizontal
@@ -315,8 +315,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: '[4]'
     positiveButton: '[6]'
-    altNegativeButton: 
-    altPositiveButton: joystick button 1
+    altNegativeButton: d
+    altPositiveButton: g
     gravity: 1000
     dead: 0.001
     sensitivity: 1000

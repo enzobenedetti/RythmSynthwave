@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CheckNote : MonoBehaviour
 {
+    public bool allPerfectCheat;
+    public bool noBadCheat;
+    
     public float perfectBuffer = 0.05f;
     
     public float niceBuffer = 0.1f;
@@ -20,7 +23,8 @@ public class CheckNote : MonoBehaviour
 
     private List<Note> notesLeft = new List<Note>();
 
-    private bool input1, input2, input3, input4, input5, input6, input7, input8, input9 = false;
+    private float input1, input2, input3, input4, input5, input6, input7, input8, input9;
+    private float inputBuffer = 0.03f;
 
     // Start is called before the first frame update
     void Start()
@@ -48,9 +52,9 @@ public class CheckNote : MonoBehaviour
                 else if (note.timeCode - badBuffer !<= Timer.timer) break;
             }
 
-            if (Input.GetButtonDown("Down Left") && !input1)
+            if (Input.GetButtonDown("Down Left") && input1 + inputBuffer <= Timer.timer)
             {
-                input1 = true;
+                input1 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 1)
@@ -60,11 +64,10 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input1 = false;
 
-            if (Input.GetButtonDown("Down") && !input2)
+            if (Input.GetButtonDown("Down") && input2 + inputBuffer <= Timer.timer)
             {
-                input2 = true;
+                input2 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 2)
@@ -74,11 +77,10 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input2 = false;
 
-            if (Input.GetButtonDown("Down Right") && !input3)
+            if (Input.GetButtonDown("Down Right") && input3 + inputBuffer <= Timer.timer)
             {
-                input3 = true;
+                input3 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 3)
@@ -88,11 +90,10 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input3 = false;
 
-            if (Input.GetButtonDown("Left") && !input4)
+            if (Input.GetButtonDown("Left") && input4 + inputBuffer <= Timer.timer)
             {
-                input4 = true;
+                input4 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 4)
@@ -102,11 +103,10 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input4 = false;
 
-            if (Input.GetButtonDown("Central") && !input5)
+            if (Input.GetButtonDown("Central") && input5 + inputBuffer <= Timer.timer)
             {
-                input5 = true;
+                input5 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 5)
@@ -116,11 +116,10 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input5 = false;
 
-            if (Input.GetButtonDown("Right") && !input6)
+            if (Input.GetButtonDown("Right") && input6 + inputBuffer <= Timer.timer)
             {
-                input6 = true;
+                input6 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 6)
@@ -130,11 +129,10 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input6 = false;
 
-            if (Input.GetButtonDown("Up Left") && !input7)
+            if (Input.GetButtonDown("Up Left") && input7 + inputBuffer <= Timer.timer)
             {
-                input7 = true;
+                input7 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 7)
@@ -144,26 +142,23 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input7 = false;
-            
-            if (Input.GetButton("Up Right") && !input9)
+
+            if (Input.GetButton("Up Right") && input9 + inputBuffer <= Timer.timer)
             {
-                input9 = true;
+                input9 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 9)
                     {
-                        Debug.Log("Timecode : " + Timer.timer);
                         CheckTiming(note);
                         break;
                     }
                 }
             }
-            else input9 = false;
 
-            if (Input.GetButtonDown("Up") && !input8)
+            if (Input.GetButtonDown("Up") && input8 + inputBuffer <= Timer.timer)
             {
-                input8 = true;
+                input8 = Timer.timer;
                 foreach (Note note in aviableNote)
                 {
                     if (note.type.index == 8)
@@ -173,46 +168,72 @@ public class CheckNote : MonoBehaviour
                     }
                 }
             }
-            else input8 = false;
 
         }
         else if (Timer.timer >= notesLeft[0].timeCode + okBuffer)
         {
-            TimingDisplay.DisplayResult(notesLeft[0].type.index, 1);
-            MusicPlayer.DestroyNote(notesLeft[0]);
-            notesLeft.Remove(notesLeft[0]);
-            AnimatePerso.BadAnimation();
-            Score.GotBad();
+            if (!allPerfectCheat && !noBadCheat)
+            {
+                ScoreBad(notesLeft[0]);
+            }
+            else if (allPerfectCheat) ScorePerfect(notesLeft[0]);
+            else ScoreOk(notesLeft[0]);
         }
     }
 
     void CheckTiming(Note note)
     {
-        if (Timer.timer <= note.timeCode + perfectBuffer &&
+        if (allPerfectCheat) ScorePerfect(note);
+        else if (Timer.timer <= note.timeCode + perfectBuffer &&
             Timer.timer >= note.timeCode - perfectBuffer)
         {
-            TimingDisplay.DisplayResult(note.type.index, 4);
-            Score.GotPerfect();
+            ScorePerfect(note);
         }
         else if (Timer.timer <= note.timeCode + niceBuffer &&
                  Timer.timer >= note.timeCode - niceBuffer)
         {
-            TimingDisplay.DisplayResult(note.type.index, 3);
-            Score.GotNice();
+            ScoreNice(note);
         }
         else if (Timer.timer <= note.timeCode + okBuffer &&
                  Timer.timer >= note.timeCode - okBuffer)
         {
-            TimingDisplay.DisplayResult(note.type.index, 2);
-            Score.GotOk();
+            ScoreOk(note);
         }
         else
         {
-            TimingDisplay.DisplayResult(note.type.index, 1);
-            AnimatePerso.BadAnimation();
-            Score.GotBad();
+            if (!noBadCheat) ScoreBad(note);
+            ScoreOk(note);
         }
+        
+    }
+    private void ScorePerfect(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 4);
+        Score.GotPerfect();
         notesLeft.Remove(note);
         MusicPlayer.DestroyNote(note);
+    }
+
+    void ScoreNice(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 3);
+        Score.GotNice();
+        notesLeft.Remove(note);
+        MusicPlayer.DestroyNote(note);
+    }
+    private void ScoreOk(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 2);
+        Score.GotOk();
+        notesLeft.Remove(note);
+        MusicPlayer.DestroyNote(note);
+    }
+    void ScoreBad(Note note)
+    {
+        TimingDisplay.DisplayResult(note.type.index, 1);
+        MusicPlayer.DestroyNote(note);
+        notesLeft.Remove(note);
+        AnimatePerso.BadAnimation();
+        Score.GotBad();
     }
 }

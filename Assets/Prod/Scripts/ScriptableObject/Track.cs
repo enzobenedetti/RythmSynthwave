@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Track")]
 public class Track : ScriptableObject
 {
+    public int songId;
+    
     public string author;
     
     public float bpm;

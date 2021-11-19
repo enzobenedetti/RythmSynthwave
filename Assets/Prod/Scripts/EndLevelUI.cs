@@ -10,7 +10,12 @@ public class EndLevelUI : MonoBehaviour
     public Text musicName;
     public Text author;
 
+    public GetBadges BadgesScript;
+
     public TextMeshProUGUI result;
+    public Image badges;
+    public Sprite perfectBadge;
+    public Sprite comboBadge;
     
     public Text score;
     public Text perfect;
@@ -21,10 +26,25 @@ public class EndLevelUI : MonoBehaviour
 
     public Slider JaugeSlider;
     
-    void Awake()
+    void Start()
     {
         musicName.text = Score.music.name;
         author.text = Score.music.author;
+
+        switch (BadgesScript.badgesId[Score.music.songId])
+        {
+            case 0:
+                badges.sprite = null;
+                badges.color = Color.clear;
+                break;
+            case 1:
+                badges.sprite = comboBadge;
+                break;
+            case 2:
+                badges.sprite = perfectBadge;
+                break;
+        }
+        
         score.text = Score.score.ToString();
         perfect.text = "Perfect : " + Score.PerfectCount;
         nice.text = "Nice : " + Score.NiceCount;
@@ -33,7 +53,6 @@ public class EndLevelUI : MonoBehaviour
         combo.text = Score.MaxCombo.ToString();
         JaugeSlider.value = Jauge.jauge;
         result.text = Jauge.jauge >= 75 ? "You win !" : "You lose...";
-        Debug.Log("Level Ended");
     }
 
     public void GoToMainMenu()

@@ -77,6 +77,7 @@ public static class Score
 
     public static void ResetScore()
     {
+        score = 0;
         OnCombo = true;
         Combo = 0;
         BadCount = 0;
