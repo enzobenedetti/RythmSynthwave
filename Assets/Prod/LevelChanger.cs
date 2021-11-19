@@ -20,7 +20,7 @@ public class LevelChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        levelObject.transform.localScale = new Vector3(1f, 1f, Jauge.jauge / 100f);
+        //levelObject.transform.localScale = new Vector3(1f, 1f, Jauge.jauge / 100f);
         if (levelObject.TryGetComponent(out MeshRenderer actualMaterial))
             actualMaterial.material.Lerp(invisibleMaterial, levelMaterial, Jauge.jauge / 100f);
         else
@@ -31,6 +31,6 @@ public class LevelChanger : MonoBehaviour
                 childMaterial.material.Lerp(invisibleMaterial, levelMaterial, Jauge.jauge / 100f);
             }
         }
-        lightLevel.intensity = Jauge.jauge / 100f;
+        lightLevel.intensity = Jauge.jauge / 50f;
     }
 }

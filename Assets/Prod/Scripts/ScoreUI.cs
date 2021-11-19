@@ -42,7 +42,7 @@ public class ScoreUI : MonoBehaviour
     // Update is called once per frame
     public static void UpdateUI()
     {
-        scoreText.text = "Score : " + Score.score;
+        scoreText.DOText(Score.score.ToString(), 0.3f, true, ScrambleMode.Numerals);
         comboText.text = "Combo : " + Score.Combo;
         maxText.text = "Combo Max : " + Score.MaxCombo;
         JaugeSlider.DOValue(Jauge.jauge, 0.25f, true).SetEase(Ease.InOutCirc);

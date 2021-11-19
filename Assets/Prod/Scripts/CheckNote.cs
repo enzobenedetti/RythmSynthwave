@@ -190,7 +190,7 @@ public class CheckNote : MonoBehaviour
         else
         {
             if (!noBadCheat) ScoreBad(note);
-            ScoreOk(note);
+            else ScoreOk(note);
         }
         
     }
