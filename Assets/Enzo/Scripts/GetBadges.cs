@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GetBadges : MonoBehaviour
 {
-    public int[] badgesId = new int[3];
+    public int[] badgesId = new int[3]{0,0,0};
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         CheckForBadges();
     }
@@ -20,11 +20,13 @@ public class GetBadges : MonoBehaviour
             badgesId[Score.music.songId] = 1;
         else badgesId[Score.music.songId] = 0;
         
-        int[] BadgesIdData = SaveData.LoadBadges().badgesId;
-        if (BadgesIdData == null)
-            BadgesIdData = new int[3]{0,0,0};
+        int[] BadgesIdData = new int[3]{0,0,0};
+        if (!SaveData.BadgesExist()) SaveData.SaveBadges(new []{0,0,0});
+        else BadgesIdData = SaveData.LoadBadges().badgesId;
         if (BadgesIdData[Score.music.songId] < badgesId[Score.music.songId])
+        {
             BadgesIdData[Score.music.songId] = badgesId[Score.music.songId];
-        SaveData.SaveBadges(BadgesIdData);
+            SaveData.SaveBadges(BadgesIdData);
+        }
     }
 }

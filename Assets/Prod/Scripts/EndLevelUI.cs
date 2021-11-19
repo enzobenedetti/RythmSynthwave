@@ -26,7 +26,7 @@ public class EndLevelUI : MonoBehaviour
 
     public Slider JaugeSlider;
     
-    void Awake()
+    void Start()
     {
         musicName.text = Score.music.name;
         author.text = Score.music.author;

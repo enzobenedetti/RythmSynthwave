@@ -113,13 +113,13 @@ public static class SaveData
    {
       BinaryFormatter formatter = new BinaryFormatter();
       string path = Application.persistentDataPath + "/Badges.saves";
-      FileStream stream = new FileStream(path, FileMode.Create);
-
-      BadgesData data = new BadgesData(id);
-      
-      formatter.Serialize(stream, data);
-      stream.Close();
-      Debug.Log("Badges saves with data : " + id);
+      FileStream stream;
+      using (stream = new FileStream(path, FileMode.Create))
+      {
+         BadgesData data = new BadgesData(id);
+         formatter.Serialize(stream, data);
+      }
+      Debug.Log("Badges saves with data : " + id[0] + id[1] + id[2]);
    }
 
    public static BadgesData LoadBadges()
@@ -128,12 +128,12 @@ public static class SaveData
       if (File.Exists(path))
       {
          BinaryFormatter formatter = new BinaryFormatter();
-         FileStream stream = new FileStream(path, FileMode.Open);
-         
-         BadgesData data = formatter.Deserialize(stream) as BadgesData;
-         stream.Close();
-         
-         Debug.Log("Badges load with data : " + data.badgesId);
+         BadgesData data;
+         using (FileStream stream = new FileStream(path, FileMode.Open))
+         {
+            data = (BadgesData) formatter.Deserialize(stream);
+         }
+         Debug.Log("Badges load with data : " + data.badgesId[0] + data.badgesId[1] + data.badgesId[2]);
          return data;
       }
       else
@@ -142,5 +142,13 @@ public static class SaveData
          return null;
       }
    }
+   
+   public static bool BadgesExist() {
+      string path = Application.persistentDataPath + "/Badges.saves";
+      return File.Exists(path);
+   }
+   
    #endregion
 }
+
+
