@@ -14,6 +14,8 @@ public class MusicPlayer : MonoBehaviour
 
     public static List<GameObject> noteOnScreen = new List<GameObject>();
 
+    public bool onPause;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,11 @@ public class MusicPlayer : MonoBehaviour
             Timer.StopTimer();
             SceneManager.LoadScene(4);
         }
+
+        if (Input.GetButtonDown("Cancel") && !onPause)
+        {
+            SetPause();
+        }
     }
 
     public static void DestroyNote(Note note)
@@ -55,5 +62,15 @@ public class MusicPlayer : MonoBehaviour
                 break;
             }
         }
+    }
+
+    void SetPause()
+    {
+        onPause = true;
+    }
+
+    public void QuitPause()
+    {
+        onPause = false;
     }
 }
