@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,6 +45,6 @@ public class ScoreUI : MonoBehaviour
         scoreText.text = "Score : " + Score.score;
         comboText.text = "Combo : " + Score.Combo;
         maxText.text = "Combo Max : " + Score.MaxCombo;
-        JaugeSlider.value = Jauge.jauge;
+        JaugeSlider.DOValue(Jauge.jauge, 0.25f, true).SetEase(Ease.InOutCirc);
     }
 }

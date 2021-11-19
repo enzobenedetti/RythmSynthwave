@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+using UnityEngine.Serialization;
 
 public class TimingDisplay : MonoBehaviour
 {
@@ -10,8 +12,7 @@ public class TimingDisplay : MonoBehaviour
     public Sprite badSprite;
     public Sprite outRunSprite;
     
-    public Transform zones;
-    public GameObject displayPrefab;
+    public Transform zonesDisplay;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class TimingDisplay : MonoBehaviour
     public void DisplayResult(int index, int quality)
     {
         GameObject display = null;
-        foreach (Transform zone in zones)
+        foreach (Transform zone in zonesDisplay)
         {
             if (zone.name == index.ToString())
             {
