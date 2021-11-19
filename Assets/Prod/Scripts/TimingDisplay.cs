@@ -9,8 +9,7 @@ public class TimingDisplay : MonoBehaviour
     public Sprite okSprite;
     public Sprite badSprite;
     public Sprite outRunSprite;
-
-    Transform zoneToDisplay;
+    
     public Transform zones;
     public GameObject displayPrefab;
 
@@ -33,33 +32,19 @@ public class TimingDisplay : MonoBehaviour
         {
             if (zone.name == index.ToString())
             {
-                zoneToDisplay = zone;
-                display = Instantiate(displayPrefab, zoneToDisplay.position + Vector3.up/2, Quaternion.identity);
+                display = zone.gameObject;
                 break;
             }
         }
-        if (quality >= 4)
+        
+        display.SetActive(true);
+
+        display.GetComponent<SpriteRenderer>().sprite = quality switch
         {
-            if (Jauge.isOutRun)
-            {
-                display.GetComponent<SpriteRenderer>().sprite = outRunSprite;
-            }
-            else
-            {
-                display.GetComponent<SpriteRenderer>().sprite = perfectSprite;
-            }
-        }
-        else if (quality == 3)
-        {
-            display.GetComponent<SpriteRenderer>().sprite = niceSprite;
-        }
-        else if (quality == 2)
-        {
-            display.GetComponent<SpriteRenderer>().sprite = okSprite;
-        }
-        else
-        {
-            display.GetComponent<SpriteRenderer>().sprite = badSprite;
-        }
+            4 => Jauge.isOutRun ? outRunSprite : perfectSprite,
+            3 => niceSprite,
+            2 => okSprite,
+            _ => badSprite
+        };
     }
 }
