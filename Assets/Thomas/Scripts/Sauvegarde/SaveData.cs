@@ -118,8 +118,8 @@ public static class SaveData
       {
          BadgesData data = new BadgesData(id);
          formatter.Serialize(stream, data);
+         Debug.Log("Badges saves with data : " + data.badgesId[0] + data.badgesId[1] + data.badgesId[2]);
       }
-      Debug.Log("Badges saves with data : " + id[0] + id[1] + id[2]);
    }
 
    public static BadgesData LoadBadges()

@@ -134,7 +134,7 @@
       <workItem from="1637002723867" duration="746000" />
       <workItem from="1637073478351" duration="7941000" />
       <workItem from="1637165399742" duration="13122000" />
-      <workItem from="1637309445932" duration="5060000" />
+      <workItem from="1637309445932" duration="7275000" />
     </task>
     <servers />
   </component>
@@ -158,24 +158,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Enzo/Scripts/GetBadges.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\enzo.benedetti\Documents\RythmSynthwave\Assets\Enzo\Scripts\GetBadges.cs" initialLine="22" containingFunctionPresentation="method 'CheckForBadges'">
-            <startOffsets>
-              <option value="589" />
-            </startOffsets>
-            <endOffsets>
-              <option value="628" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
