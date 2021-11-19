@@ -36,13 +36,13 @@ public class AudioOptionsObject : MonoBehaviour
                 ButtonsScript.SetSelectedObject(gameObject);
             }
         }
-        
-        RelatedValueText.text = (RelatedSlider.value / 10).ToString();
+        RelatedValueText.text = RelatedSlider.value.ToString();
+        AudioListener.volume = RelatedSlider.GetComponent<Slider>().value;
     }
 
     public void SaveAudioVolume()
     {
-        SaveData.SaveAudioParameters(RelatedSlider.value/10);
-        Debug.Log("Saved audio at " + RelatedSlider.value/10);
+        SaveData.SaveAudioParameters(RelatedSlider.value);
+        Debug.Log("Saved audio at " + RelatedSlider.value);
     }
 }
