@@ -14,6 +14,8 @@ public class PauseUiScript : MonoBehaviour
     public GameObject FirstSelected;
     public GameObject VolumeSlider;
     public TextMeshProUGUI VolumeValueText;
+
+    public GameObject PauseTab;
     
     private void Awake()
     {
@@ -30,12 +32,32 @@ public class PauseUiScript : MonoBehaviour
                 ButtonsScript.SetSelectedObject(VolumeSlider);
             }
         }
-        VolumeValueText.text = VolumeSlider.GetComponent<Slider>().value.ToString();
+        VolumeValueText.text = VolumeSlider.GetComponent<Slider>().value.ToString("F1");
         AudioListener.volume = VolumeSlider.GetComponent<Slider>().value;
+
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            Pause();
+        }
+    }
+    
+    public void Pause()
+    {
+        switch (PauseTab.activeSelf)
+        {
+        case true:
+            PauseTab.SetActive(false);
+            break;
+        case false:
+            PauseTab.SetActive(true);
+            break;
+        }
     }
 
     public void SaveVolume()
     {
-        SaveData.SaveAudioParameters(VolumeSlider.GetComponent<Slider>().value);
+        SaveData.SaveAudioParameters(AudioListener.volume);
+        Debug.Log("Saved audio at " + VolumeSlider.GetComponent<Slider>().value);
     }
 }

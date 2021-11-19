@@ -89,6 +89,7 @@ namespace UI
                     SceneManager.LoadScene("LevelThree");
                     break;
             }
+            SaveData.SaveNextMusicSpeed(Speed);
         }
 
         public void ChangeMusicDown()
