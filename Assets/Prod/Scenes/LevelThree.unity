@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dollyZoom: 36.5
-  camera: {fileID: 1299727426}
+  gameCam: {fileID: 1299727426}
 --- !u!114 &1366149406 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9152019785208780630, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}

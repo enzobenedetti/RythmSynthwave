@@ -45,9 +45,10 @@ public class MusicPlayer : MonoBehaviour
             SceneManager.LoadScene(4);
         }
 
-        if (Input.GetButtonDown("Cancel") && !OnPause)
+        if (Input.GetButtonDown("Cancel"))
         {
-            //SetPause();
+            if (!OnPause) SetPause();
+            else QuitPause();
         }
     }
 
@@ -73,6 +74,6 @@ public class MusicPlayer : MonoBehaviour
     public void QuitPause()
     {
         OnPause = false;
-        Timer.StartTimer();
+        Timer.UnPauseTimer();
     }
 }
