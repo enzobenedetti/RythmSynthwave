@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Serialization;
 
 public class CameraZoom : MonoBehaviour
 {
@@ -9,11 +10,11 @@ public class CameraZoom : MonoBehaviour
     private float distance;
     private float _frustumHeight;
 
-    public Camera camera;
+    public Camera gameCam;
     // Start is called before the first frame update
     void Start()
     {
-        distance = -camera.transform.position.z;
+        distance = -gameCam.transform.position.z;
         _frustumHeight = GetFrustumHeight();
     }
 
@@ -22,14 +23,14 @@ public class CameraZoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        camera.transform.DOMoveZ(((Jauge.jauge / 2f) + 1f) - 52f, 0.2f).SetEase(Ease.Linear);
+        gameCam.transform.DOMoveZ(((Jauge.jauge / 2f) + 1f) - 52f, 0.2f).SetEase(Ease.Linear);
         distance = -(((Jauge.jauge / 2f) + 1f) - 52f);
-        camera.DOFieldOfView(GetFieldOfView(), 0.2f).SetEase(Ease.Linear);
+        gameCam.DOFieldOfView(GetFieldOfView(), 0.2f).SetEase(Ease.Linear);
         
     }
     private float GetFrustumHeight()
     {
-        return (2f * distance * Mathf.Tan(camera.fieldOfView * 0.5f * Mathf.Deg2Rad));
+        return (2f * distance * Mathf.Tan(gameCam.fieldOfView * 0.5f * Mathf.Deg2Rad));
     }
     float GetFieldOfView()
     {

@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
+    public static Action GameResumed;
     
     public static float timer = -1f;
 
@@ -11,39 +13,43 @@ public class Timer : MonoBehaviour
     public float unPauseTime = 3f;
     private static bool _isOutOfPause;
     
-    private static bool _timerOn = true;
+    public static bool TimerOn = true;
     
     // Update is called once per frame
     void Update()
     {
-        if (_timerOn)
+        if (TimerOn)
             timer += Time.deltaTime;
         if (_isOutOfPause)
             outOfPauseTimer += Time.deltaTime;
         if (outOfPauseTimer >= unPauseTime)
+        {
             StartTimer();
+            GameResumed?.Invoke();
+        }
     }
 
     public static void StartTimer()
     {
-        _timerOn = true;
+        TimerOn = true;
         _isOutOfPause = false;
         outOfPauseTimer = 0f;
     }
 
     public static void StopTimer()
     {
-        _timerOn = false;
+        TimerOn = false;
     }
 
     public static void ResetTimer()
     {
-        _timerOn = false;
+        TimerOn = false;
         timer = -1f;
     }
 
     public static void UnPauseTimer()
     {
         _isOutOfPause = true;
+        outOfPauseTimer = 0f;
     }
 }

@@ -36,7 +36,7 @@ public class CheckNote : MonoBehaviour
     void Update()
     {
         if (notesLeft.Count <= 0) return;
-        if (Input.anyKeyDown && notesLeft[0].timeCode - badBuffer <= Timer.timer)
+        if (Input.anyKeyDown && notesLeft[0].timeCode - badBuffer <= Timer.timer && Timer.TimerOn)
         {
             List<Note> aviableNote = new List<Note>();
             

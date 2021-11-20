@@ -20,16 +20,17 @@ public class AudioManager : MonoBehaviour
             if (_comboVolume > 1f) _comboVolume = 1f;
         }
     }
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        Timer.GameResumed += ResumeMusic;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Timer.timer >= 0f && !audioBase.isPlaying)
+        if(Timer.timer >= 0f && !audioBase.isPlaying && Timer.TimerOn)
         {
             audioBase.Play();
             audioCombo.Play();
@@ -44,5 +45,11 @@ public class AudioManager : MonoBehaviour
         else comboVolume -= Time.deltaTime * 2;
 
         audioCombo.volume = comboVolume;
+    }
+
+    void ResumeMusic()
+    {
+        audioBase.UnPause();
+        audioCombo.UnPause();
     }
 }

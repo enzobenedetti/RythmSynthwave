@@ -22,7 +22,7 @@ public class MoveNote : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Note.type.Movement(this.transform, speed);
+        if (Timer.TimerOn) Note.type.Movement(this.transform, speed);
     }
 
     private void OnDestroy()
