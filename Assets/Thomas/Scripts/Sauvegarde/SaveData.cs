@@ -39,41 +39,7 @@ public static class SaveData
       }
    }
    #endregion
-
-   #region MusicSpeed saves & load
-   public static void SaveNextMusicSpeed(float nextMusicSpeed)
-   {
-      BinaryFormatter formatter = new BinaryFormatter();
-      string path = Application.persistentDataPath + "/Music_Parameter.saves";
-      FileStream stream = new FileStream(path, FileMode.Create);
-
-      MusicSpeedData data = new MusicSpeedData(nextMusicSpeed);
-      
-      formatter.Serialize(stream, data);
-      stream.Close();
-   }
-
-   public static MusicSpeedData LoadMusicSpeed()
-   {
-      string path = Application.persistentDataPath + "/Music_Parameter.saves";
-      if (File.Exists(path))
-      {
-         BinaryFormatter formatter = new BinaryFormatter();
-         FileStream stream = new FileStream(path, FileMode.Open);
-         
-         MusicSpeedData data = formatter.Deserialize(stream) as MusicSpeedData;
-         stream.Close();
-         
-         return data;
-      }
-      else
-      {
-         Debug.LogError("File not found in " + path);
-         return null;
-      }
-   }
-   #endregion
-
+   
    #region Audio parameters saves & load
    public static void SaveAudioParameters(float audioVolume)
    {

@@ -19,7 +19,7 @@ public class MusicPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Speed = SaveData.LoadMusicSpeed().SavedSpeedForNextMusic;
+        Speed = PlayerPrefs.GetFloat("MusicSpeed");
         Score.music = track;
         Score.ResetScore();
         Jauge.Reset();

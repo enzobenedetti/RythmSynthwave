@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/CameraZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/CameraZoom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/CheckNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/CheckNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/MoveNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/MoveNote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,14 +22,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/CameraZoom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/Outline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Thomas/Scripts/Sauvegarde/InitializeSaves.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_EditorResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/CameraZoom.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -50,13 +40,18 @@
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/UiManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/SaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/LevelSelectionBrain.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/MusicSelectionUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/MusicSelectionBrain.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/OptionsMenuScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/General UI/ButtonsScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/AudioOptionsObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/Sauvegarde/SaveData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/Music Selection/MusicSelectionBrain.cs" />
+      <option value="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/InitializeSaves.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/Sauvegarde/InitializeSaves.cs" />
+      <option value="$PROJECT_DIR$/Assets/Thomas/Scripts/General UI/PauseUiScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zrA9hwMS3IY4ZeBUnYWavyK5PR" />
@@ -93,7 +88,6 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -103,7 +97,6 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
