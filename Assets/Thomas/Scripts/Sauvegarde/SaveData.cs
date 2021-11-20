@@ -7,13 +7,13 @@ using UnityEngine;
 public static class SaveData
 {
    #region High score saves & load
-   public static void SaveHighScore(float highestScoreToSave)
+   public static void SaveHighScore(float highestScoreToSave, int LevelToSave)
    {
       BinaryFormatter formatter = new BinaryFormatter();
       string path = Application.persistentDataPath + "/High_Score.saves";
       FileStream stream = new FileStream(path, FileMode.Create);
 
-      HighScoreData data = new HighScoreData(highestScoreToSave);
+      HighScoreData data = new HighScoreData(highestScoreToSave, LevelToSave);
       
       formatter.Serialize(stream, data);
       stream.Close();

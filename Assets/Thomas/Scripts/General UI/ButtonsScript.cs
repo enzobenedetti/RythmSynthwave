@@ -3,17 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
 public class ButtonsScript : MonoBehaviour
 {
     public GameObject FirstSelected;
-    
+
     private void Awake()
     {
         SetSelectedObject(FirstSelected);
+        AudioListener.volume = SaveData.LoadAudioParameters().GameVolume;
+        SaveData.SaveAudioParameters(AudioListener.volume);
     }
     
     public static void QuitGame()
@@ -69,6 +73,10 @@ public class ButtonsScript : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(firstSelected);
     }
-    
-    
+
+    public static void GoToMainMenu()
+    {
+        SceneManager.LoadSceneAsync("MenuScene");
+    }
+
 }

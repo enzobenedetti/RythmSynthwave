@@ -6,11 +6,22 @@ using UnityEngine;
 [Serializable]
 public class HighScoreData
 {
-    public float ActualSavedHighScore;
-    
-    public HighScoreData(float highScore)
+    public float MusicOneHighScore,MusicTwoHighScore,MusicThreeHighScore;
+
+    public HighScoreData(float highScore, int LevelToSave)
     {
-        ActualSavedHighScore = highScore;
+        switch (LevelToSave)
+        {
+            case 1:
+                MusicOneHighScore = highScore;
+                break;
+            case 2:
+                MusicTwoHighScore = highScore;
+                break;
+            case 3:
+                MusicThreeHighScore = highScore;
+                break;
+        }
     }
     
 }
