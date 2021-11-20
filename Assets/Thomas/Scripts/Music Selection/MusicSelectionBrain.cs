@@ -89,7 +89,7 @@ namespace UI
                     SceneManager.LoadScene("LevelThree");
                     break;
             }
-            SaveData.SaveNextMusicSpeed(Speed);
+            PlayerPrefs.SetFloat("MusicSpeed",Speed);
         }
 
         public void ChangeMusicDown()
@@ -164,13 +164,13 @@ namespace UI
                     if (Speed < MusicThreeMaxSpeed) Speed += 0.25f;
                     break;
             }
-            SaveData.SaveNextMusicSpeed(Speed);
+            PlayerPrefs.SetFloat("MusicSpeed",Speed);
         }
 
         void ChangeSpeedDown()
         {
             if (Speed > 1) Speed -= 0.25f;
-            SaveData.SaveNextMusicSpeed(Speed);
+            PlayerPrefs.SetFloat("MusicSpeed",Speed);
         }
     }
 }
