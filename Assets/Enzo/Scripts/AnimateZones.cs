@@ -18,41 +18,44 @@ public class AnimateZones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Down Left"))
+        if (Timer.TimerOn)
         {
-            ShakeZone(zone1);
-        }
-        if (Input.GetButtonDown("Down"))
-        {
-            ShakeZone(zone2);
-        }
-        if (Input.GetButtonDown("Down Right"))
-        {
-            ShakeZone(zone3);
-        }
-        if (Input.GetButtonDown("Left"))
-        {
-            ShakeZone(zone4);
-        }
-        if (Input.GetButtonDown("Central"))
-        {
-            ShakeZone(zone5);
-        }
-        if (Input.GetButtonDown("Right"))
-        {
-            ShakeZone(zone6);
-        }
-        if (Input.GetButtonDown("Up Left"))
-        {
-            ShakeZone(zone7);
-        }
-        if (Input.GetButtonDown("Up Right"))
-        {
-            ShakeZone(zone9);
-        }
-        if (Input.GetButtonDown("Up"))
-        {
-            ShakeZone(zone8);
+            if (Input.GetButtonDown("Down Left"))
+            {
+                ShakeZone(zone1);
+            }
+            if (Input.GetButtonDown("Down"))
+            {
+                ShakeZone(zone2);
+            }
+            if (Input.GetButtonDown("Down Right"))
+            {
+                ShakeZone(zone3);
+            }
+            if (Input.GetButtonDown("Left"))
+            {
+                ShakeZone(zone4);
+            }
+            if (Input.GetButtonDown("Central"))
+            {
+                ShakeZone(zone5);
+            }
+            if (Input.GetButtonDown("Right"))
+            {
+                ShakeZone(zone6);
+            }
+            if (Input.GetButtonDown("Up Left"))
+            {
+                ShakeZone(zone7);
+            }
+            if (Input.GetButtonDown("Up Right"))
+            {
+                ShakeZone(zone9);
+            }
+            if (Input.GetButtonDown("Up"))
+            {
+                ShakeZone(zone8);
+            }
         }
     }
 

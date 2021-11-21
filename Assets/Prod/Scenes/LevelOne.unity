@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dollyZoom: 0
-  camera: {fileID: 618621700}
+  gameCam: {fileID: 618621700}
 --- !u!1 &631903602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,28 +1322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1628742779 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4544099535705400088, guid: 5027613b848967947a6410588b0c048d, type: 3}
-  m_PrefabInstance: {fileID: 1628742777}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1628742780 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4866555393626745161, guid: 5027613b848967947a6410588b0c048d, type: 3}
-  m_PrefabInstance: {fileID: 1628742777}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1666491731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,11 +1455,11 @@ PrefabInstance:
     - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: music
       value: 
-      objectReference: {fileID: 1628742780}
+      objectReference: {fileID: 0}
     - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: author
       value: 
-      objectReference: {fileID: 1628742779}
+      objectReference: {fileID: 0}
     - target: {fileID: 1877058710153097085, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: musicTime
       value: 
