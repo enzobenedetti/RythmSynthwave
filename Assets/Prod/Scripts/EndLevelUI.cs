@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class EndLevelUI : MonoBehaviour
 {
-    public Text musicName;
-    public Text author;
+    public TextMeshProUGUI musicName;
+    public TextMeshProUGUI author;
 
     public GetBadges BadgesScript;
 
@@ -16,13 +16,16 @@ public class EndLevelUI : MonoBehaviour
     public Image badges;
     public Sprite perfectBadge;
     public Sprite comboBadge;
+    public Image perso;
+    public Sprite happy;
+    public Sprite sad;
     
-    public Text score;
-    public Text perfect;
-    public Text nice;
-    public Text ok;
-    public Text bad;
-    public Text combo;
+    public TextMeshProUGUI score;
+    public TextMeshProUGUI perfect;
+    public TextMeshProUGUI nice;
+    public TextMeshProUGUI ok;
+    public TextMeshProUGUI bad;
+    public TextMeshProUGUI combo;
 
     public Slider JaugeSlider;
     
@@ -53,6 +56,7 @@ public class EndLevelUI : MonoBehaviour
         combo.text = Score.MaxCombo.ToString();
         JaugeSlider.value = Jauge.jauge;
         result.text = Jauge.jauge >= 75 ? "You win !" : "You lose...";
+        perso.sprite = Jauge.jauge >= 75 ? happy : sad;
     }
 
     public void GoToMainMenu()

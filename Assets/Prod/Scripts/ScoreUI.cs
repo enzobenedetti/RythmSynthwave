@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,10 +10,10 @@ public class ScoreUI : MonoBehaviour
 {
     
     public static Text scoreText;
-    public static Text comboText;
-    public static Text maxText;
-    public Text music;
-    public Text author;
+    public static TextMeshProUGUI comboText;
+    public static TextMeshProUGUI maxText;
+    public TextMeshProUGUI music;
+    public TextMeshProUGUI author;
     public MusicPlayer playerMusic;
     public static Slider JaugeSlider;
     public Slider musicTime;
@@ -21,8 +22,8 @@ public class ScoreUI : MonoBehaviour
     void Awake()
     {
         scoreText = GameObject.Find("Score").GetComponent<Text>();
-        comboText = GameObject.Find("Combo").GetComponent<Text>();
-        maxText = GameObject.Find("MaxCombo").GetComponent<Text>();
+        comboText = GameObject.Find("Combo").GetComponent<TextMeshProUGUI>();
+        maxText = GameObject.Find("MaxCombo").GetComponent<TextMeshProUGUI>();
         JaugeSlider = GameObject.Find("Jauge").GetComponent<Slider>();
         
         music.text = playerMusic.track.name;
