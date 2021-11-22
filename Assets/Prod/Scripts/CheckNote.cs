@@ -7,11 +7,11 @@ public class CheckNote : MonoBehaviour
     public bool allPerfectCheat;
     public bool noBadCheat;
     
-    public float perfectBuffer = 0.05f;
+    public float perfectBuffer = 0.08f;
     
-    public float niceBuffer = 0.1f;
+    public float niceBuffer = 0.15f;
 
-    public float okBuffer = 0.25f;
+    public float okBuffer = 0.3f;
 
     public float badBuffer = 1f;
 
