@@ -22,6 +22,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/StartTouchBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo/Scripts/CameraZoom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -135,7 +136,7 @@
       <workItem from="1637395836665" duration="2613000" />
       <workItem from="1637403683365" duration="997000" />
       <workItem from="1637488084473" duration="2677000" />
-      <workItem from="1637591892499" duration="1214000" />
+      <workItem from="1637591892499" duration="1978000" />
     </task>
     <servers />
   </component>
