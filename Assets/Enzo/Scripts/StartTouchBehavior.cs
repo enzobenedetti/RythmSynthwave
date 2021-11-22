@@ -13,7 +13,7 @@ public class StartTouchBehavior : MonoBehaviour
             number.gameObject.SetActive(true);
             SpriteRenderer numberSprite = number.GetComponent<SpriteRenderer>();
             numberSprite.color = new Color(1f, 1f, 1f, 0f);
-            numberSprite.DOFade(1f, 1f);
+            numberSprite.DOFade(1f, 0.8f + float.Parse(number.name) / 5f).SetEase(Ease.OutQuint);
         }
     }
 
@@ -25,7 +25,7 @@ public class StartTouchBehavior : MonoBehaviour
             foreach (Transform number in transform)
             {
                 SpriteRenderer numberSprite = number.GetComponent<SpriteRenderer>();
-                numberSprite.DOFade(0f, 1f);
+                numberSprite.DOFade(0f, 0.7f + float.Parse(number.name) / 5f);
             }
         }
     }
