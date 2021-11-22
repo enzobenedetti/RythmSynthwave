@@ -6,9 +6,9 @@ using UnityEngine;
 [Serializable]
 public class HighScoreData
 {
-    public float MusicOneHighScore,MusicTwoHighScore,MusicThreeHighScore;
+    public int MusicOneHighScore,MusicTwoHighScore,MusicThreeHighScore;
 
-    public HighScoreData(float highScore, int LevelToSave)
+    public HighScoreData(int highScore, int LevelToSave)
     {
         switch (LevelToSave)
         {

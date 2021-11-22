@@ -15,11 +15,14 @@ public class PauseUiScript : MonoBehaviour
     public TextMeshProUGUI VolumeValueText;
 
     public GameObject PauseTab;
+
+    private float UnPauseAnimationTime;
     
     private void Awake()
     {
-        VolumeSlider.GetComponent<Slider>().value = SaveData.LoadAudioParameters().GameVolume;
+        VolumeSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("GlobalVolume");
         ButtonsScript.SetSelectedObject(FirstSelected);
+        UnPauseAnimationTime = FindObjectOfType<Timer>().unPauseTime;
     }
 
     private void Update()
@@ -44,9 +47,11 @@ public class PauseUiScript : MonoBehaviour
         switch (PauseTab.activeSelf)
         {
         case true:
+            MusicPlayer.QuitPause();
             PauseTab.SetActive(false);
             break;
         case false:
+            MusicPlayer.SetPause();
             PauseTab.SetActive(true);
             break;
         }

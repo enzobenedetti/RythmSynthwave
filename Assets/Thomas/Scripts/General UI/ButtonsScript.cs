@@ -7,16 +7,20 @@ using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
+
 
 
 public class ButtonsScript : MonoBehaviour
 {
     public GameObject FirstSelected;
 
+    public Color SelectedColor;
+
     private void Awake()
     {
         SetSelectedObject(FirstSelected);
-        AudioListener.volume = SaveData.LoadAudioParameters().GameVolume;
+        AudioListener.volume = PlayerPrefs.GetFloat("GameVolume");
         SaveData.SaveAudioParameters(AudioListener.volume);
     }
     
@@ -34,6 +38,7 @@ public class ButtonsScript : MonoBehaviour
         CheckOutline();
     }
 
+    private GameObject LastButton;
     void CheckOutline()
     {
         GameObject[] Buttons = GameObject.FindGameObjectsWithTag("OutlinedButton");
@@ -42,29 +47,26 @@ public class ButtonsScript : MonoBehaviour
         {
             if (button == EventSystem.current.currentSelectedGameObject)
             {
-                OutlineButton(button);
+                if(LastButton != button)
+                {
+                    button.GetComponent<RectTransform>().DOShakePosition(0.75f, 20, 1, 80, false);
+                    OutlineButton(button);
+                }
+                LastButton = button;
             }
             else
             {
-                if (button.GetComponent<Outline>())
-                {
-                    button.GetComponent<Outline>().enabled = false;
-                }
+                button.transform.localScale = Vector3.one;
+                button.GetComponent<Image>().color = Color.white;
             }
         }
     }
 
     public void OutlineButton(GameObject ToOutline)
     {
-        if (ToOutline.GetComponent<Outline>())
+        if (ToOutline.GetComponent<Image>())
         {
-            ToOutline.GetComponent<Outline>().enabled = true;
-        }
-        else
-        {
-            Outline objOutline = ToOutline.AddComponent<Outline>();
-            objOutline.effectColor = Color.cyan;
-            objOutline.effectDistance = new Vector2(5, 5);
+            ToOutline.GetComponent<Image>().color = SelectedColor;
         }
     }
 

@@ -16,7 +16,7 @@ public class AudioOptionsObject : MonoBehaviour
 
     private void Awake()
     {
-        RelatedSlider.value = SaveData.LoadAudioParameters().GameVolume;
+        RelatedSlider.value = PlayerPrefs.GetFloat("GameVolume");
     }
 
     private void Update()
@@ -43,7 +43,6 @@ public class AudioOptionsObject : MonoBehaviour
         }
         
         RelatedValueText.text = RelatedSlider.value.ToString("F1");
-        
     }
 
     public void SaveAudioVolume()

@@ -9,11 +9,6 @@ public class InitializeSaves : MonoBehaviour
 {
     private void Start()
     {
-        if (File.Exists(Application.persistentDataPath + "/Game_Volume.saves") != true)
-        {
-            SaveData.SaveAudioParameters(0.8f);
-        }
-        
         if (File.Exists(Application.persistentDataPath + "/Badges.saves") != true)
         {
             FileStream stream = new FileStream(Application.persistentDataPath + "/Badges.saves", FileMode.Create);
