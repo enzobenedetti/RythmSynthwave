@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
 {
     public static Action GameResumed;
     
-    public static float timer = -1f;
+    public static float timer = -5f;
 
     public static float outOfPauseTimer = 0f;
     public float unPauseTime = 3f;
@@ -44,7 +44,7 @@ public class Timer : MonoBehaviour
     public static void ResetTimer()
     {
         TimerOn = false;
-        timer = -1f;
+        timer = -5f;
     }
 
     public static void UnPauseTimer()
