@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
 
     public static float outOfPauseTimer = 0f;
     public float unPauseTime = 3f;
-    private static bool _isOutOfPause;
+    public static bool IsOutOfPause;
     
     public static bool TimerOn = true;
     
@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
     {
         if (TimerOn)
             timer += Time.deltaTime;
-        if (_isOutOfPause)
+        if (IsOutOfPause)
             outOfPauseTimer += Time.deltaTime;
         if (outOfPauseTimer >= unPauseTime)
         {
@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour
     public static void StartTimer()
     {
         TimerOn = true;
-        _isOutOfPause = false;
+        IsOutOfPause = false;
         outOfPauseTimer = 0f;
     }
 
@@ -49,7 +49,7 @@ public class Timer : MonoBehaviour
 
     public static void UnPauseTimer()
     {
-        _isOutOfPause = true;
+        IsOutOfPause = true;
         outOfPauseTimer = 0f;
     }
 }

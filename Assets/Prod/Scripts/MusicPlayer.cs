@@ -16,6 +16,8 @@ public class MusicPlayer : MonoBehaviour
 
     public static bool OnPause;
 
+    public TransitonScreen transition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,10 +44,10 @@ public class MusicPlayer : MonoBehaviour
         if (track.lenght <= Timer.timer)
         {
             Timer.StopTimer();
-            SceneManager.LoadScene(4);
+            transition.StartCoroutine(transition.LoadScene());
         }
 
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") && !Timer.IsOutOfPause)
         {
             if (!OnPause) SetPause();
             else QuitPause();
