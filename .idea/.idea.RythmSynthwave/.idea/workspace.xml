@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/EndLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/EndLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelOne.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +136,7 @@
       <workItem from="1637488084473" duration="2677000" />
       <workItem from="1637591892499" duration="5409000" />
       <workItem from="1637607669787" duration="748000" />
-      <workItem from="1637773423535" duration="4218000" />
+      <workItem from="1637773423535" duration="4798000" />
     </task>
     <servers />
   </component>
