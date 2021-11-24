@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Material/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Material/Green.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scenes/LevelThree.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo/Scripts/TransitonScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo/Scripts/TransitonScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Scripts/Music Selection/MusicSelectionBrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/Scripts/Music Selection/MusicSelectionBrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,7 @@
       <workItem from="1637488084473" duration="2677000" />
       <workItem from="1637591892499" duration="5409000" />
       <workItem from="1637607669787" duration="748000" />
-      <workItem from="1637773423535" duration="3152000" />
+      <workItem from="1637773423535" duration="3864000" />
     </task>
     <servers />
   </component>

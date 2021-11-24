@@ -9,6 +9,12 @@ public class TransitonScreen : MonoBehaviour
 
     public int sceneId;
 
+    public void ButtonLoadScene(int id)
+    {
+        sceneId = id;
+        StartCoroutine(LoadScene());
+    }
+    
     public IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("changedScene");
