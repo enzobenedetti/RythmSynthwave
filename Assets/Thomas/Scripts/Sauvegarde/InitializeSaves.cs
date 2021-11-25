@@ -16,12 +16,14 @@ public class InitializeSaves : MonoBehaviour
         
         if (File.Exists(Application.persistentDataPath + "/Badges.saves") != true)
         {
-            FileStream stream = new FileStream(Application.persistentDataPath + "/Badges.saves", FileMode.Create);
+            SaveData.SaveBadges(new[] {0, 0, 0});
         }
         
         if (File.Exists(Application.persistentDataPath + "/High_Score.saves") != true)
         {
-            FileStream stream = new FileStream(Application.persistentDataPath + "/High_Score.saves", FileMode.Create);
+            SaveData.SaveHighScore(0, 1);
+            SaveData.SaveHighScore(0, 2);
+            SaveData.SaveHighScore(0, 3);
         }
     }
 }
