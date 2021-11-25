@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="297627db-a165-475e-83a3-6f99dde146dd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RythmSynthwave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thomas/Scripts/Sauvegarde/InitializeSaves.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thomas/Scripts/Sauvegarde/InitializeSaves.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Prefabs/NotePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Prefabs/NotePrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/MoveNote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/MoveNote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prod/Scripts/MusicPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +142,7 @@
       <workItem from="1637591892499" duration="5409000" />
       <workItem from="1637607669787" duration="748000" />
       <workItem from="1637773423535" duration="4798000" />
-      <workItem from="1637870041664" duration="856000" />
+      <workItem from="1637870041664" duration="2614000" />
     </task>
     <servers />
   </component>
