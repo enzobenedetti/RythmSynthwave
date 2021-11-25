@@ -33,8 +33,8 @@ namespace UI
         
         public enum MusicSelection{MusicOne,MusicTwo,MusicThree}
         public MusicSelection CurHighlightedMusic;
-        
-         
+
+        public TransitonScreen transition;
         
         private void Awake()
         {
@@ -80,13 +80,13 @@ namespace UI
             switch (CurHighlightedMusic)
             {
                 case MusicSelection.MusicOne:
-                    SceneManager.LoadScene("LevelOne");
+                    transition.ButtonLoadScene(1);
                     break;
                 case MusicSelection.MusicTwo:
-                    SceneManager.LoadScene("LevelTwo");
+                    transition.ButtonLoadScene(2);
                     break;
                 case MusicSelection.MusicThree:
-                    SceneManager.LoadScene("LevelThree");
+                    transition.ButtonLoadScene(3);
                     break;
             }
             PlayerPrefs.SetFloat("MusicSpeed",Speed);
