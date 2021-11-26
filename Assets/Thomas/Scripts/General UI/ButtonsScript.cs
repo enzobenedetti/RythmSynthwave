@@ -71,7 +71,7 @@ public class ButtonsScript : MonoBehaviour
 
     public static void GoToMainMenu()
     {
-        SceneManager.LoadSceneAsync("MenuScene");
+        SceneManager.LoadScene("MenuScene");
     }
 
 }
