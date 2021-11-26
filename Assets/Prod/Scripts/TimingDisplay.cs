@@ -13,6 +13,7 @@ public class TimingDisplay : MonoBehaviour
     public Sprite outRunSprite;
     
     public Transform zonesDisplay;
+    public Transform zones;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,17 @@ public class TimingDisplay : MonoBehaviour
 
     public void DisplayResult(int index, int quality)
     {
+        if (Jauge.isOutRun) foreach (Transform zone in zones)
+        {
+            if (zone.name == index.ToString())
+            {
+                Sequence sequence = DOTween.Sequence();
+                sequence.Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.cyan, 0.2f))
+                    .Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.white, 0.2f));
+                sequence.Play();
+            }
+        }
+        
         GameObject display = null;
         foreach (Transform zone in zonesDisplay)
         {
