@@ -47,10 +47,11 @@ public class MusicPlayer : MonoBehaviour
             transition.StartCoroutine(transition.LoadScene());
         }
 
+        //if (Input.GetButtonDown("Cancel"))
         if (Input.GetButtonDown("Cancel") && !Timer.IsOutOfPause)
         {
-            if (!OnPause) SetPause();
-            else QuitPause();
+            //if (!OnPause) SetPause();
+            //else QuitPause();
         }
     }
 
@@ -68,13 +69,13 @@ public class MusicPlayer : MonoBehaviour
         }
     }
 
-    void SetPause()
+    public static void SetPause()
     {
         OnPause = true;
         Timer.StopTimer();
     }
 
-    public void QuitPause()
+    public static void QuitPause()
     {
         OnPause = false;
         Timer.UnPauseTimer();

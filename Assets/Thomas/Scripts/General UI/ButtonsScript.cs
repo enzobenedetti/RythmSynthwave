@@ -7,17 +7,25 @@ using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
+
 
 
 public class ButtonsScript : MonoBehaviour
 {
     public GameObject FirstSelected;
 
+    public Color SelectedColor;
+
+    private void Start()
+    {
+        AudioListener.volume = PlayerPrefs.GetFloat("GameVolume");
+        Debug.Log(PlayerPrefs.GetFloat("GameVolume"));
+    }
+
     private void Awake()
     {
         SetSelectedObject(FirstSelected);
-        AudioListener.volume = SaveData.LoadAudioParameters().GameVolume;
-        SaveData.SaveAudioParameters(AudioListener.volume);
     }
     
     public static void QuitGame()
@@ -34,6 +42,7 @@ public class ButtonsScript : MonoBehaviour
         CheckOutline();
     }
 
+    private GameObject LastButton;
     void CheckOutline()
     {
         GameObject[] Buttons = GameObject.FindGameObjectsWithTag("OutlinedButton");
@@ -42,29 +51,15 @@ public class ButtonsScript : MonoBehaviour
         {
             if (button == EventSystem.current.currentSelectedGameObject)
             {
-                OutlineButton(button);
+                //button.GetComponent<RectTransform>().DOShakePosition(0.75f, 20, 1, 80, false);
+                button.GetComponent<Image>().color = SelectedColor;
             }
             else
             {
-                if (button.GetComponent<Outline>())
-                {
-                    button.GetComponent<Outline>().enabled = false;
-                }
+                button.transform.localScale = Vector3.one;
+                button.GetComponent<Image>().color = Color.white;
+                LastButton = null;
             }
-        }
-    }
-
-    public void OutlineButton(GameObject ToOutline)
-    {
-        if (ToOutline.GetComponent<Outline>())
-        {
-            ToOutline.GetComponent<Outline>().enabled = true;
-        }
-        else
-        {
-            Outline objOutline = ToOutline.AddComponent<Outline>();
-            objOutline.effectColor = Color.cyan;
-            objOutline.effectDistance = new Vector2(5, 5);
         }
     }
 

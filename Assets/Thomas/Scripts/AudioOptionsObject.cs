@@ -14,9 +14,9 @@ public class AudioOptionsObject : MonoBehaviour
 
     public Slider RelatedSlider;
 
-    private void Awake()
+    private void Start()
     {
-        RelatedSlider.value = SaveData.LoadAudioParameters().GameVolume;
+        RelatedSlider.value = AudioListener.volume;
     }
 
     private void Update()
@@ -41,14 +41,17 @@ public class AudioOptionsObject : MonoBehaviour
                 ButtonsScript.SetSelectedObject(gameObject);
             }
         }
-        
+        AudioListener.volume = RelatedSlider.value;
+
+        if (PlayerPrefs.GetFloat("GameVolume") != AudioListener.volume )
+        {
+            SaveAudioVolume();
+        }
         RelatedValueText.text = RelatedSlider.value.ToString("F1");
-        
     }
 
     public void SaveAudioVolume()
     {
-        AudioListener.volume = RelatedSlider.value;
         SaveData.SaveAudioParameters(AudioListener.volume);
         Debug.Log("Saved audio at " + RelatedSlider.value);
     }

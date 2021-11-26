@@ -9,9 +9,9 @@ public class InitializeSaves : MonoBehaviour
 {
     private void Start()
     {
-        if (File.Exists(Application.persistentDataPath + "/Game_Volume.saves") != true)
+        if (PlayerPrefs.HasKey("GameVolume") != true)
         {
-            SaveData.SaveAudioParameters(0.8f);
+            PlayerPrefs.SetFloat("GameVolume", 0.8f);
         }
         
         if (File.Exists(Application.persistentDataPath + "/Badges.saves") != true)

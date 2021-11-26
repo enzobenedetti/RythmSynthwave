@@ -7,7 +7,7 @@ using UnityEngine;
 public static class SaveData
 {
    #region High score saves & load
-   public static void SaveHighScore(float highestScoreToSave, int LevelToSave)
+   public static void SaveHighScore(int highestScoreToSave, int LevelToSave)
    {
       BinaryFormatter formatter = new BinaryFormatter();
       string path = Application.persistentDataPath + "/High_Score.saves";
@@ -43,34 +43,7 @@ public static class SaveData
    #region Audio parameters saves & load
    public static void SaveAudioParameters(float audioVolume)
    {
-      BinaryFormatter formatter = new BinaryFormatter();
-      string path = Application.persistentDataPath + "/Game_Volume.saves";
-      FileStream stream = new FileStream(path, FileMode.Create);
-
-      GameVolumeData data = new GameVolumeData(audioVolume);
-      
-      formatter.Serialize(stream, data);
-      stream.Close();
-   }
-
-   public static GameVolumeData LoadAudioParameters()
-   {
-      string path = Application.persistentDataPath + "/Game_Volume.saves";
-      if (File.Exists(path))
-      {
-         BinaryFormatter formatter = new BinaryFormatter();
-         FileStream stream = new FileStream(path, FileMode.Open);
-         
-         GameVolumeData data = formatter.Deserialize(stream) as GameVolumeData;
-         stream.Close();
-         
-         return data;
-      }
-      else
-      {
-         Debug.LogError("File not found in " + path);
-         return null;
-      }
+      PlayerPrefs.SetFloat("GameVolume", audioVolume);
    }
    #endregion
 
