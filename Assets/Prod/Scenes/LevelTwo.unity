@@ -365,6 +365,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6c1413f93401bf84dab5f4c2697d24d6, type: 3}
     - target: {fileID: 9152019785208780630, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: particule
+      value: 
+      objectReference: {fileID: 807481592811539239, guid: 12f1c28285f8f184b960ea6cdd3ed1da, type: 3}
+    - target: {fileID: 9152019785208780630, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: niceSprite
       value: 
       objectReference: {fileID: 21300000, guid: fcda76d628eb0eb4ca119a4f43b7b419, type: 3}
