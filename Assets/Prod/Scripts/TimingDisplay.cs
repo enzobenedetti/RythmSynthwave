@@ -34,7 +34,7 @@ public class TimingDisplay : MonoBehaviour
             if (zone.name == index.ToString())
             {
                 Sequence sequence = DOTween.Sequence();
-                sequence.Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.green, 0.2f))
+                sequence.Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.cyan, 0.2f))
                     .Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.white, 0.2f));
                 sequence.Play();
             }
