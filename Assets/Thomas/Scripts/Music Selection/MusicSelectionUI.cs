@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using TMPro;
 using UI;
 using UnityEngine;
@@ -15,14 +16,14 @@ public class MusicSelectionUI : MonoBehaviour
     public TextMeshProUGUI UpperTitle;
     public TextMeshProUGUI UpperAuthor;
     public TextMeshProUGUI UpperDifficulty;
-    public TextMeshProUGUI UpperBPM;
+    [CanBeNull]public TextMeshProUGUI UpperBPM;
     public TextMeshProUGUI UpperTime;
     
     [Header("LevelSelectMiddleTab")] 
     public TextMeshProUGUI MiddleTitle;
     public TextMeshProUGUI MiddleAuthor;
     public TextMeshProUGUI MiddleDifficulty;
-    public TextMeshProUGUI MiddleBPM;
+    [CanBeNull]public TextMeshProUGUI MiddleBPM;
     public TextMeshProUGUI MiddleTime;
     [Space] 
     public GameObject CommencerObject;
@@ -32,7 +33,7 @@ public class MusicSelectionUI : MonoBehaviour
     public TextMeshProUGUI LowerTitle;
     public TextMeshProUGUI LowerAuthor;
     public TextMeshProUGUI LowerDifficulty;
-    public TextMeshProUGUI LowerBPM;
+    [CanBeNull]public TextMeshProUGUI LowerBPM;
     public TextMeshProUGUI LowerTime;
 
     
@@ -61,7 +62,7 @@ public class MusicSelectionUI : MonoBehaviour
         UpperTitle.text = _musicSelectionBrain.upperDisplayParameters.MusicTitle;
         UpperAuthor.text = _musicSelectionBrain.upperDisplayParameters.MusicAuthor;
         UpperTime.text =(_musicSelectionBrain.upperDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.upperDisplayParameters.Minutes.ToString() +(_musicSelectionBrain.upperDisplayParameters.Seconds > 10 ? ":" : ":0")  + _musicSelectionBrain.upperDisplayParameters.Seconds;
-        UpperBPM.text = _musicSelectionBrain.upperDisplayParameters.BPM.ToString();
+        if (UpperBPM is { }) UpperBPM.text = _musicSelectionBrain.upperDisplayParameters.BPM.ToString();
 
         switch (_musicSelectionBrain.upperDisplayParameters.MusicDifficulty)
         {
@@ -82,7 +83,7 @@ public class MusicSelectionUI : MonoBehaviour
         MiddleTitle.text = _musicSelectionBrain.middleDisplayParameters.MusicTitle;
         MiddleAuthor.text = _musicSelectionBrain.middleDisplayParameters.MusicAuthor;
         MiddleTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.middleDisplayParameters.Minutes.ToString() + (_musicSelectionBrain.middleDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.middleDisplayParameters.Seconds;
-        MiddleBPM.text = _musicSelectionBrain.middleDisplayParameters.BPM.ToString();
+        if (MiddleBPM is { }) MiddleBPM.text = _musicSelectionBrain.middleDisplayParameters.BPM.ToString();
 
         switch (_musicSelectionBrain.middleDisplayParameters.MusicDifficulty)
         {
@@ -115,7 +116,7 @@ public class MusicSelectionUI : MonoBehaviour
         LowerTitle.text = _musicSelectionBrain.lowerDisplayParameters.MusicTitle;
         LowerAuthor.text = _musicSelectionBrain.lowerDisplayParameters.MusicAuthor;
         LowerTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.lowerDisplayParameters.Minutes.ToString() + (_musicSelectionBrain.lowerDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.lowerDisplayParameters.Seconds;
-        LowerBPM.text = _musicSelectionBrain.lowerDisplayParameters.BPM.ToString();
+        if (LowerBPM is { }) LowerBPM.text = _musicSelectionBrain.lowerDisplayParameters.BPM.ToString();
 
         switch (_musicSelectionBrain.lowerDisplayParameters.MusicDifficulty)
         {

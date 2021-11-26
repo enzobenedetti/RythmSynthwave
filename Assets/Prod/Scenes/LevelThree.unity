@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6299597325628522543, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1749346038}
     - target: {fileID: 9086239204497951870, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -409,7 +413,7 @@ Transform:
   - {fileID: 1749757050}
   - {fileID: 1468798835}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &128663763 stripped
 MonoBehaviour:
@@ -1673,7 +1677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4939826948998287645, guid: db4cff7e50706a545b698fd62b27c056, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4939826948998287645, guid: db4cff7e50706a545b698fd62b27c056, type: 3}
       propertyPath: m_AnchorMax.x
