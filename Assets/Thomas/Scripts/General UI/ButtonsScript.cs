@@ -17,11 +17,15 @@ public class ButtonsScript : MonoBehaviour
 
     public Color SelectedColor;
 
+    private void Start()
+    {
+        AudioListener.volume = PlayerPrefs.GetFloat("GameVolume");
+        Debug.Log(PlayerPrefs.GetFloat("GameVolume"));
+    }
+
     private void Awake()
     {
         SetSelectedObject(FirstSelected);
-        AudioListener.volume = PlayerPrefs.GetFloat("GameVolume");
-        SaveData.SaveAudioParameters(AudioListener.volume);
     }
     
     public static void QuitGame()
@@ -47,26 +51,15 @@ public class ButtonsScript : MonoBehaviour
         {
             if (button == EventSystem.current.currentSelectedGameObject)
             {
-                if(LastButton != button)
-                {
-                    button.GetComponent<RectTransform>().DOShakePosition(0.75f, 20, 1, 80, false);
-                    OutlineButton(button);
-                }
-                LastButton = button;
+                //button.GetComponent<RectTransform>().DOShakePosition(0.75f, 20, 1, 80, false);
+                button.GetComponent<Image>().color = SelectedColor;
             }
             else
             {
                 button.transform.localScale = Vector3.one;
                 button.GetComponent<Image>().color = Color.white;
+                LastButton = null;
             }
-        }
-    }
-
-    public void OutlineButton(GameObject ToOutline)
-    {
-        if (ToOutline.GetComponent<Image>())
-        {
-            ToOutline.GetComponent<Image>().color = SelectedColor;
         }
     }
 

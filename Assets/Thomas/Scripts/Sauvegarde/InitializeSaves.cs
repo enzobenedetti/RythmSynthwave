@@ -9,6 +9,11 @@ public class InitializeSaves : MonoBehaviour
 {
     private void Start()
     {
+        if (PlayerPrefs.HasKey("GameVolume") != true)
+        {
+            PlayerPrefs.SetFloat("GameVolume", 0.8f);
+        }
+        
         if (File.Exists(Application.persistentDataPath + "/Badges.saves") != true)
         {
             FileStream stream = new FileStream(Application.persistentDataPath + "/Badges.saves", FileMode.Create);

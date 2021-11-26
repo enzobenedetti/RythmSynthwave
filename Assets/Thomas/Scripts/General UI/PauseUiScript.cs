@@ -14,13 +14,18 @@ public class PauseUiScript : MonoBehaviour
     public GameObject VolumeSlider;
     public TextMeshProUGUI VolumeValueText;
 
-    public GameObject PauseTab;
+    public GameObject PauseTab,PauseAnimationTab;
 
     private float UnPauseAnimationTime;
     
+    
+    private void Start()
+    {
+        AudioListener.volume = PlayerPrefs.GetFloat("GameVolume");
+        VolumeSlider.GetComponent<Slider>().value = AudioListener.volume;
+    }
     private void Awake()
     {
-        VolumeSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("GlobalVolume");
         ButtonsScript.SetSelectedObject(FirstSelected);
         UnPauseAnimationTime = FindObjectOfType<Timer>().unPauseTime;
     }
@@ -40,26 +45,48 @@ public class PauseUiScript : MonoBehaviour
         {
             Pause();
         }
+        
+        AudioListener.volume = VolumeSlider.GetComponent<Slider>().value;
+        
+        if (PlayerPrefs.GetFloat("GameVolume") != AudioListener.volume )
+        {
+            SaveVolume();
+        }
     }
     
     public void Pause()
     {
-        switch (PauseTab.activeSelf)
+        if (PauseAnimationTab.activeSelf != true)
         {
-        case true:
-            MusicPlayer.QuitPause();
-            PauseTab.SetActive(false);
-            break;
-        case false:
-            MusicPlayer.SetPause();
-            PauseTab.SetActive(true);
-            break;
+            switch (PauseTab.activeSelf)
+            {
+                case true:
+                    StartCoroutine("ExitPause");
+                    break;
+                case false:
+                    MusicPlayer.SetPause();
+                    PauseTab.SetActive(true);
+                    if (PauseAnimationTab.activeSelf)
+                    {
+                        PauseAnimationTab.SetActive(false);
+                    }
+                    break;
+            }
         }
+    }
+
+     IEnumerator ExitPause()
+    {
+        
+        MusicPlayer.QuitPause();
+        PauseTab.SetActive(false);
+        PauseAnimationTab.SetActive(true);
+        yield return new WaitForSeconds(UnPauseAnimationTime);
+        PauseAnimationTab.SetActive(false);
     }
 
     public void SaveVolume()
     {
-        AudioListener.volume = VolumeSlider.GetComponent<Slider>().value;
         SaveData.SaveAudioParameters(AudioListener.volume);
         Debug.Log("Saved audio at " + VolumeSlider.GetComponent<Slider>().value);
     }
