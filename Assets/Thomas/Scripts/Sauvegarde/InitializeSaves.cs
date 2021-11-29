@@ -7,11 +7,14 @@ using UnityEngine;
 
 public class InitializeSaves : MonoBehaviour
 {
+    public float FirstAudioVolumeSave;
+    
     private void Start()
     {
         if (PlayerPrefs.HasKey("GameVolume") != true)
         {
-            PlayerPrefs.SetFloat("GameVolume", 0.8f);
+            PlayerPrefs.SetFloat("GameVolume", FirstAudioVolumeSave);
+            Debug.LogWarning("Initialized Game volume at " + FirstAudioVolumeSave);
         }
         
         if (File.Exists(Application.persistentDataPath + "/Badges.saves") != true)
@@ -21,9 +24,9 @@ public class InitializeSaves : MonoBehaviour
         
         if (File.Exists(Application.persistentDataPath + "/High_Score.saves") != true)
         {
-            SaveData.SaveHighScore(0, 1);
-            SaveData.SaveHighScore(0, 2);
-            SaveData.SaveHighScore(0, 3);
+            SaveData.SaveHighScore(new int[]{0,0,0});
+            
+            Debug.LogWarning("Initialized all musics HighScore at 0");
         }
     }
 }
