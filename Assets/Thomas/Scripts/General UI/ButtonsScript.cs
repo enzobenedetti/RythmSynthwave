@@ -41,8 +41,6 @@ public class ButtonsScript : MonoBehaviour
     {
         CheckOutline();
     }
-
-    private GameObject LastButton;
     void CheckOutline()
     {
         GameObject[] Buttons = GameObject.FindGameObjectsWithTag("OutlinedButton");
@@ -58,7 +56,6 @@ public class ButtonsScript : MonoBehaviour
             {
                 button.transform.localScale = Vector3.one;
                 button.GetComponent<Image>().color = Color.white;
-                LastButton = null;
             }
         }
     }

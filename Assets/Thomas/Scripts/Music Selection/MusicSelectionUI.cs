@@ -42,7 +42,7 @@ public class MusicSelectionUI : MonoBehaviour
     [Space]
     public TextMeshProUGUI SpeedValueDisplay;
     
-    private void Awake()
+    private void Start()
     {
         _musicSelectionBrain = GetComponentInParent<MusicSelectionBrain>();
     }
@@ -61,7 +61,7 @@ public class MusicSelectionUI : MonoBehaviour
     {
         UpperTitle.text = _musicSelectionBrain.upperDisplayParameters.MusicTitle;
         UpperAuthor.text = _musicSelectionBrain.upperDisplayParameters.MusicAuthor;
-        UpperTime.text =(_musicSelectionBrain.upperDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.upperDisplayParameters.Minutes.ToString() +(_musicSelectionBrain.upperDisplayParameters.Seconds > 10 ? ":" : ":0")  + _musicSelectionBrain.upperDisplayParameters.Seconds;
+        UpperTime.text =(_musicSelectionBrain.upperDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.upperDisplayParameters.Minutes +(_musicSelectionBrain.upperDisplayParameters.Seconds > 10 ? ":" : ":0")  + _musicSelectionBrain.upperDisplayParameters.Seconds;
         if (UpperBPM is { }) UpperBPM.text = _musicSelectionBrain.upperDisplayParameters.BPM.ToString();
 
         switch (_musicSelectionBrain.upperDisplayParameters.MusicDifficulty)
@@ -82,7 +82,7 @@ public class MusicSelectionUI : MonoBehaviour
     {
         MiddleTitle.text = _musicSelectionBrain.middleDisplayParameters.MusicTitle;
         MiddleAuthor.text = _musicSelectionBrain.middleDisplayParameters.MusicAuthor;
-        MiddleTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.middleDisplayParameters.Minutes.ToString() + (_musicSelectionBrain.middleDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.middleDisplayParameters.Seconds;
+        MiddleTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.middleDisplayParameters.Minutes + (_musicSelectionBrain.middleDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.middleDisplayParameters.Seconds;
         if (MiddleBPM is { }) MiddleBPM.text = _musicSelectionBrain.middleDisplayParameters.BPM.ToString();
 
         switch (_musicSelectionBrain.middleDisplayParameters.MusicDifficulty)
@@ -115,7 +115,7 @@ public class MusicSelectionUI : MonoBehaviour
     {
         LowerTitle.text = _musicSelectionBrain.lowerDisplayParameters.MusicTitle;
         LowerAuthor.text = _musicSelectionBrain.lowerDisplayParameters.MusicAuthor;
-        LowerTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.lowerDisplayParameters.Minutes.ToString() + (_musicSelectionBrain.lowerDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.lowerDisplayParameters.Seconds;
+        LowerTime.text = (_musicSelectionBrain.middleDisplayParameters.Minutes > 10 ? "" : "0") + _musicSelectionBrain.lowerDisplayParameters.Minutes + (_musicSelectionBrain.lowerDisplayParameters.Seconds > 10 ? ":" : ":0") + _musicSelectionBrain.lowerDisplayParameters.Seconds;
         if (LowerBPM is { }) LowerBPM.text = _musicSelectionBrain.lowerDisplayParameters.BPM.ToString();
 
         switch (_musicSelectionBrain.lowerDisplayParameters.MusicDifficulty)

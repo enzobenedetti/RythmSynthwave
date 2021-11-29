@@ -6,22 +6,13 @@ using UnityEngine;
 [Serializable]
 public class HighScoreData
 {
-    public int MusicOneHighScore,MusicTwoHighScore,MusicThreeHighScore;
+    public int[] highscores = new int[3];
 
-    public HighScoreData(int highScore, int LevelToSave)
+    public HighScoreData(int[] newHS)
     {
-        switch (LevelToSave)
-        {
-            case 1:
-                MusicOneHighScore = highScore;
-                break;
-            case 2:
-                MusicTwoHighScore = highScore;
-                break;
-            case 3:
-                MusicThreeHighScore = highScore;
-                break;
-        }
+        highscores[0] = newHS[0];
+        highscores[1] = newHS[1];
+        highscores[2] = newHS[2];
     }
     
 }
