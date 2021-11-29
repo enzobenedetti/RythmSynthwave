@@ -57,6 +57,11 @@ public class EndLevelUI : MonoBehaviour
         JaugeSlider.value = Jauge.jauge;
         result.text = Jauge.jauge >= 75 ? "You win !" : "You lose...";
         perso.sprite = Jauge.jauge >= 75 ? happy : sad;
+
+        if (Score.score > SaveData.LoadHighScore().highscores[Score.music.songId])
+        {
+            
+        }
     }
 
     public void GoToMainMenu()
