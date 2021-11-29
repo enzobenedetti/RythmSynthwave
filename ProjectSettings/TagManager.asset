@@ -39,6 +39,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 1378688121
+    locked: 0
+  - name: FX BG
+    uniqueID: 1911188495
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: FX FOREGROUND
+    uniqueID: 1435623039
+    locked: 0
+  - name: UI
+    uniqueID: 4157497981
     locked: 0
