@@ -61,6 +61,6 @@ public class AnimateZones : MonoBehaviour
 
     void ShakeZone(Transform zone)
     {
-        zone.DOShakeScale(0.05f, Jauge.isOutRun? 2.2f : 0.8f, Jauge.isOutRun? 30 : 10, 0f, true).SetEase(Ease.OutElastic);
+        zone.DOShakeScale(0.05f, Jauge.isOutRun? 3f : 1f, 5, 0f, true).SetEase(Ease.OutElastic);
     }
 }
