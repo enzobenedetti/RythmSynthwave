@@ -8,6 +8,8 @@ public class Track : ScriptableObject
     public int songId;
     
     public string author;
+
+    public Sprite album;
     
     public float bpm;
 

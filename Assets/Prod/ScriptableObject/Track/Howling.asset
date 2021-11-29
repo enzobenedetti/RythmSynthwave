@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songId: 2
   author: Lupus Nocte
+  album: {fileID: 21300000, guid: 71b3ff6f10935c64cacd5d95a7ccaae1, type: 3}
   bpm: 150
   lenght: 184
   completeTrack: {fileID: 8300000, guid: e0aa13708bc51124c92aa2a2d4c4313c, type: 3}

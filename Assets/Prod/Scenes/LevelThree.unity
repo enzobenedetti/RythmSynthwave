@@ -1474,6 +1474,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749757049}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1806140381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9193525312556075054, guid: 7f61301a529b8bb41b425f6e211e46df, type: 3}
+  m_PrefabInstance: {fileID: 7224911671583542717}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2397dbe664d3cf947b2b8a8a1503c399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1996468630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7224911670683909163, guid: 7f61301a529b8bb41b425f6e211e46df, type: 3}
@@ -1659,6 +1670,10 @@ PrefabInstance:
       propertyPath: zones
       value: 
       objectReference: {fileID: 1996468630}
+    - target: {fileID: 9152019785208780630, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
+      propertyPath: AnimateZones
+      value: 
+      objectReference: {fileID: 1806140381}
     - target: {fileID: 9152019785208780630, guid: 192c96dfe5969fe4fb51f798d398e856, type: 3}
       propertyPath: zonesDisplay
       value: 
@@ -1987,6 +2002,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9193525312556075054, guid: 7f61301a529b8bb41b425f6e211e46df, type: 3}
+      propertyPath: TimingDisplay
+      value: 
+      objectReference: {fileID: 1366149406}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f61301a529b8bb41b425f6e211e46df, type: 3}
 --- !u!1001 &8851489879074466303
