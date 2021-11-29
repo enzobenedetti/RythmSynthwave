@@ -28,26 +28,34 @@ public class TimingDisplay : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Feedback d'une notes avec le texte
+    /// </summary>
+    /// <param name="index">index de la note touché</param>
+    /// <param name="quality">qualité de la note touché</param>
     public void DisplayResult(int index, int quality)
     {
-        if (Jauge.isOutRun) 
-        { 
-            foreach (Transform zone in zones)
+        foreach (Transform zone in zones)
+        {
+            if (zone.name == index.ToString())
             {
-                if (zone.name == index.ToString())
-                {
-                    Sequence sequence = DOTween.Sequence();
-                    sequence.Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.cyan, 0.2f))
-                        .Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.white, 0.2f));
-                    sequence.Play();
+                Sequence sequence = DOTween.Sequence();
+                sequence.Append(zone.GetComponent<SpriteRenderer>().DOColor(Jauge.isOutRun?Color.cyan : Color.cyan/2, 0.2f))
+                    .Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.white, 0.2f));
+                sequence.Play();
 
-                    Instantiate(particule, zone.position, Quaternion.identity);
-                    
-                    break;
+                if (Jauge.isOutRun) Instantiate(particule, zone.position, Quaternion.identity);
+                else
+                {
+                    GameObject particuleGo =  Instantiate(particule, zone.position, Quaternion.identity);
+                    ParticleSystem.EmissionModule emissionModule = particuleGo.GetComponent<ParticleSystem>().emission;
+                    emissionModule.rateOverTime = Score.Combo * 20;
                 }
+                
+                break;
             }
         }
-        
+
         GameObject display = null;
         foreach (Transform zone in zonesDisplay)
         {

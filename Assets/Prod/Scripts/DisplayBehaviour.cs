@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class DisplayBehaviour : MonoBehaviour
 {
@@ -17,12 +18,18 @@ public class DisplayBehaviour : MonoBehaviour
     void Update()
     {
         if (timerBalise + 0.5f <= Timer.timer)
+        {
+            transform.rotation = Quaternion.identity;
             gameObject.SetActive(false);
+        }
+            
     }
 
     private void OnEnable()
     {
         timerBalise = Timer.timer;
+        transform.DOKill();
+        transform.DOPunchScale(Vector3.one, 0.45f, Jauge.isOutRun? 5 : 3);
     }
 
     private void OnDisable()
