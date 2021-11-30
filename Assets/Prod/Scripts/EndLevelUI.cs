@@ -60,7 +60,11 @@ public class EndLevelUI : MonoBehaviour
 
         if (Score.score > SaveData.LoadHighScore().highscores[Score.music.songId])
         {
-            
+            int[] MusicHsData = new int[3] {0, 0, 0};
+            if (!SaveData.HighScoresExist()) SaveData.SaveBadges(new[] {0, 0, 0});
+            else MusicHsData = SaveData.LoadHighScore().highscores;
+            MusicHsData[Score.music.songId] = Score.score;
+            SaveData.SaveHighScore(MusicHsData);
         }
     }
 
