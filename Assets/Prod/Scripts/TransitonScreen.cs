@@ -18,7 +18,7 @@ public class TransitonScreen : MonoBehaviour
     public IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("changedScene");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneId);
     }
 }
