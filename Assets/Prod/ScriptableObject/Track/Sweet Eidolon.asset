@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songId: 0
   author: Andreas Boldt
+  album: {fileID: 21300000, guid: 5b0634d9b8d4f084d9fcb749f39f5795, type: 3}
   bpm: 78
   lenght: 153
   completeTrack: {fileID: 8300000, guid: 562c4d182d6fe304cbc08c94b16c3441, type: 3}

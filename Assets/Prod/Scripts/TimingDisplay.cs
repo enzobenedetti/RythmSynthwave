@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,9 @@ public class TimingDisplay : MonoBehaviour
     public Transform zones;
     public GameObject particule;
 
+    public static bool[] zoneAnimating = new bool[9];
+    private float[] timeBalise = new float[9];
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +29,14 @@ public class TimingDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        for (int f = 0; f <= timeBalise.Length - 1; f++)
+        {
+            if (timeBalise[f] <= Timer.timer + 0.4f && zoneAnimating[f])
+            {
+                timeBalise[f] = float.MaxValue;
+                zoneAnimating[f] = false;
+            }
+        }
     }
 
     /// <summary>
@@ -37,12 +48,19 @@ public class TimingDisplay : MonoBehaviour
     {
         foreach (Transform zone in zones)
         {
-            if (zone.name == index.ToString())
+            if (zone.name == index.ToString() && quality > 1)
             {
+                zoneAnimating[int.Parse(zone.name)-1] = true;
+                timeBalise[int.Parse(zone.name)-1] = Timer.timer;
+                
                 Sequence sequence = DOTween.Sequence();
-                sequence.Append(zone.GetComponent<SpriteRenderer>().DOColor(Jauge.isOutRun?Color.cyan : Color.cyan/2, 0.2f))
-                    .Append(zone.GetComponent<SpriteRenderer>().DOColor(Color.white, 0.2f));
+                sequence.Append(zone.DOShakeScale(0.1f, Jauge.isOutRun ? 3f : 1f, 5, 0f, true).SetEase(Ease.OutElastic))
+                    .Append(zone.DOScale(Vector3.one, 2f)).SetEase(Ease.InElastic)
+                    .Insert(0f,zone.GetComponent<SpriteRenderer>()
+                        .DOColor(Jauge.isOutRun ? Color.cyan : Color.cyan / 2, 0.2f)).SetEase(Ease.OutQuint)
+                    .Insert(0.2f, zone.GetComponent<SpriteRenderer>().DOColor(Color.white, 0.2f).SetEase(Ease.InQuint));
                 sequence.Play();
+                
 
                 if (Jauge.isOutRun) Instantiate(particule, zone.position, Quaternion.identity);
                 else

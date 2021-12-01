@@ -9,6 +9,7 @@ public class EndLevelUI : MonoBehaviour
 {
     public TextMeshProUGUI musicName;
     public TextMeshProUGUI author;
+    public Image musicImage;
 
     public GetBadges BadgesScript;
 
@@ -33,6 +34,7 @@ public class EndLevelUI : MonoBehaviour
     {
         musicName.text = Score.music.name;
         author.text = Score.music.author;
+        musicImage.sprite = Score.music.album;
 
         switch (BadgesScript.badgesId[Score.music.songId])
         {

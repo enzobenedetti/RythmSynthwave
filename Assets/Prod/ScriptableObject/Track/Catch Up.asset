@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songId: 1
   author: Falcon Dives
+  album: {fileID: 21300000, guid: dd5ab204d2aec2d498a8f44b8324015f, type: 3}
   bpm: 110
   lenght: 121
   completeTrack: {fileID: 8300000, guid: 06d2aa311e9221c46878b1efcdc5abb2, type: 3}
