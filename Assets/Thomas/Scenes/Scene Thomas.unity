@@ -810,6 +810,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6119764210946185459, guid: 8689a2d21bee0d84e866267f977c74a0, type: 3}
+      propertyPath: FirstAudioVolumeSave
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7032818249573222262, guid: 8689a2d21bee0d84e866267f977c74a0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

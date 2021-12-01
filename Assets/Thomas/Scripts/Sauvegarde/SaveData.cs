@@ -12,18 +12,16 @@ public static class SaveData
       BinaryFormatter formatter = new BinaryFormatter();
       string path = Application.persistentDataPath + "/High_Score.saves";
       FileStream stream;
-      if (File.Exists(path))
+
+      using (stream = new FileStream(path, FileMode.Create))
       {
-         stream = new FileStream(path, FileMode.Open);
+         HighScoreData data = new HighScoreData(hS);
+         formatter.Serialize(stream, data);
+         Debug.Log("HighScores Saved with value: " + data.highscores[0] + ", " + data.highscores[1] + ", " + data.highscores[2]);
       }
-      else
-      {
-         stream = new FileStream(path, FileMode.Create);
-      }
-      HighScoreData data = new HighScoreData(hS);
       
-      formatter.Serialize(stream, data);
-      stream.Close();
+      
+      //stream.Close();
    }
 
    public static HighScoreData LoadHighScore()
@@ -44,6 +42,11 @@ public static class SaveData
          Debug.LogError("File not found in " + path);
          return null;
       }
+   }
+   
+   public static bool HighScoresExist() {
+      string path = Application.persistentDataPath + "/High_Score.saves";
+      return File.Exists(path);
    }
    #endregion
    
