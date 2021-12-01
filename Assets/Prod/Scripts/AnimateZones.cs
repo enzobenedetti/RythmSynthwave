@@ -16,7 +16,7 @@ public class AnimateZones : MonoBehaviour
     public Transform zone9;
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (Timer.TimerOn)
         {
@@ -61,6 +61,7 @@ public class AnimateZones : MonoBehaviour
 
     void ShakeZone(Transform zone)
     {
-        zone.DOShakeScale(0.05f, Jauge.isOutRun? 3f : 1f, 5, 0f, true).SetEase(Ease.OutElastic);
+        if (!TimingDisplay.zoneAnimating[int.Parse(zone.name)-1])
+            zone.DOShakeScale(0.05f, Jauge.isOutRun? 3f : 1f, 5, 0f, true).SetEase(Ease.OutElastic);
     }
 }
