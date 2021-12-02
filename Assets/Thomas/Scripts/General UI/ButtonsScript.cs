@@ -14,18 +14,28 @@ using DG.Tweening;
 public class ButtonsScript : MonoBehaviour
 {
     public GameObject FirstSelected;
-
+    [CanBeNull]public GameObject TitleScreen;
+    [CanBeNull]public GameObject MainMenu;
+    
     public Color SelectedColor;
+
+    [CanBeNull]public AudioSource AudioLaunch;
 
     private void Start()
     {
         AudioListener.volume = PlayerPrefs.GetFloat("GameVolume");
         Debug.Log(PlayerPrefs.GetFloat("GameVolume"));
-    }
 
-    private void Awake()
-    {
-        SetSelectedObject(FirstSelected);
+        if (PlayerPrefs.GetInt("HasSeenTitleScreen") != 1)
+        {
+            DisplayTitleScreen();
+        }
+        else
+        {
+            if (TitleScreen != null) TitleScreen.SetActive(false);    
+            if(MainMenu != null)MainMenu.SetActive(true);
+            SetSelectedObject(FirstSelected);
+        }
     }
     
     public static void QuitGame()
@@ -40,6 +50,20 @@ public class ButtonsScript : MonoBehaviour
     private void Update()
     {
         CheckOutline();
+
+        if (TitleScreen != null)
+        {
+            if (TitleScreen.activeSelf)
+            {
+                if (Input.anyKeyDown)
+                {
+                    TitleScreen.SetActive(false);
+                    if (MainMenu != null)MainMenu.SetActive(true);
+                    SetSelectedObject(FirstSelected);
+                    if(AudioLaunch != null)AudioLaunch.Play();
+                }
+            }
+        } 
     }
     void CheckOutline()
     {
@@ -71,4 +95,10 @@ public class ButtonsScript : MonoBehaviour
         SceneManager.LoadScene("MenuScene");
     }
 
+
+    void DisplayTitleScreen()
+    {
+        PlayerPrefs.SetInt("HasSeenTitleScreen", 1);
+        TitleScreen.SetActive(true);
+    }
 }
