@@ -311,6 +311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transitions
       objectReference: {fileID: 0}
+    - target: {fileID: 4939826948998287640, guid: db4cff7e50706a545b698fd62b27c056, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4939826948998287645, guid: db4cff7e50706a545b698fd62b27c056, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -404,6 +408,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1080390948523919823, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.7411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080390948523919823, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9843137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080390948523919823, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.2901961
+      objectReference: {fileID: 0}
     - target: {fileID: 2547902706618276997, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -547,7 +563,11 @@ PrefabInstance:
     - target: {fileID: 8461091143317708137, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1799012236}
+      objectReference: {fileID: 1736701661}
+    - target: {fileID: 8461091143317708137, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
 --- !u!114 &1736701660 stripped
@@ -561,6 +581,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1736701661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 932600128143297685, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+  m_PrefabInstance: {fileID: 1736701659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1799012236 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6075298377901651439, guid: db4cff7e50706a545b698fd62b27c056, type: 3}
