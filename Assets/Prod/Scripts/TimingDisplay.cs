@@ -21,9 +21,9 @@ public class TimingDisplay : MonoBehaviour
     private float[] timeBalise = new float[9];
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        DOTween.SetTweensCapacity(7812,50);
     }
 
     // Update is called once per frame

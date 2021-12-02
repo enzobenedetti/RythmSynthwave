@@ -23,8 +23,8 @@ public class CameraZoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameCam.transform.DOMoveZ(((Jauge.jauge / 2f) + 1f) - 52f, 0.2f).SetEase(Ease.Linear);
-        distance = -(((Jauge.jauge / 2f) + 1f) - 52f);
+        gameCam.transform.DOMoveZ(Mathf.Pow(Jauge.jauge / 2f, 1.1f) - 76f, 0.2f).SetEase(Ease.Linear);
+        distance = -(Mathf.Pow(Jauge.jauge / 2f, 1.1f) - 76f);
         gameCam.DOFieldOfView(GetFieldOfView(), 0.2f).SetEase(Ease.Linear);
         
     }
