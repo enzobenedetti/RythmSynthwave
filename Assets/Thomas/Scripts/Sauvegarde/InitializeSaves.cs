@@ -9,7 +9,7 @@ public class InitializeSaves : MonoBehaviour
 {
     public float FirstAudioVolumeSave;
     
-    private void Start()
+    private void Awake()
     {
         if (PlayerPrefs.HasKey("GameVolume") != true)
         {
