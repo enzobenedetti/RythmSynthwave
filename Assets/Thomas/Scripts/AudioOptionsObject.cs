@@ -14,6 +14,8 @@ public class AudioOptionsObject : MonoBehaviour
 
     public Slider RelatedSlider;
 
+    public AudioSource UiReturnSound;
+    
     private void Start()
     {
         RelatedSlider.value = AudioListener.volume;
@@ -27,6 +29,7 @@ public class AudioOptionsObject : MonoBehaviour
              if (Input.GetButtonDown("Cancel"))
              {
                  ButtonsScript.SetSelectedObject(AudioTabButton);
+                 UiReturnSound.Play();
              }
         }
         else
@@ -39,6 +42,7 @@ public class AudioOptionsObject : MonoBehaviour
             if (Input.GetButtonDown("Cancel"))
             {
                 ButtonsScript.SetSelectedObject(gameObject);
+                UiReturnSound.Play();
             }
         }
         AudioListener.volume = RelatedSlider.value;
