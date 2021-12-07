@@ -42,7 +42,8 @@ public class CheckNote : MonoBehaviour
             
             foreach (Note note in notesLeft)
             {
-                if (note.timeCode - badBuffer <= Timer.timer && note.timeCode + okBuffer >= Timer.timer)
+                if (note.timeCode - badBuffer <= Timer.timer && note.timeCode + okBuffer >= Timer.timer &&
+                    Timer.timer >= note.timeCode - (60/MusicPlayer.track.bpm) * 3 * (1/MusicPlayer.Speed))
                 {
                     aviableNote.Add(note);
                 }
