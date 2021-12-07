@@ -52,9 +52,10 @@ public class TimingDisplay : MonoBehaviour
             {
                 zoneAnimating[int.Parse(zone.name)-1] = true;
                 timeBalise[int.Parse(zone.name)-1] = Timer.timer;
-                
+
+                zone.DOPause();
                 Sequence sequence = DOTween.Sequence();
-                sequence.Append(zone.DOShakeScale(0.1f, Jauge.isOutRun ? 3f : 1f, 5, 0f, true).SetEase(Ease.OutElastic))
+                sequence.Append(zone.DOPunchScale(Jauge.isOutRun? Vector3.one * 2f : Vector3.one * 1.5f, 1f, 5, 2.2f).SetEase(Ease.OutElastic))
                     .Append(zone.DOScale(Vector3.one, 2f)).SetEase(Ease.InElastic)
                     .Insert(0f,zone.GetComponent<SpriteRenderer>()
                         .DOColor(Jauge.isOutRun ? Color.cyan : Color.cyan / 2, 0.2f)).SetEase(Ease.OutQuint)
