@@ -89,6 +89,6 @@ public class PauseUiScript : MonoBehaviour
     public void SaveVolume()
     {
         SaveData.SaveAudioParameters(AudioListener.volume);
-        Debug.Log("Saved audio at " + VolumeSlider.GetComponent<Slider>().value);
+        //Debug.Log("Saved audio at " + VolumeSlider.GetComponent<Slider>().value);
     }
 }

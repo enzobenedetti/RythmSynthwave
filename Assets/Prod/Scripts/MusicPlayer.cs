@@ -26,6 +26,7 @@ public class MusicPlayer : MonoBehaviour
         Score.ResetScore();
         Jauge.Reset();
         MoveNote.speed = track.bpm / 60 * Speed;
+        OnPause = false;
         Timer.ResetTimer();
         Timer.StartTimer();
         ScoreUI.UpdateUI();
