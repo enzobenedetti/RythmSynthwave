@@ -61,7 +61,8 @@ public class AnimateZones : MonoBehaviour
 
     void ShakeZone(Transform zone)
     {
-        if (!TimingDisplay.zoneAnimating[int.Parse(zone.name)-1])
-            zone.DOShakeScale(0.05f, Jauge.isOutRun? 3f : 1f, 5, 0f, true).SetEase(Ease.OutElastic);
+        if (!TimingDisplay.zoneAnimating[int.Parse(zone.name) - 1])
+            //zone.DOShakeScale(0.05f, Jauge.isOutRun? 3f : 1.5f, 5, 0f, true).SetEase(Ease.OutElastic);
+            zone.DOPunchScale(Jauge.isOutRun? Vector3.one * 1.5f : Vector3.one * 1.3f, 0.08f, 5, 2f).SetEase(Ease.OutElastic);
     }
 }
