@@ -9623,7 +9623,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: you can use these key preset to play & naviguate trough menus
+  m_text: You can use this key preset to play & navigate  through menus.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b0fbe3d3ceeea6544a295547b403c303, type: 2}
   m_sharedMaterial: {fileID: 9193979988458287558, guid: b0fbe3d3ceeea6544a295547b403c303, type: 2}
