@@ -1524,6 +1524,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 13.319946
       objectReference: {fileID: 0}
+    - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1970785194}
+    - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1925972202}
+    - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonLoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TransitonScreen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8672517154330149173, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
@@ -1558,6 +1586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+--- !u!82 &1925972202 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7482625254266778800, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+  m_PrefabInstance: {fileID: 1925972201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1970785193
 PrefabInstance:
   m_ObjectHideFlags: 0
