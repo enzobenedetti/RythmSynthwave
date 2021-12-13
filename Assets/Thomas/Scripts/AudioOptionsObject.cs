@@ -10,11 +10,7 @@ public class AudioOptionsObject : MonoBehaviour
 {
     public TextMeshProUGUI RelatedValueText;
 
-    public GameObject AudioTabButton;
-
     public Slider RelatedSlider;
-
-    public AudioSource UiReturnSound;
     
     private void Start()
     {
@@ -23,28 +19,6 @@ public class AudioOptionsObject : MonoBehaviour
 
     private void Update()
     {
-        if (EventSystem.current.currentSelectedGameObject == gameObject)
-        {
-             gameObject.GetComponent<TextMeshProUGUI>().color = Color.cyan;
-             if (Input.GetButtonDown("Cancel"))
-             {
-                 ButtonsScript.SetSelectedObject(AudioTabButton);
-                 UiReturnSound.Play();
-             }
-        }
-        else
-        {
-            gameObject.GetComponent<TextMeshProUGUI>().color = Color.black;
-        }
-        
-        if (EventSystem.current.currentSelectedGameObject == RelatedSlider.gameObject)
-        {
-            if (Input.GetButtonDown("Cancel"))
-            {
-                ButtonsScript.SetSelectedObject(gameObject);
-                UiReturnSound.Play();
-            }
-        }
         AudioListener.volume = RelatedSlider.value;
 
         if (PlayerPrefs.GetFloat("GameVolume") != AudioListener.volume )
