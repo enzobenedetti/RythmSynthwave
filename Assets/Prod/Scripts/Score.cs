@@ -43,25 +43,31 @@ public static class Score
 
     public static void GotPerfect()
     {
-        int scoreToAdd = 10 + AddCombo();
+        float scoreToAdd = 10 + AddCombo();
         if (Jauge.isOutRun) scoreToAdd *= 2;
-        score += scoreToAdd;
+        float speedMultiplier = PlayerPrefs.GetFloat("MusicSpeed");
+        scoreToAdd *= 1 + ((speedMultiplier - 1) / 2);
+        score += (int)scoreToAdd;
         PerfectCount++;
         ScoreUI.UpdateUI();
     }
     public static void GotNice()
     {
-        int scoreToAdd = 5 + AddCombo();
+        float scoreToAdd = 5 + AddCombo();
         if (Jauge.isOutRun) scoreToAdd *= 2;
-        score += scoreToAdd;
+        float speedMultiplier = PlayerPrefs.GetFloat("MusicSpeed");
+        scoreToAdd *= 1 + ((speedMultiplier - 1) / 2);
+        score += (int)scoreToAdd;
         NiceCount++;
         ScoreUI.UpdateUI();
     }
     public static void GotOk()
     {
-        int scoreToAdd = 1 + AddCombo();
+        float scoreToAdd = 1 + AddCombo();
         if (Jauge.isOutRun) scoreToAdd *= 2;
-        score += scoreToAdd;
+        float speedMultiplier = PlayerPrefs.GetFloat("MusicSpeed");
+        scoreToAdd *= 1 + ((speedMultiplier - 1) / 2);
+        score += (int)scoreToAdd;
         OkCount++;
         ScoreUI.UpdateUI();
     }
