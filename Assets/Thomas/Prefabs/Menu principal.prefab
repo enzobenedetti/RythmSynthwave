@@ -3934,6 +3934,7 @@ GameObject:
   - component: {fileID: 3616557672025597621}
   - component: {fileID: 1411442454941046825}
   - component: {fileID: 6346223401184700771}
+  - component: {fileID: 4136015770888691683}
   m_Layer: 5
   m_Name: Options
   m_TagString: OutlinedButton
@@ -4018,7 +4019,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 9168913497373445843}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -4091,6 +4092,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &4136015770888691683
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225630493937209564}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3545199641193470410
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,6 +4371,7 @@ GameObject:
   - component: {fileID: 1679084187169514066}
   - component: {fileID: 886043390026031513}
   - component: {fileID: 2209669037624853224}
+  - component: {fileID: 2063246035054039014}
   m_Layer: 5
   m_Name: Quitter
   m_TagString: OutlinedButton
@@ -4435,7 +4456,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 4980939242562959678}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -4484,6 +4505,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &2063246035054039014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879317128066973212}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3888468635470462596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5078,6 +5118,7 @@ GameObject:
   - component: {fileID: 9132402630636585267}
   - component: {fileID: 2614810582392265507}
   - component: {fileID: 6577722271814808280}
+  - component: {fileID: 3899547171658392553}
   m_Layer: 5
   m_Name: Retour
   m_TagString: OutlinedButton
@@ -5162,7 +5203,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 4803851353706914708}
     m_SelectOnRight: {fileID: 3349053102461655400}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -5235,6 +5276,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &3899547171658392553
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193678917342751819}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4313552333734172834
 GameObject:
   m_ObjectHideFlags: 0
@@ -5798,6 +5858,7 @@ GameObject:
   - component: {fileID: 7667260797912502132}
   - component: {fileID: 853304719529180635}
   - component: {fileID: 4803851353706914708}
+  - component: {fileID: 6223583259820532297}
   m_Layer: 5
   m_Name: High Scores
   m_TagString: OutlinedButton
@@ -5882,7 +5943,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 3349053102461655400}
     m_SelectOnRight: {fileID: 6577722271814808280}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -5979,6 +6040,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!95 &6223583259820532297
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689582831732325145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4748612060097910365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6670,6 +6750,7 @@ GameObject:
   - component: {fileID: 4980939242562959676}
   - component: {fileID: 4980939242562959677}
   - component: {fileID: 4980939242562959678}
+  - component: {fileID: 1996082122149349457}
   m_Layer: 5
   m_Name: Selection
   m_TagString: OutlinedButton
@@ -6754,7 +6835,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 6346223401184700771}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6827,6 +6908,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &1996082122149349457
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980939242562959672}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4980939243171960413
 GameObject:
   m_ObjectHideFlags: 0
@@ -6926,7 +7026,7 @@ MonoBehaviour:
   FirstSelected: {fileID: 4980939242562959672}
   TitleScreen: {fileID: 8738289682866809170}
   MainMenu: {fileID: 4980939242201738940}
-  SelectedColor: {r: 0.2901961, g: 0.9843138, b: 0.7411765, a: 1}
+  SelectedColor: {r: 0, g: 1, b: 0.64971757, a: 1}
   AudioLaunch: {fileID: 2511457196585846957}
 --- !u!1 &4980939243179960217
 GameObject:
@@ -8606,6 +8706,7 @@ GameObject:
   - component: {fileID: 1342411839067477761}
   - component: {fileID: 2627361711012307429}
   - component: {fileID: 9168913497373445843}
+  - component: {fileID: 2206506203485220081}
   m_Layer: 5
   m_Name: "Cr\xE9dits"
   m_TagString: OutlinedButton
@@ -8690,7 +8791,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 2209669037624853224}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -8763,6 +8864,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &2206506203485220081
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5907698151883042378}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6025517959528483407
 GameObject:
   m_ObjectHideFlags: 0
@@ -9096,7 +9216,7 @@ Animator:
   m_GameObject: {fileID: 6282098267241453710}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11380,6 +11500,7 @@ GameObject:
   - component: {fileID: 418467041199886904}
   - component: {fileID: 1734297732989936304}
   - component: {fileID: 401927901010706835}
+  - component: {fileID: 5039902161826585946}
   m_Layer: 5
   m_Name: Button
   m_TagString: OutlinedButton
@@ -11464,7 +11585,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -11561,6 +11682,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &5039902161826585946
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353524648702818694}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48c38ddcbc9741143912b73eda1ba2c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8407287904021080627
 GameObject:
   m_ObjectHideFlags: 0
