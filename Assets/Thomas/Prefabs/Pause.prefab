@@ -7505,7 +7505,7 @@ MonoBehaviour:
   FirstSelected: {fileID: 7602729130611810336}
   TitleScreen: {fileID: 0}
   MainMenu: {fileID: 0}
-  SelectedColor: {r: 0.94509804, g: 0.9137255, b: 0.4509804, a: 1}
+  SelectedColor: {r: 0.2901961, g: 0.9843137, b: 0.7411765, a: 1}
   AudioLaunch: {fileID: 0}
 --- !u!1 &9115519038526722890
 GameObject:
