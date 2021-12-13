@@ -43,7 +43,9 @@ public class ButtonsScript : MonoBehaviour
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
-        
+
+        Application.ExternalEval("document.location.reload(true)");
+        //Application.OpenURL("https://forest-ier.itch.io/rythmwave");
         Application.Quit();
     }
     
