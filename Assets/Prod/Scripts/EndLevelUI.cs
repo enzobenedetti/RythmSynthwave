@@ -20,6 +20,8 @@ public class EndLevelUI : MonoBehaviour
     public Image perso;
     public Sprite happy;
     public Sprite sad;
+
+    public TextMeshProUGUI speed;
     
     public TextMeshProUGUI score;
     public TextMeshProUGUI perfect;
@@ -49,7 +51,8 @@ public class EndLevelUI : MonoBehaviour
                 badges.sprite = perfectBadge;
                 break;
         }
-        
+
+        speed.text = "Speed : x" + PlayerPrefs.GetFloat("MusicSpeed") + " Score = x" + (1 + ((PlayerPrefs.GetFloat("MusicSpeed") - 1) / 2));
         score.text = Score.score.ToString();
         perfect.text = "Perfect : " + Score.PerfectCount;
         nice.text = "Nice : " + Score.NiceCount;
