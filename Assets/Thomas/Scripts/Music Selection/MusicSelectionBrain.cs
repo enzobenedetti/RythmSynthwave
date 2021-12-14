@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -27,9 +28,16 @@ namespace UI
         public float MusicOneMaxSpeed;
         public float MusicTwoMaxSpeed;
         public float MusicThreeMaxSpeed;
+        [Space] 
+        public float AnimationTime = 0.3f;
+
+        public AudioSource LaunchGameSound,ClickSound;
+
+        [CanBeNull] public Animator LevelSelectorAnimator;
         
         [Header("Checks")] 
         public bool OnMiddleTab;
+        private bool IsInAnimation;
         
         public enum MusicSelection{MusicOne,MusicTwo,MusicThree}
         public MusicSelection CurHighlightedMusic;
@@ -65,10 +73,12 @@ namespace UI
         {
             if (OnMiddleTab)
             {
-                if (Input.GetButtonDown("Up")) ChangeMusicDown();
+                if (IsInAnimation == false)
+                {
+                    if (Input.GetButtonDown("Up")) StartCoroutine(nameof(ChangeMusicUp));
                 
-                if (Input.GetButtonDown("Down")) ChangeMusicUp();
-
+                    if (Input.GetButtonDown("Down")) StartCoroutine(nameof(ChangeMusicDown));
+                }
                 if (Input.GetButtonDown("Down Left")) ChangeSpeedDown();
                 
                 if (Input.GetButtonDown("Down Right")) ChangeSpeedUp();
@@ -77,25 +87,33 @@ namespace UI
         
         public void StartSelectedMusic()
         {
-            switch (CurHighlightedMusic)
+            if (IsInAnimation == false)
             {
-                case MusicSelection.MusicOne:
-                    transition.ButtonLoadScene(1);
-                    break;
-                case MusicSelection.MusicTwo:
-                    transition.ButtonLoadScene(2);
-                    break;
-                case MusicSelection.MusicThree:
-                    transition.ButtonLoadScene(3);
-                    break;
+                switch (CurHighlightedMusic)
+                {
+                    case MusicSelection.MusicOne:
+                        transition.ButtonLoadScene(1);
+                        break;
+                    case MusicSelection.MusicTwo:
+                        transition.ButtonLoadScene(2);
+                        break;
+                    case MusicSelection.MusicThree:
+                        transition.ButtonLoadScene(3);
+                        break;
+                }
+                PlayerPrefs.SetFloat("MusicSpeed",Speed);
+                LaunchGameSound.Play();
             }
-            PlayerPrefs.SetFloat("MusicSpeed",Speed);
         }
 
-        public void ChangeMusicDown()
+        public IEnumerator ChangeMusicDown()
         {
+            ClickSound.Play();
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoDown",true);
+            IsInAnimation = true;
+            yield return new WaitForSeconds(AnimationTime + .01f);
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoDown",false);
             Speed = 1;
-            
             switch (CurHighlightedMusic)
                { 
                    case MusicSelection.MusicOne:
@@ -108,12 +126,18 @@ namespace UI
                        CurHighlightedMusic = MusicSelection.MusicOne; 
                        break;
             }
+
+            IsInAnimation = false;
         }
         
-        void ChangeMusicUp()
+        public IEnumerator ChangeMusicUp()
         {
+            ClickSound.Play();
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoUp",true);
+            IsInAnimation = true;
+            yield return new WaitForSeconds(AnimationTime + .01f);
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoUp",false);
             Speed = 1;
-            
             switch (CurHighlightedMusic)
             {
                 case MusicSelection.MusicOne:
@@ -126,6 +150,8 @@ namespace UI
                     CurHighlightedMusic = MusicSelection.MusicTwo;
                     break;
             }
+
+            IsInAnimation = false;
         }
 
         void CheckHighlightedMusic()
