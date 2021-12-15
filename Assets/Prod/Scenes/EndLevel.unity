@@ -420,6 +420,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3764019683202637714, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4461707594245260361, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -432,6 +436,18 @@ PrefabInstance:
       propertyPath: transition
       value: 
       objectReference: {fileID: 1799012236}
+    - target: {fileID: 7841853448675262048, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7841853448675262048, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7841853448675262048, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8461091141929701920, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_Pivot.x
       value: 0
