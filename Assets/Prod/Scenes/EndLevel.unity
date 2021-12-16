@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!95 &180609418 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3681250628137690411, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
-  m_PrefabInstance: {fileID: 1736701659}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &504394119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8461091143317708136, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
@@ -508,7 +503,7 @@ PrefabInstance:
     - target: {fileID: 4890790932858604580, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: LevelSelectorAnimator
       value: 
-      objectReference: {fileID: 180609418}
+      objectReference: {fileID: 0}
     - target: {fileID: 4950650626603463904, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -525,6 +520,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6061888701457635611, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1799012236}
     - target: {fileID: 7697699362447481942, guid: 26ff445af59c9c24f9613ea2be2a86ff, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
