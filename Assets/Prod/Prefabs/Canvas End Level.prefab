@@ -1129,7 +1129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &27191974523700508
@@ -3062,7 +3062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &5624906089292073390
@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bab13289f4e4a00429bb138b1b6ec9fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36abab9a550d4b2469f8e6896f65ea26, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6759,7 +6759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bab13289f4e4a00429bb138b1b6ec9fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36abab9a550d4b2469f8e6896f65ea26, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8733,7 +8733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bab13289f4e4a00429bb138b1b6ec9fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36abab9a550d4b2469f8e6896f65ea26, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9143,6 +9143,8 @@ MonoBehaviour:
   FirstSelected: {fileID: 8461091143317708136}
   TitleScreen: {fileID: 0}
   MainMenu: {fileID: 0}
+  Background: {fileID: 0}
+  BlurredBackground: {fileID: 0}
   SelectedColor: {r: 0.2901961, g: 0.9843137, b: 0.7411765, a: 1}
   AudioLaunch: {fileID: 0}
 --- !u!1 &8461091142165101506
