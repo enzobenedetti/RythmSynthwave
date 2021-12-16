@@ -17,6 +17,8 @@ public class ButtonsScript : MonoBehaviour
     [CanBeNull]public GameObject TitleScreen;
     [CanBeNull]public GameObject MainMenu;
     
+    [CanBeNull]public Sprite Background,BlurredBackground;
+    
     public Color SelectedColor;
 
     [CanBeNull]public AudioSource AudioLaunch;
@@ -44,7 +46,7 @@ public class ButtonsScript : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
 
-        Application.ExternalEval("document.location.reload(true)");
+        //Application.ExternalEval("document.location.reload(true)");
         //Application.OpenURL("https://forest-ier.itch.io/rythmwave");
         Application.Quit();
     }
@@ -65,7 +67,13 @@ public class ButtonsScript : MonoBehaviour
                     if(AudioLaunch != null)AudioLaunch.Play();
                 }
             }
-        } 
+        }
+
+        if (MainMenu != null)
+        {
+            if(MainMenu.activeSelf) gameObject.GetComponent<Image>().sprite = Background;
+            else gameObject.GetComponent<Image>().sprite = BlurredBackground;
+        }
     }
     void CheckOutline()
     {
