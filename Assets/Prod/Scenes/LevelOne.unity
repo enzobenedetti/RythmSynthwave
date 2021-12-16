@@ -328,6 +328,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 930125723534048345, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3bd6053e7ba00304b956c2ae9af4a0d2, type: 3}
     - target: {fileID: 1244886618208060681, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -568,6 +572,10 @@ PrefabInstance:
       propertyPath: transition
       value: 
       objectReference: {fileID: 1159928795}
+    - target: {fileID: 6951023228700468755, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1db5c0b943a0f9544bf4a6e7a424de13, type: 3}
     - target: {fileID: 7593821269223556936, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
@@ -624,6 +632,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9168509651924140235, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1159928795}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f07837d5f861b34789c2b679106f8cd, type: 3}
 --- !u!82 &851591323 stripped
