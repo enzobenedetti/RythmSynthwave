@@ -6170,7 +6170,7 @@ MonoBehaviour:
   MusicOneMaxSpeed: 8
   MusicTwoMaxSpeed: 5
   MusicThreeMaxSpeed: 3
-  AnimationTime: 1
+  AnimationTime: 0.5
   LaunchGameSound: {fileID: 2511457196585846957}
   ClickSound: {fileID: 5234774234589497617}
   LevelSelectorAnimator: {fileID: 261728080362744132}

@@ -109,10 +109,10 @@ namespace UI
         public IEnumerator ChangeMusicDown()
         {
             ClickSound.Play();
-            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoDown",true);
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoUp",true);
             IsInAnimation = true;
             yield return new WaitForSeconds(AnimationTime + .01f);
-            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoDown",false);
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoUp",false);
             Speed = 1;
             switch (CurHighlightedMusic)
                { 
@@ -133,10 +133,10 @@ namespace UI
         public IEnumerator ChangeMusicUp()
         {
             ClickSound.Play();
-            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoUp",true);
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoDown",true);
             IsInAnimation = true;
             yield return new WaitForSeconds(AnimationTime + .01f);
-            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoUp",false);
+            if (LevelSelectorAnimator != null)LevelSelectorAnimator.SetBool("GoDown",false);
             Speed = 1;
             switch (CurHighlightedMusic)
             {
